@@ -4,9 +4,14 @@ import "@fontsource-variable/manrope";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Wholesale Accounting Software | QuickAccounts by Dotcode",
+  title: "Coming Soon | Dotcode",
   description:
-    "QuickAccounts helps wholesalers organize stock, purchases, customer accounts, cash and ledgers with unlimited users, setup and training.",
+    "Dotcode is updating its website. We will be back online very soon.",
+  icons: {
+    icon: "/assets/favicon.png",
+    shortcut: "/assets/favicon.png",
+    apple: "/assets/favicon.png",
+  },
 };
 
 export default function RootLayout({

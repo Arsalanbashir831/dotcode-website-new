@@ -145,6 +145,271 @@ body {
   }
 }
 
+/* Temporary coming-soon experience. */
+.cs-page {
+  position: relative;
+  display: grid;
+  min-height: 100svh;
+  grid-template-rows: auto 1fr auto;
+  padding: 28px clamp(22px, 4vw, 64px) 24px;
+  overflow: hidden;
+  isolation: isolate;
+  color: #171717;
+  background: #fbfaf8;
+}
+.cs-grid {
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(23, 23, 23, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(23, 23, 23, 0.045) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: linear-gradient(to bottom, black, transparent 88%);
+}
+.cs-header,
+.cs-footer {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.cs-logo {
+  width: 152px;
+  height: auto;
+}
+.cs-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 13px;
+  border: 1px solid #e4ded8;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.74);
+  font-size: 0.7rem;
+  font-weight: 780;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.cs-status i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #f45a21;
+  box-shadow: 0 0 0 5px rgba(244, 90, 33, 0.13);
+}
+.cs-content {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  width: min(1180px, 100%);
+  align-self: center;
+  gap: clamp(30px, 5vw, 68px);
+  margin: 56px auto;
+}
+.cs-content h1 {
+  display: flex;
+  max-width: 980px;
+  flex-wrap: wrap;
+  column-gap: 0.2em;
+  font-size: clamp(4rem, 10.5vw, 9.4rem);
+  font-weight: 440;
+  line-height: 0.84;
+  letter-spacing: -0.075em;
+}
+.cs-word-wrap {
+  display: inline-flex;
+  padding: 0.08em 0.04em 0.12em;
+  overflow: hidden;
+}
+.cs-word {
+  display: inline-block;
+}
+.cs-word-wrap:nth-child(2) .cs-word,
+.cs-word-wrap:nth-child(5) .cs-word {
+  color: #f45a21;
+}
+.cs-intro {
+  display: grid;
+  max-width: 490px;
+  justify-self: end;
+  gap: 24px;
+}
+.cs-intro p {
+  color: #5f5b57;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  line-height: 1.65;
+}
+.cs-intro a {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  gap: 9px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #171717;
+  color: #171717;
+  font-size: 0.9rem;
+  font-weight: 750;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+.cs-intro a:hover {
+  border-color: #d94712;
+  color: #d94712;
+}
+.cs-intro a:focus-visible {
+  border-radius: 3px;
+  outline: 3px solid rgba(244, 90, 33, 0.26);
+  outline-offset: 5px;
+}
+.cs-intro svg {
+  width: 17px;
+  height: 17px;
+}
+.cs-shapes {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.cs-shape {
+  position: absolute;
+  display: grid;
+  place-items: center;
+}
+.cs-shape-circle {
+  top: 17%;
+  right: 9%;
+  width: clamp(62px, 7vw, 108px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #f45a21;
+}
+.cs-shape-square {
+  top: 52%;
+  left: 4%;
+  width: clamp(64px, 7vw, 104px);
+  aspect-ratio: 1;
+  border: 2px solid #171717;
+  border-radius: 24%;
+  transform: rotate(13deg);
+}
+.cs-shape-pill {
+  right: 17%;
+  bottom: 19%;
+  width: 120px;
+  height: 48px;
+  border-radius: 999px;
+  color: white;
+  background: #171717;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+.cs-shape-spark {
+  top: 23%;
+  left: 6%;
+  color: #ff986f;
+  font-size: clamp(3rem, 6vw, 6.5rem);
+  line-height: 1;
+}
+.cs-shape-ring {
+  top: 45%;
+  right: 3%;
+  width: clamp(100px, 12vw, 170px);
+  aspect-ratio: 1;
+  border: 1px solid #cfc8c1;
+  border-radius: 50%;
+}
+.cs-orbit-dot {
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+}
+.cs-orbit-dot::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #d94712;
+  transform: translateX(-50%);
+}
+.cs-footer {
+  padding-top: 18px;
+  border-top: 1px solid #ded8d2;
+  color: #77716c;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.cs-footer span:last-child {
+  color: #d94712;
+}
+@media (max-width: 720px) {
+  .cs-page {
+    padding: 22px 18px 20px;
+  }
+  .cs-header {
+    align-items: flex-start;
+  }
+  .cs-logo {
+    width: 126px;
+  }
+  .cs-status {
+    max-width: 150px;
+    justify-content: center;
+    padding: 8px 10px;
+    text-align: center;
+    font-size: 0.58rem;
+    line-height: 1.35;
+  }
+  .cs-content {
+    gap: 36px;
+    margin: 62px auto 48px;
+  }
+  .cs-content h1 {
+    max-width: 560px;
+    font-size: clamp(3.6rem, 18vw, 6rem);
+    line-height: 0.88;
+  }
+  .cs-intro {
+    max-width: 370px;
+    justify-self: start;
+  }
+  .cs-shape-circle {
+    top: 19%;
+    right: -22px;
+  }
+  .cs-shape-square {
+    top: 59%;
+    left: -28px;
+  }
+  .cs-shape-spark {
+    top: 33%;
+    left: auto;
+    right: 4%;
+  }
+  .cs-shape-ring {
+    top: auto;
+    right: -50px;
+    bottom: 14%;
+  }
+  .cs-shape-pill {
+    display: none;
+  }
+  .cs-footer span:last-child {
+    display: none;
+  }
+}
+
 /* QuickAccounts landing page — adapted from the supplied static source. */
 .qa-site {
   background: #fbfaf8;
