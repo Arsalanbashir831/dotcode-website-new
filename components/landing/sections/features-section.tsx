@@ -7,7 +7,7 @@ export const FeaturesSection = () => (
       <SectionHeading
         eyebrow="One system for your business operations"
         title="Manage inventory, trade and accounts in one place."
-        description="QuickAccounts connects multi-outlet and warehouse stock, purchases and sales, serial tracking for warranty and RMA workflows, and financial records for retailers, wholesalers and distributors."
+        description="Keep stock, sales, warranties and financial records connected, across every outlet and warehouse."
       />
       <FeatureStack />
     </div>

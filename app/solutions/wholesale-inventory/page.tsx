@@ -25,7 +25,7 @@ export default function WholesaleInventoryPage() {
     faqs={[
       { question: "What can wholesalers manage in QuickAccounts?", answer: "QuickAccounts supports core records for stock, purchases, cash, customer accounts and ledgers." },
       { question: "Does the license include setup and training?", answer: "Standard setup, supported data migration and team training are included. Hosting and any optional customizations are separate." },
-      { question: "How much does QuickAccounts cost?", answer: "QuickAccounts offers a free guided product demo and an $850 one-time software purchase. Hosting depends on your online or offline setup; contact Dotcode to confirm current terms." },
+      { question: "How much does QuickAccounts cost?", answer: "The offline single-user lifetime license is $1,200 one time. The online unlimited-user lifetime license is $850 one time, plus $40 per month for hosting. A guided demo is free." },
     ]}
   />;
 }

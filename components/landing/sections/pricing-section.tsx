@@ -10,8 +10,14 @@ export const PricingSection = () => (
     <div className="qa-container">
       <SectionHeading
         eyebrow="Straightforward licensing"
-        title="Check the demo. Own it when you’re ready."
-        description="Explore QuickAccounts in a free guided demo, then purchase the software once for $850. No subscription and no per-user charges."
+        title={
+          <>
+            No-Subscription ERP Software
+            <br />
+            for Wholesale Businesses
+          </>
+        }
+        description="Explore QuickAccounts ERP for inventory, purchasing, sales and accounts. Choose an offline or online lifetime license, then discuss customizations for your workflow."
       />
       <div className="qa-pricing-grid">
         {pricingPlans.map((plan) => (
@@ -21,7 +27,7 @@ export const PricingSection = () => (
             data-reveal
           >
             {plan.isPopular ? (
-              <span className="qa-popular">POPULAR</span>
+              <span className="qa-popular">ONLINE · UNLIMITED USERS</span>
             ) : null}
             <h3>{plan.name}</h3>
             <p>{plan.description}</p>
@@ -31,14 +37,15 @@ export const PricingSection = () => (
             </div>
             <small>{plan.note}</small>
             <WhatsAppButton
-              href={plan.name === "Check Demo"
-                ? WHATSAPP_DEMO_URL
-                : getWhatsAppContactUrl(
-                    `Hi, I’m interested in the QuickAccounts ${plan.name}. Please share the next steps.`,
-                  )}
+              className="qa-price-card-cta"
+              href={
+                plan.isDemo
+                  ? WHATSAPP_DEMO_URL
+                  : getWhatsAppContactUrl(plan.message)
+              }
               label={plan.cta}
-              theme={plan.name === "Check Demo" ? "orange" : "whatsapp"}
-              showIcon={plan.name !== "Check Demo"}
+              theme={plan.isDemo ? "orange" : "whatsapp"}
+              showIcon={!plan.isDemo}
             />
             <ul>
               {plan.features.map((feature) => (
@@ -52,8 +59,9 @@ export const PricingSection = () => (
         ))}
       </div>
       <p className="qa-footnote">
-        <strong>Please note:</strong> Hosting is not included in the software
-        purchase. Additional features and customizations are optional and quoted
+        <strong>Please note:</strong> All prices are in USD. The offline license
+        is for one user and stores data on your hardware. Online hosting is
+        billed separately at $40 per month. Customizations are quoted
         separately.
       </p>
     </div>

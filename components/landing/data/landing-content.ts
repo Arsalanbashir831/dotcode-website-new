@@ -17,10 +17,8 @@ export type FeatureItem = {
   icon: LucideIcon;
   title: string;
   description: string;
-  image?: {
-    src: string;
-    alt: string;
-  };
+  graphic: "locations" | "stock" | "trading" | "serials" | "accounts";
+  href: string;
 };
 
 export type AudienceItem = {
@@ -28,10 +26,9 @@ export type AudienceItem = {
   label: string;
   title: string;
   description: string;
-  image?: {
-    src: string;
-    alt: string;
-  };
+  graphic: "wholesale" | "merchandise" | "distribution";
+  href: string;
+  linkLabel: string;
 };
 
 export const navigationItems = [
@@ -52,53 +49,43 @@ export const valueItems = [
 export const features: FeatureItem[] = [
   {
     icon: Store,
-    title: "Manage Multiple Outlets and Warehouses",
+    title: "Outlets and warehouses",
     description:
       "Manage inventory across branches and warehouses, see location-level stock, and coordinate transfers as products move through your business.",
-    image: {
-      src: "/assets/feature1.png",
-      alt: "QuickAccounts stores and warehouses screen with outlet and warehouse locations",
-    },
+    graphic: "locations",
+    href: "/features/multi-warehouse-inventory",
   },
   {
     icon: Boxes,
-    title: "Manage and Track Your Stock",
+    title: "Stock tracking",
     description:
       "Keep product records and stock quantities organized so your team can review what is available and where it is held.",
-    image: {
-      src: "/assets/feature2.png",
-      alt: "QuickAccounts stock workspace showing inventory activity, transfers, and serial traceability",
-    },
+    graphic: "stock",
+    href: "/solutions/wholesale-inventory",
   },
   {
     icon: ClipboardList,
-    title: "Record Purchases and Sales",
+    title: "Purchases and sales",
     description:
       "Record buying and selling activity in a connected workflow, keeping transaction history alongside your inventory records.",
-    image: {
-      src: "/assets/feature3.png",
-      alt: "QuickAccounts purchase order screen with supplier, delivery, and product details",
-    },
+    graphic: "trading",
+    href: "/solutions/wholesale-inventory",
   },
   {
     icon: PackageCheck,
-    title: "Track Serials for Warranty and RMA Claims",
+    title: "Serials and warranty claims",
     description:
       "Trace individual products by serial number, find related sales details, and support warranty checks, returns, and replacements.",
-    image: {
-      src: "/assets/feature4-rma.png",
-      alt: "QuickAccounts returns and warranty workspace with serial verification and RMA claims",
-    },
+    graphic: "serials",
+    href: "/features/serial-number-tracking",
   },
   {
     icon: WalletCards,
-    title: "Manage Financial Accounts, Ledgers and Expenses",
+    title: "Accounts and ledgers",
     description:
       "Keep customer and vendor ledgers, cash records, and expense activity together with your inventory and sales operations.",
-    image: {
-      src: "/assets/feature5-ledger.png",
-      alt: "QuickAccounts customer ledger showing invoice and payment history, balances, and outstanding amounts",
-    },
+    graphic: "accounts",
+    href: "/features/business-accounting",
   },
 ];
 
@@ -106,23 +93,32 @@ export const audienceItems: AudienceItem[] = [
   {
     icon: Store,
     label: "01 / WHOLESALERS",
-    title: "Keep trading records together",
+    title: "From purchase to payment.",
     description:
-      "Organize purchases, stock, customer accounts, cash and ledgers for your wholesale operation.",
+      "Keep supplier purchases, customer sales and payments connected to the accounts behind every trade.",
+    graphic: "wholesale",
+    href: "/solutions/wholesale-inventory",
+    linkLabel: "Explore wholesale tools",
   },
   {
     icon: ShoppingBag,
     label: "02 / MERCHANDISE",
-    title: "Follow your goods and accounts",
+    title: "Know what’s in stock.",
     description:
-      "Keep records for the merchandise you buy and sell alongside stock and customer accounts.",
+      "Follow the goods you receive, hold and sell, with stock movements and customer records in one place.",
+    graphic: "merchandise",
+    href: "/industries/merchandise-wholesalers",
+    linkLabel: "Explore merchandise tools",
   },
   {
     icon: Truck,
     label: "03 / DISTRIBUTORS",
-    title: "Bring daily records into one place",
+    title: "Keep every location connected.",
     description:
-      "Keep merchandise, purchasing and everyday account records organized for your team.",
+      "See stock across warehouses and outlets. Coordinate transfers and keep your team working from the same business records.",
+    graphic: "distribution",
+    href: "/features/multi-warehouse-inventory",
+    linkLabel: "Explore multiple locations",
   },
 ];
 
@@ -163,11 +159,11 @@ export const processSteps = [
   {
     title: "Choose a license",
     description:
-      "Review the demo, then choose online or offline software. Online hosting costs about $30–$40 per month; offline software has no monthly charges.",
+      "Review the demo, then choose an offline single-user license or online access for your team. Online hosting is $40 per month.",
     details: [
       "See the product in a guided demo",
-      "Online hosting: about $30–$40/month",
-      "Offline software: no monthly charges",
+      "Offline: $1,200 one time, for one user",
+      "Online: $850 one time, plus $40/month hosting",
     ],
   },
   {
@@ -183,7 +179,7 @@ export const processSteps = [
   {
     title: "Get to work",
     description:
-      "Use QuickAccounts with as many team members as your business needs, with no per-user fee.",
+      "Use QuickAccounts with the owner-only offline license or give your full team access through the online setup.",
     details: [
       "Invite your whole team",
       "Keep daily records together",
@@ -195,38 +191,72 @@ export const processSteps = [
 export const pricingPlans = [
   {
     name: "Check Demo",
-    description: "Get a guided look at QuickAccounts before choosing a license.",
+    description:
+      "See QuickAccounts in a guided demo before choosing your setup.",
     price: "Free",
-    suffix: "product demo",
-    note: "See the key workflows before you decide",
+    suffix: "guided demo",
+    note: "Explore the core workflows and available features",
     cta: "View Demo",
+    message: "Hi, I’d like to book a QuickAccounts demo for my business.",
+    isDemo: true,
     isPopular: false,
     features: [
-      "Stock and purchase management",
-      "Multi-warehouse inventory and stock transfers",
-      "Serial number tracking and warranty workflows",
+      "Inventory, purchases and sales",
+      "Outlets, warehouses and stock transfers",
+      "Serial number and warranty tracking",
       "Returns and product replacements",
       "Customer accounts, cash and ledgers",
+      "Discuss optional customization",
     ],
   },
   {
-    name: "Software Purchase",
-    description: "Own QuickAccounts with one simple, one-time payment.",
+    name: "Online ERP Software License",
+    description: "Cloud hosted access for you and your whole team.",
     price: "$850",
-    suffix: "one time",
-    note: "No subscription or software renewal fees",
-    cta: "Contact Us",
+    suffix: "one-time lifetime license",
+    note: "Plus $40/month for online hosting",
+    cta: "Ask About Online Setup",
+    message:
+      "Hi, I’m interested in the online QuickAccounts license for $850 plus $40/month hosting.",
+    isDemo: false,
     isPopular: true,
     features: [
-      "Lifetime software access",
-      "Unlimited users",
-      "Free setup and business integration",
-      "Free training for your team",
-      "Optional features and customizations quoted separately",
-      "3 Months of free support included",
-      "For Online Software Hosting and cloud storage are separate (estimated $30–$40/month) for Offline Software Hosting there is no hosting fee",
+      "Full inventory, purchasing and sales features",
+      "Multi-warehouse stock and transfers",
+      "Serial tracking, warranty and returns",
+      "Customer accounts, cash and ledgers",
+      "Unlimited users across your team",
+      "Lifetime software license with no renewal fee",
+      "$40/month hosting, billed separately",
+      "Standard setup and team training included",
+      "Customizations quoted separately",
     ],
   },
+  {
+    name: "Offline ERP Software License",
+    description:
+      "Installed on your hardware, with business data stored locally.",
+    price: "$1,200",
+    suffix: "one-time lifetime license",
+    note: "One user · no monthly hosting cost",
+    cta: "Ask About Offline Setup",
+    message:
+      "Hi, I’m interested in the offline QuickAccounts license for $1,200.",
+    isDemo: false,
+    isPopular: false,
+    features: [
+      "Full inventory, purchasing and sales features",
+      "Multi-warehouse stock and transfers",
+      "Serial tracking, warranty and returns",
+      "Customer accounts, cash and ledgers",
+      "Single-user access for the owner",
+      "Data stored on your own hardware",
+      "Lifetime software license with no renewal fee",
+      "Standard setup and team training included",
+      "Customizations quoted separately",
+    ],
+  },
+  
 ];
 
 export const partnerOptions = [
@@ -258,17 +288,17 @@ export const faqItems = [
   {
     question: "Do you charge extra for each user?",
     answer:
-      "No. Your software license is not priced per user. Give access to all the team members your business needs.",
+      "The online license includes unlimited users. The offline license is for one user, typically the business owner.",
   },
   {
     question: "What license options are available?",
     answer:
-      "Request a free guided product demo or purchase a lifetime software license for $850. There is no software renewal fee. Hosting depends on your online or offline setup.",
+      "Start with a free guided demo. The offline single-user lifetime license is $1,200 one time. The online unlimited-user lifetime license is $850 one time, plus $40 per month for hosting. Neither license has a software renewal fee.",
   },
   {
     question: "Is hosting included?",
     answer:
-      "No. Hosting is arranged and paid for separately. The current estimate shown on this page is $30–$40 per month; confirm the right option with Dotcode for your setup.",
+      "Online hosting is $40 per month and billed separately from the $850 software license. The offline license stores data on your hardware and has no monthly hosting cost.",
   },
   {
     question: "Are setup, data migration and training included?",

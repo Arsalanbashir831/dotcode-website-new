@@ -1,13 +1,13 @@
 "use client";
 
 import { type CSSProperties, useLayoutEffect, useRef } from "react";
+import Link from "next/link";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ArrowRight, ImageIcon } from "lucide-react";
-import Image from "next/image";
+import { ArrowRight } from "lucide-react";
 
 import { features } from "@/components/landing/data/landing-content";
-import { WHATSAPP_CONTACT_URL } from "@/lib/contact";
+import { FeatureGraphic } from "@/components/landing/shared/feature-graphic";
 
 type StackCardStyle = CSSProperties & {
   "--stack-index": number;
@@ -84,7 +84,7 @@ export const FeatureStack = () => {
 
   return (
     <div className="qa-feature-stack" ref={stackRef}>
-      {features.map(({ icon: Icon, title, description, image }, index) => (
+      {features.map(({ icon: Icon, title, description, graphic, href }, index) => (
         <article
           className="qa-feature-stack-card"
           data-feature-card
@@ -97,35 +97,20 @@ export const FeatureStack = () => {
             </span>
             <div>
               <span className="qa-feature-stack-icon">
-                <Icon />
+                <Icon aria-hidden="true" />
               </span>
               <h3>{title}</h3>
               <p>{description}</p>
             </div>
-            <a
-              href={WHATSAPP_CONTACT_URL}
+            <Link
+              href={href}
               className="qa-feature-stack-link"
-              rel="noopener noreferrer"
-              target="_blank"
             >
               Learn more <ArrowRight aria-hidden="true" />
-            </a>
+            </Link>
           </div>
           <div className="qa-feature-stack-media">
-            {image ? (
-              <Image
-                src={image.src}
-                alt={image.alt}
-                fill
-                sizes="(min-width: 769px) 55vw, 100vw"
-              />
-            ) : (
-              <div className="qa-feature-image-placeholder">
-                <ImageIcon aria-hidden="true" />
-                <strong>Feature image</strong>
-                <span>Add the image path in landing-content.ts</span>
-              </div>
-            )}
+            <FeatureGraphic kind={graphic} />
           </div>
         </article>
       ))}

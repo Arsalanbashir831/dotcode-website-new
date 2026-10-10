@@ -1,31 +1,37 @@
+import { ArrowRight, CalendarDays } from "lucide-react";
 import Image from "next/image";
 
-import { WhatsAppButton } from "@/components/ui/whatsapp-button";
+import { WHATSAPP_DEMO_URL } from "@/lib/contact";
 
 export const ContactSection = () => (
   <section className="qa-contact" id="contact">
     <div className="qa-container">
       <div className="qa-contact-card">
         <div className="qa-contact-copy">
-          <p className="qa-contact-kicker">Let’s talk about your business</p>
+          <p className="qa-contact-kicker"><span aria-hidden="true" />Ready to streamline your business?</p>
           <h2>
-            <span>Bring all wholesale records</span>
-            <span>into one clear system.</span>
+            <span>Bring all your wholesale</span>
+            <span><em>operations into one system.</em></span>
           </h2>
           <p>
-            See stock, purchases, customer accounts, cash and ledgers in one
-            place. Book a free demo and we’ll help you confirm the right setup.
+            Manage stock, purchases, sales, customers, suppliers and accounting
+            in one simple platform. No per-user fees. Just one powerful ERP.
           </p>
           <div className="qa-contact-actions">
-            <WhatsAppButton size="lg" />
+            <a className="qa-contact-primary" href={WHATSAPP_DEMO_URL} target="_blank" rel="noopener noreferrer">
+              Get a Demo <ArrowRight aria-hidden="true" />
+            </a>
+            <a className="qa-contact-secondary" href={WHATSAPP_DEMO_URL} target="_blank" rel="noopener noreferrer">
+              <CalendarDays aria-hidden="true" /> Book Free Consultation
+            </a>
           </div>
         </div>
 
         <div className="qa-contact-visual">
           <Image
             className="qa-contact-image"
-            src="/assets/cta-workflow-visual.png"
-            alt="Dotcode connects stock, purchases, cash, accounts and ledgers in one business system"
+            src="/assets/cta-image.png"
+            alt="QuickAccounts dashboard showing sales, purchases, stock value and product categories"
             fill
             sizes="(min-width: 769px) 55vw, 100vw"
           />

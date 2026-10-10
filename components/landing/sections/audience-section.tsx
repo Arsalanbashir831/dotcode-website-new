@@ -1,33 +1,11 @@
-import { ImageIcon } from "lucide-react";
-import Image from "next/image";
+import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 
 import {
   audienceItems,
-  type AudienceItem,
 } from "@/components/landing/data/landing-content";
+import { AudienceGraphic } from "@/components/landing/shared/audience-graphic";
 import { SectionHeading } from "@/components/landing/shared/section-heading";
-
-const AudienceMedia = ({
-  image,
-  title,
-}: Pick<AudienceItem, "image" | "title">) => (
-  <div className="qa-audience-media">
-    {image ? (
-      <Image
-        src={image.src}
-        alt={image.alt}
-        fill
-        sizes="(min-width: 769px) 50vw, 100vw"
-      />
-    ) : (
-      <div className="qa-audience-placeholder">
-        <ImageIcon aria-hidden="true" />
-        <strong>{title} image</strong>
-        <span>Add the image path in landing-content.ts</span>
-      </div>
-    )}
-  </div>
-);
 
 export const AudienceSection = () => (
   <section className="qa-section qa-audience-section">
@@ -35,8 +13,8 @@ export const AudienceSection = () => (
       <SectionHeading
         isDark
         eyebrow="Made for merchandise businesses"
-        title="Designed around buying, holding and selling goods."
-        description="QuickAccounts focuses on practical stock and account records for trade-led businesses."
+        title="Your trade. Your stock. All connected."
+        description="From the first purchase to the final payment, QuickAccounts brings the daily work of trading businesses together."
       />
       <div className="qa-audience-grid">
         {audienceItems.map((item, index) => {
@@ -58,8 +36,11 @@ export const AudienceSection = () => (
                   <h3>{item.title}</h3>
                 </div>
                 <p>{item.description}</p>
+                <Link className="qa-audience-link" href={item.href}>
+                  {item.linkLabel}<ArrowUpRight aria-hidden="true" />
+                </Link>
               </div>
-              <AudienceMedia image={item.image} title={item.title} />
+              <AudienceGraphic kind={item.graphic} />
             </article>
           );
         })}

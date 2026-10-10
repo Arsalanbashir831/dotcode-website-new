@@ -65,7 +65,7 @@ export function SeoLandingPage({
       <footer className="qa-footer"><div className="qa-container qa-footer-bottom">
         <p>© {new Date().getFullYear()} Dotcode Solutions</p>
         <Link href="/">QuickAccounts home</Link>
-        <a href="mailto:hello@dotcode.dev">hello@dotcode.dev</a>
+        <a href="mailto:arsalanbashir831@gmail.com">arsalanbashir831@gmail.com</a>
       </div></footer>
     </main>
   );

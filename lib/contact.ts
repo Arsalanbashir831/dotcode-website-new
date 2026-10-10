@@ -1,4 +1,4 @@
-const WHATSAPP_BASE_URL = "https://wa.me/923035555992";
+const WHATSAPP_BASE_URL = "https://wa.me/923071257828";
 
 export function getWhatsAppContactUrl(message: string) {
   return `${WHATSAPP_BASE_URL}?text=${encodeURIComponent(message)}`;

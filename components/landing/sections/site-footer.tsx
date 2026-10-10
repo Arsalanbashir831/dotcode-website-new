@@ -42,7 +42,8 @@ export const SiteFooter = () => (
           <br />
           Practical software, set up for the way you work.
         </p>
-        <span>Lahore, Pakistan · Serving businesses worldwide</span>
+        <span>Headquarters: Lahore, Pakistan</span>
+        <span>Operations office: New Mexico, USA</span>
       </div>
 
       <nav aria-label="Product links">
@@ -73,7 +74,10 @@ export const SiteFooter = () => (
       </nav>
       <div className="qa-footer-contact">
         <p>Contact</p>
-        <a href="mailto:hello@dotcode.dev">hello@dotcode.dev</a>
+        <span>Email</span>
+        <a href="mailto:arsalanbashir831@gmail.com">arsalanbashir831@gmail.com</a>
+        <span>WhatsApp</span>
+        <a href={WHATSAPP_CONTACT_URL} target="_blank" rel="noopener noreferrer">+92 307 1257828</a>
         <span>Wholesale accounting software</span>
         <span>Setup, migration and training</span>
       </div>

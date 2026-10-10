@@ -13,7 +13,7 @@ const organizationSchema = {
   name: "Dotcode Solutions",
   url: "https://dotcodesolution.com",
   logo: "https://dotcodesolution.com/assets/dotcode-logo.png",
-  email: "hello@dotcode.dev",
+  email: "arsalanbashir831@gmail.com",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Lahore",

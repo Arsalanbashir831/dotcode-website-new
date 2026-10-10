@@ -101,7 +101,7 @@ export function MarketingHeader() {
                   </div>
                   <Link className="qa-mega-pricing" href="/#pricing" onClick={closeMenus}>
                     <span>Simple licensing</span>
-                    <strong>Free product demo · $850 one-time</strong>
+                    <strong>Free demo · Online $850 · Offline $1,200</strong>
                     <span>See pricing and what’s included <ArrowRight aria-hidden="true" /></span>
                   </Link>
                 </div>
