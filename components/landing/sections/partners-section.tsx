@@ -1,7 +1,6 @@
 import { partnerOptions } from "@/components/landing/data/landing-content";
 import { SectionHeading } from "@/components/landing/shared/section-heading";
-import { Button } from "@/components/ui/button";
-import { WHATSAPP_CONTACT_URL } from "@/lib/contact";
+import { WhatsAppButton } from "@/components/ui/whatsapp-button";
 
 export const PartnersSection = () => (
   <section className="qa-section bg-[#F4F1ED]" id="partners">
@@ -34,15 +33,7 @@ export const PartnersSection = () => (
             agreed terms.
           </p>
         </div>
-        <Button asChild>
-          <a
-            href={WHATSAPP_CONTACT_URL}
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Ask About White-Label Licensing
-          </a>
-        </Button>
+        <WhatsAppButton />
       </div>
     </div>
   </section>

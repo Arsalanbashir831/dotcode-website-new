@@ -5,9 +5,9 @@ export const FeaturesSection = () => (
   <section className="qa-section bg-white" id="features">
     <div className="qa-container">
       <SectionHeading
-        eyebrow="The essentials, together"
-        title="Less searching. A clearer view of the work."
-        description="Keep the everyday records behind your wholesale business organized in one straightforward system."
+        eyebrow="One system for your business operations"
+        title="Manage inventory, trade and accounts in one place."
+        description="QuickAccounts connects multi-outlet and warehouse stock, purchases and sales, serial tracking for warranty and RMA workflows, and financial records for retailers, wholesalers and distributors."
       />
       <FeatureStack />
     </div>

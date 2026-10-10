@@ -1,9 +1,6 @@
-import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
-import { Button } from "@/components/ui/button";
-import { WHATSAPP_CONTACT_URL } from "@/lib/contact";
-
-const systemNodes = ["Stock", "Purchases", "Cash", "Accounts", "Ledgers"];
+import { WhatsAppButton } from "@/components/ui/whatsapp-button";
 
 export const ContactSection = () => (
   <section className="qa-contact" id="contact">
@@ -20,42 +17,18 @@ export const ContactSection = () => (
             place. Book a free demo and we’ll help you confirm the right setup.
           </p>
           <div className="qa-contact-actions">
-            <Button asChild size="lg">
-              <a
-                href={WHATSAPP_CONTACT_URL}
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Explore License Options <ArrowRight />
-              </a>
-            </Button>
-            <Button asChild size="lg" variant="outline">
-              <a
-                href={WHATSAPP_CONTACT_URL}
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Book a free demo
-              </a>
-            </Button>
+            <WhatsAppButton size="lg" />
           </div>
         </div>
 
-        <div className="qa-contact-visual" aria-hidden="true">
-          <div className="qa-contact-orbit qa-contact-orbit-outer" />
-          <div className="qa-contact-orbit qa-contact-orbit-inner" />
-          <div className="qa-contact-core">
-            <span>QA</span>
-            <small>ONE CLEAR SYSTEM</small>
-          </div>
-          {systemNodes.map((node, index) => (
-            <span
-              className={`qa-contact-node qa-contact-node-${index + 1}`}
-              key={node}
-            >
-              {node}
-            </span>
-          ))}
+        <div className="qa-contact-visual">
+          <Image
+            className="qa-contact-image"
+            src="/assets/cta-workflow-visual.png"
+            alt="Dotcode connects stock, purchases, cash, accounts and ledgers in one business system"
+            fill
+            sizes="(min-width: 769px) 55vw, 100vw"
+          />
         </div>
       </div>
     </div>

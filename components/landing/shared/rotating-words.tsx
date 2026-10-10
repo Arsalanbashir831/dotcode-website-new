@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-const words = ["Wholesellers", "Retailers", "E-commerce", "Production House"];
+const words = ["Wholesalers", "Distributors", "Retailers"];
 
 const transitionDuration = 350;
 const wordDuration = 2400;
@@ -42,7 +42,7 @@ export const RotatingWords = () => {
         {words[activeIndex]}
       </span>
       <span className="sr-only">
-        Wholesellers, Retailers, E-commerce, and Manufacturing Production Houses
+        Wholesalers, distributors and retailers
       </span>
     </span>
   );

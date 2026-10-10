@@ -51,28 +51,54 @@ export const valueItems = [
 
 export const features: FeatureItem[] = [
   {
-    icon: Boxes,
-    title: "Track your stock",
+    icon: Store,
+    title: "Manage Multiple Outlets and Warehouses",
     description:
-      "Keep product and merchandise records organized so your team can follow what the business has on hand.",
+      "Manage inventory across branches and warehouses, see location-level stock, and coordinate transfers as products move through your business.",
+    image: {
+      src: "/assets/feature1.png",
+      alt: "QuickAccounts stores and warehouses screen with outlet and warehouse locations",
+    },
+  },
+  {
+    icon: Boxes,
+    title: "Manage and Track Your Stock",
+    description:
+      "Keep product records and stock quantities organized so your team can review what is available and where it is held.",
+    image: {
+      src: "/assets/feature2.png",
+      alt: "QuickAccounts stock workspace showing inventory activity, transfers, and serial traceability",
+    },
   },
   {
     icon: ClipboardList,
-    title: "Record purchases",
+    title: "Record Purchases and Sales",
     description:
-      "Keep purchasing information together with your other day-to-day business records.",
+      "Record buying and selling activity in a connected workflow, keeping transaction history alongside your inventory records.",
+    image: {
+      src: "/assets/feature3.png",
+      alt: "QuickAccounts purchase order screen with supplier, delivery, and product details",
+    },
   },
   {
-    icon: Users,
-    title: "Manage customer accounts",
+    icon: PackageCheck,
+    title: "Track Serials for Warranty and RMA Claims",
     description:
-      "Keep customer information and account balances easy for your team to find.",
+      "Trace individual products by serial number, find related sales details, and support warranty checks, returns, and replacements.",
+    image: {
+      src: "/assets/feature4-rma.png",
+      alt: "QuickAccounts returns and warranty workspace with serial verification and RMA claims",
+    },
   },
   {
     icon: WalletCards,
-    title: "Keep cash and ledgers organized",
+    title: "Manage Financial Accounts, Ledgers and Expenses",
     description:
-      "Maintain cash-in-hand records and clear account ledgers in one system.",
+      "Keep customer and vendor ledgers, cash records, and expense activity together with your inventory and sales operations.",
+    image: {
+      src: "/assets/feature5-ledger.png",
+      alt: "QuickAccounts customer ledger showing invoice and payment history, balances, and outstanding amounts",
+    },
   },
 ];
 
@@ -137,11 +163,11 @@ export const processSteps = [
   {
     title: "Choose a license",
     description:
-      "Start with a 10-day trial, then choose a monthly or lifetime license. Hosting is separate.",
+      "Review the demo, then choose online or offline software. Online hosting costs about $30–$40 per month; offline software has no monthly charges.",
     details: [
-      "Compare three clear options",
-      "No per-user license fees",
-      "Confirm hosting separately",
+      "See the product in a guided demo",
+      "Online hosting: about $30–$40/month",
+      "Offline software: no monthly charges",
     ],
   },
   {
@@ -168,27 +194,28 @@ export const processSteps = [
 
 export const pricingPlans = [
   {
-    name: "10-Day Trial",
-    description: "Explore QuickAccounts free for 10 days before you purchase.",
+    name: "Check Demo",
+    description: "Get a guided look at QuickAccounts before choosing a license.",
     price: "Free",
-    suffix: "for 10 days",
-    note: "No software license fee during your trial",
-    cta: "Start Your Free Trial",
+    suffix: "product demo",
+    note: "See the key workflows before you decide",
+    cta: "View Demo",
     isPopular: false,
     features: [
-      "Unlimited users",
-      "Full access to explore the software",
-      "Free setup and business integration",
-      "Free training for your team",
+      "Stock and purchase management",
+      "Multi-warehouse inventory and stock transfers",
+      "Serial number tracking and warranty workflows",
+      "Returns and product replacements",
+      "Customer accounts, cash and ledgers",
     ],
   },
   {
     name: "Software Purchase",
     description: "Own QuickAccounts with one simple, one-time payment.",
-    price: "$1,500",
+    price: "$850",
     suffix: "one time",
     note: "No subscription or software renewal fees",
-    cta: "Purchase QuickAccounts",
+    cta: "Contact Us",
     isPopular: true,
     features: [
       "Lifetime software access",
@@ -197,7 +224,7 @@ export const pricingPlans = [
       "Free training for your team",
       "Optional features and customizations quoted separately",
       "3 Months of free support included",
-      "Hosting/Cloud Storage costs excluded ( Estimated $30-40$/month )",
+      "For Online Software Hosting and cloud storage are separate (estimated $30–$40/month) for Offline Software Hosting there is no hosting fee",
     ],
   },
 ];
@@ -205,13 +232,13 @@ export const pricingPlans = [
 export const partnerOptions = [
   {
     title: "Referral Partner",
-    rate: "20–30%",
+    rate: "3–5%",
     description:
       "Introduce a business to Dotcode. We handle the demo, sale, setup and customer support.",
   },
   {
     title: "Certified Reseller",
-    rate: "25–30%",
+    rate: "3–5%",
     description:
       "Sell QuickAccounts directly and support customers in your market.",
   },
@@ -236,12 +263,12 @@ export const faqItems = [
   {
     question: "What license options are available?",
     answer:
-      "Start with a free 10-day trial, choose a monthly license at $45/month, or purchase a lifetime license for $1,200 with no renewal.",
+      "Request a free guided product demo or purchase a lifetime software license for $850. There is no software renewal fee. Hosting depends on your online or offline setup.",
   },
   {
     question: "Is hosting included?",
     answer:
-      "No. Hosting is arranged and paid for separately. Recommended hosting is approximately $30/month.",
+      "No. Hosting is arranged and paid for separately. The current estimate shown on this page is $30–$40 per month; confirm the right option with Dotcode for your setup.",
   },
   {
     question: "Are setup, data migration and training included?",

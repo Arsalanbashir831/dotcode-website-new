@@ -3,16 +3,28 @@ import Image from "next/image";
 import { WHATSAPP_CONTACT_URL } from "@/lib/contact";
 
 const productLinks = [
-  ["QuickAccounts", "#quickaccounts"],
-  ["Features", "#features"],
-  ["Pricing", "#pricing"],
-  ["FAQs", "#faq"],
+  ["QuickAccounts", "/#quickaccounts"],
+  ["Features", "/#features"],
+  ["Wholesale inventory", "/solutions/wholesale-inventory"],
+  ["Stock and accounts", "/features/business-accounting"],
+  ["Multi-warehouse inventory", "/features/multi-warehouse-inventory"],
+  ["Serial number tracking", "/features/serial-number-tracking"],
+  ["Warranty and RMA", "/features/warranty-management"],
+  ["Pricing", "/#pricing"],
+  ["FAQs", "/#faq"],
+];
+
+const industryLinks = [
+  ["Electronics distributors", "/industries/electronics-distributors"],
+  ["Computer hardware wholesalers", "/industries/computer-hardware-wholesalers"],
+  ["Multi-outlet retailers", "/industries/multi-outlet-retailers"],
+  ["Merchandise wholesalers", "/industries/merchandise-wholesalers"],
 ];
 
 const companyLinks = [
-  ["Partner program", "#partners"],
-  ["How it works", "#process"],
-  ["Book a demo", WHATSAPP_CONTACT_URL],
+  ["Partner program", "/#partners"],
+  ["How it works", "/#process"],
+  ["Contact Us", WHATSAPP_CONTACT_URL],
 ];
 
 export const SiteFooter = () => (
@@ -54,6 +66,10 @@ export const SiteFooter = () => (
             {label}
           </a>
         ))}
+      </nav>
+      <nav aria-label="Industries served">
+        <p>Industries</p>
+        {industryLinks.map(([label, href]) => <a href={href} key={href}>{label}</a>)}
       </nav>
       <div className="qa-footer-contact">
         <p>Contact</p>

@@ -2,16 +2,16 @@ import { Check } from "lucide-react";
 
 import { pricingPlans } from "@/components/landing/data/landing-content";
 import { SectionHeading } from "@/components/landing/shared/section-heading";
-import { Button } from "@/components/ui/button";
-import { WHATSAPP_CONTACT_URL } from "@/lib/contact";
+import { WhatsAppButton } from "@/components/ui/whatsapp-button";
+import { getWhatsAppContactUrl, WHATSAPP_DEMO_URL } from "@/lib/contact";
 
 export const PricingSection = () => (
   <section className="qa-section bg-white" id="pricing">
     <div className="qa-container">
       <SectionHeading
         eyebrow="Straightforward licensing"
-        title="Try it free. Own it when you’re ready."
-        description="Start with a free 10-day trial, then purchase the software once for $1,500. No subscription and no per-user charges."
+        title="Check the demo. Own it when you’re ready."
+        description="Explore QuickAccounts in a free guided demo, then purchase the software once for $850. No subscription and no per-user charges."
       />
       <div className="qa-pricing-grid">
         {pricingPlans.map((plan) => (
@@ -30,15 +30,16 @@ export const PricingSection = () => (
               <span>{plan.suffix}</span>
             </div>
             <small>{plan.note}</small>
-            <Button asChild variant={plan.isPopular ? "default" : "outline"}>
-              <a
-                href={WHATSAPP_CONTACT_URL}
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                {plan.cta}
-              </a>
-            </Button>
+            <WhatsAppButton
+              href={plan.name === "Check Demo"
+                ? WHATSAPP_DEMO_URL
+                : getWhatsAppContactUrl(
+                    `Hi, I’m interested in the QuickAccounts ${plan.name}. Please share the next steps.`,
+                  )}
+              label={plan.cta}
+              theme={plan.name === "Check Demo" ? "orange" : "whatsapp"}
+              showIcon={plan.name !== "Check Demo"}
+            />
             <ul>
               {plan.features.map((feature) => (
                 <li key={feature}>
