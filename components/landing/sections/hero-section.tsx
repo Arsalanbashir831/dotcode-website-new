@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { RotatingWords } from "@/components/landing/shared/rotating-words";
-import { WHATSAPP_DEMO_URL } from "@/lib/contact";
+import { DEMO_APPLICATION_URL, WHATSAPP_DEMO_URL } from "@/lib/contact";
 import { WhatsAppButton } from "@/components/ui/whatsapp-button";
 
 export const HeroSection = () => (
@@ -23,7 +23,7 @@ export const HeroSection = () => (
         <div className="qa-hero-actions">
           <WhatsAppButton href={WHATSAPP_DEMO_URL} size="lg" />
           <Button asChild size="lg" variant="outline">
-            <a href={WHATSAPP_DEMO_URL} target="_blank" rel="noopener noreferrer">Check Demo Application</a>
+            <a href={DEMO_APPLICATION_URL} target="_blank" rel="noopener noreferrer">Check Demo Application</a>
           </Button>
         </div>
       </div>

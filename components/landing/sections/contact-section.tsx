@@ -1,7 +1,7 @@
 import { ArrowRight, CalendarDays } from "lucide-react";
 import Image from "next/image";
 
-import { WHATSAPP_DEMO_URL } from "@/lib/contact";
+import { DEMO_APPLICATION_URL, WHATSAPP_DEMO_URL } from "@/lib/contact";
 import { ConsultationForm } from "@/components/landing/sections/consultation-form";
 
 export const ContactSection = () => (
@@ -26,7 +26,7 @@ export const ContactSection = () => (
               in one simple platform. No per-user fees. Just one powerful ERP.
             </p>
             <div className="qa-contact-actions">
-              <a className="qa-contact-primary" href={WHATSAPP_DEMO_URL} target="_blank" rel="noopener noreferrer">
+              <a className="qa-contact-primary" href={DEMO_APPLICATION_URL} target="_blank" rel="noopener noreferrer">
                 Get a Demo <ArrowRight aria-hidden="true" />
               </a>
               <a className="qa-contact-secondary" href={WHATSAPP_DEMO_URL} target="_blank" rel="noopener noreferrer">
