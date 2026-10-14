@@ -30,7 +30,7 @@ export function SeoLandingPage({
             <p className="seo-intro">{intro}</p>
             <div className="seo-actions">
               <WhatsAppButton size="lg" />
-              <Link href="/#pricing">See license options</Link>
+              <Link href="/#contact">Talk to our team</Link>
             </div>
             <ul className="seo-proof">
               {["Free product demo", "Unlimited users", "Setup and team training included"].map((item) => (

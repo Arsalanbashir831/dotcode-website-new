@@ -34,7 +34,6 @@ export type AudienceItem = {
 export const navigationItems = [
   { label: "Features", href: "#features" },
   { label: "How it works", href: "#process" },
-  { label: "Pricing", href: "#pricing" },
   { label: "FAQs", href: "#faq" },
 ];
 

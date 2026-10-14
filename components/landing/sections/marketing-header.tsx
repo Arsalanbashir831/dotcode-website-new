@@ -99,16 +99,10 @@ export function MarketingHeader() {
                       </Link>
                     ))}
                   </div>
-                  <Link className="qa-mega-pricing" href="/#pricing" onClick={closeMenus}>
-                    <span>Simple licensing</span>
-                    <strong>Free demo · Online $850 · Offline $1,200</strong>
-                    <span>See pricing and what’s included <ArrowRight aria-hidden="true" /></span>
-                  </Link>
                 </div>
               </div>
             </div>
           ))}
-          <Link href="/#pricing" onClick={closeMenus}>Pricing</Link>
           <Link href="/#process" onClick={closeMenus}>How it works</Link>
         </nav>
         <div className="qa-nav-actions">
