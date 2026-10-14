@@ -4,7 +4,7 @@ import "@fontsource-variable/manrope";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://dotcodesolution.com"),
+  metadataBase: new URL("https://dotcodesolutions.com"),
   title: {
     default: "Inventory Management Software for Wholesalers | QuickAccounts",
     template: "%s | QuickAccounts by Dotcode",

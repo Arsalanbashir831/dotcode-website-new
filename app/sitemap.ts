@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const BASE_URL = "https://dotcodesolution.com";
+const BASE_URL = "https://dotcodesolutions.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [

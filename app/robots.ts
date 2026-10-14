@@ -14,6 +14,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/admin/", "/dashboard/", "/api/"],
       },
     ],
-    sitemap: "https://dotcodesolution.com/sitemap.xml",
+    sitemap: "https://dotcodesolutions.com/sitemap.xml",
   };
 }
