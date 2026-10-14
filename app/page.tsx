@@ -48,6 +48,22 @@ const organizationSchema = {
         "Business setup, data migration and team training",
         "Suitable for CCTV dealers, RAM distributors, hard drive wholesalers",
       ],
+      offers: [
+        {
+          "@type": "Offer",
+          name: "Offline single-user lifetime license",
+          price: "1200",
+          priceCurrency: "USD",
+          description: "One-time software license for one user; setup, supported migration and team training included.",
+        },
+        {
+          "@type": "Offer",
+          name: "Online unlimited-user lifetime license",
+          price: "850",
+          priceCurrency: "USD",
+          description: "One-time software license for unlimited users, plus $40 per month for hosting; setup, supported migration and team training included.",
+        },
+      ],
       publisher: { "@id": "https://dotcodesolutions.com/#organization" },
     },
   },

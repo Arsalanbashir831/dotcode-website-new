@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Check } from "lucide-react";
 
 import { WhatsAppButton } from "@/components/ui/whatsapp-button";
@@ -49,6 +50,28 @@ export function SeoLandingPage({
               ) : null}
             </section>
           ))}
+          <section className="seo-evidence" aria-labelledby="product-evidence-heading">
+            <div>
+              <p className="qa-eyebrow">Inside the workflow</p>
+              <h2 id="product-evidence-heading">A practical record trail from stock to service.</h2>
+              <p>For example, a distributor can receive a serialized camera, sell it against a customer account, find the original invoice later, and review the warranty or RMA request without rebuilding the history from separate spreadsheets.</p>
+              <ol>
+                <li><strong>Receive:</strong> record products, quantities and serial numbers.</li>
+                <li><strong>Sell:</strong> connect the item to the customer and invoice.</li>
+                <li><strong>Resolve:</strong> verify warranty status and coordinate return or replacement.</li>
+              </ol>
+            </div>
+            <Image src="/assets/feature1.png" alt="QuickAccounts inventory workflow preview" width={900} height={650} />
+          </section>
+          <nav className="seo-related-links" aria-label="Related QuickAccounts pages">
+            <h2>Explore related workflows</h2>
+            <div>
+              <Link href="/features/serial-number-tracking">Serial number tracking</Link>
+              <Link href="/features/warranty-management">Warranty and RMA management</Link>
+              <Link href="/features/multi-warehouse-inventory">Multi-warehouse inventory</Link>
+              <Link href="/features/business-accounting">Business accounting</Link>
+            </div>
+          </nav>
           <section className="seo-cta">
             <h2>See whether QuickAccounts fits your workflow</h2>
             <p>Talk through your current records, team needs and setup before choosing a license.</p>

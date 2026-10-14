@@ -2,21 +2,53 @@ import type { MetadataRoute } from "next";
 
 const BASE_URL = "https://dotcodesolutions.com";
 
+// Keep published, indexable routes grouped by search intent. Add each new page
+// here when it is published so it is included in the next sitemap response.
+const commercialRoutes = [
+  "/solutions/wholesale-inventory",
+  "/features/business-accounting",
+  "/features/multi-warehouse-inventory",
+  "/features/serial-number-tracking",
+  "/features/warranty-management",
+];
+
+const industryRoutes = [
+  "/industries/electronics-distributors",
+  "/industries/computer-hardware-wholesalers",
+  "/industries/multi-outlet-retailers",
+  "/industries/merchandise-wholesalers",
+];
+
+// Educational/resource routes can be added here as they go live.
+const educationalRoutes: string[] = [];
+
+const resourceRoutes = [
+  "/blog",
+  "/guides/warranty-claim-management",
+  "/guides/serial-number-inventory-tracking",
+  "/guides/excel-to-erp-migration",
+];
+
+const routes = [
+  "/",
+  "/pricing",
+  "/implementation",
+  "/features/rma-replacement-tracking",
+  "/industries/cctv-distributors",
+  "/industries/hard-drive-distributors",
+  "/regions/uae",
+  "/regions/uk",
+  "/regions/us",
+  ...commercialRoutes,
+  ...industryRoutes,
+  ...educationalRoutes,
+  ...resourceRoutes,
+];
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    "",
-    "/solutions/wholesale-inventory",
-    "/features/business-accounting",
-    "/features/multi-warehouse-inventory",
-    "/features/serial-number-tracking",
-    "/features/warranty-management",
-    "/industries/electronics-distributors",
-    "/industries/computer-hardware-wholesalers",
-    "/industries/multi-outlet-retailers",
-    "/industries/merchandise-wholesalers",
-  ].map((route) => ({
-      url: `${BASE_URL}${route}`,
-      changeFrequency: route === "" ? "weekly" : "monthly",
-      priority: route === "" ? 1 : 0.8,
-    }));
+  return routes.map((route) => ({
+    url: `${BASE_URL}${route}`,
+    changeFrequency: route === "/" ? "weekly" : "monthly",
+    priority: route === "/" ? 1 : 0.8,
+  }));
 }

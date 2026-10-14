@@ -435,6 +435,11 @@ body {
 .seo-content p, .seo-content li { color: #5e5b54; font-size: 1.05rem; line-height: 1.8; }
 .seo-content ul { padding-left: 1.3rem; }
 .seo-content .seo-cta { margin: 2rem 0; padding: 2rem; border: 0; border-radius: 1rem; background: #f5f4ef; }
+.seo-evidence { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; }
+.seo-evidence ol { padding-left: 1.25rem; }
+.seo-evidence img { width: 100%; height: auto; border: 1px solid #e8e6df; border-radius: 1rem; }
+.seo-related-links > div { display: flex; flex-wrap: wrap; gap: .75rem; }
+.seo-related-links a { padding: .7rem .9rem; border: 1px solid #dedbd2; border-radius: 999px; color: #34312d; font-weight: 700; }
 .seo-cta p { margin-bottom: 1.5rem; }
 .seo-faq details { padding: 1rem 0; border-bottom: 1px solid #e8e6df; }
 .seo-faq summary { cursor: pointer; font-weight: 700; }
@@ -443,6 +448,9 @@ body {
   .seo-nav { display: none; }
   .seo-brand span { display: none; }
   .seo-actions { align-items: flex-start; flex-direction: column; gap: 1rem; }
+  .seo-evidence { grid-template-columns: 1fr; }
+  .qa-demo-evidence-panel { grid-template-columns: 1fr; }
+  .qa-demo-evidence-panel > img { min-height: 240px; max-height: 300px; }
 }
 
 /* QuickAccounts landing page — adapted from the supplied static source. */
@@ -634,6 +642,16 @@ body {
 .qa-hero-intro {
   width: min(100%, 1160px);
 }
+.qa-hero-visual {
+  width: min(100%, 1160px);
+  margin: 0 auto;
+  filter: drop-shadow(0 24px 38px rgba(50, 36, 25, .12));
+}
+.qa-hero-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 .qa-kicker {
   display: inline-flex;
   align-items: center;
@@ -661,12 +679,13 @@ body {
   font-weight: 900;
 }
 .qa-hero h1 {
-  max-width: 1160px;
+  max-width: 1240px;
   margin-inline: auto;
   font-size: clamp(2.2rem, 6.4vw, 5rem);
   line-height: 1.01;
   letter-spacing: -0.052em;
   font-weight: 760;
+  text-wrap: balance;
 }
 .qa-rotating-word-slot {
   display: inline-grid;
@@ -679,7 +698,7 @@ body {
 .qa-hero-heading-line {
   display: block;
   white-space: nowrap;
-  word-spacing: 0.1em;
+  word-spacing: 0.06em;
 }
 .qa-hero-heading-row {
   display: flex;
@@ -690,8 +709,7 @@ body {
   font: inherit;
   line-height: inherit;
   letter-spacing: inherit;
-  white-space: nowrap;
-  word-spacing: 0.1em;
+  word-spacing: 0.06em;
 }
 .qa-rotating-word {
   grid-area: 1 / 1;
@@ -802,6 +820,12 @@ body {
   border: 0;
   inset: 0;
 }
+.qa-demo-evidence-panel { display: grid; grid-template-columns: 1.15fr .85fr; aspect-ratio: auto; min-height: 420px; background: #171717; }
+.qa-demo-evidence-panel > img { width: 100%; height: 100%; min-height: 420px; object-fit: cover; object-position: left center; }
+.qa-demo-evidence-copy { display: flex; justify-content: center; flex-direction: column; padding: clamp(28px, 5vw, 64px); color: #fff; }
+.qa-demo-evidence-copy h2 { margin: 10px 0 14px; font-size: clamp(1.8rem, 3vw, 3rem); line-height: 1.05; letter-spacing: -.045em; }
+.qa-demo-evidence-copy p:not(.qa-eyebrow) { color: #c5c0bb; line-height: 1.65; }
+.qa-button { display: inline-flex; width: fit-content; margin-top: 24px; padding: 12px 17px; border-radius: 999px; color: #fff; background: #f45a21; font-weight: 750; }
 .qa-demo-video-placeholder {
   position: absolute;
   display: flex;
@@ -2612,12 +2636,20 @@ body {
 }
 .qa-contact {
   position: relative;
+  z-index: 2;
   margin-bottom: -112px;
   padding: 70px 0 0;
-  background: linear-gradient(to bottom, #fbfaf8 0%, #fbfaf8 55%, #111 55%, #111 100%);
+  background: #111;
   font-family:
     var(--font-manrope), "Avenir Next", ui-sans-serif, system-ui, sans-serif;
 }
+.qa-consultation-section {
+  padding: 76px 0;
+  color: #111820;
+  background: #fff;
+  font-family: var(--font-manrope), "Avenir Next", ui-sans-serif, system-ui, sans-serif;
+}
+.qa-consultation-section .qa-container { width: min(1120px, calc(100% - 40px)); }
 .qa-contact .qa-container {
   width: min(1360px, calc(100% - 40px));
 }
@@ -2721,6 +2753,17 @@ body {
   box-shadow: 0 2px 4px rgba(20, 30, 40, 0.03);
 }
 .qa-contact-secondary:hover { background: #fff; }
+.qa-contact-details { margin-top: 16px; color: #58616d; font-size: .9rem; }
+.qa-contact-details a { color: #c94d16; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+.qa-consultation-form { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 20px 30px; max-width: 1080px; margin: 0 auto; padding: clamp(28px, 4vw, 48px); border: 1px solid #e5e7eb; border-radius: 24px; background: #fff; box-shadow: 0 12px 40px rgba(17, 24, 32, .08); }
+.qa-consultation-form > div { grid-row: span 6; padding-right: 20px; }
+.qa-consultation-form h2 { margin-top: 8px; font-size: clamp(1.8rem, 3vw, 2.65rem); line-height: 1.08; letter-spacing: -.055em; text-wrap: balance; }
+.qa-consultation-form > div > p:last-child { margin-top: 14px; color: #58616d; line-height: 1.6; }
+.qa-consultation-form .qa-consultation-note { margin-top: 20px; color: #7b838d; font-size: .83rem; line-height: 1.55; }
+.qa-consultation-form label { display: grid; gap: 7px; color: #303842; font-size: .85rem; font-weight: 750; }
+.qa-consultation-form input, .qa-consultation-form textarea { width: 100%; border: 1px solid #d6dce0; border-radius: 10px; padding: 11px 12px; color: #17202a; background: #fbfcfd; font: inherit; }
+.qa-consultation-form textarea { resize: vertical; }
+.qa-consultation-form button { width: fit-content; border: 0; border-radius: 999px; padding: 12px 18px; color: #fff; background: #ff5a08; font-weight: 750; cursor: pointer; }
 .qa-contact-visual {
   position: relative;
   min-height: 470px;
@@ -2831,6 +2874,8 @@ body {
   }
   .qa-contact h2 { font-size: clamp(2rem, 4.8vw, 2.8rem); }
   .qa-contact-visual { min-height: 420px; }
+  .qa-consultation-form { grid-template-columns: 1fr; }
+  .qa-consultation-form > div { grid-row: auto; padding-right: 0; }
   .qa-footer-main {
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 28px;
@@ -3150,6 +3195,8 @@ body {
     margin-bottom: -72px;
     padding: 58px 0 0;
   }
+  .qa-consultation-section { padding: 52px 0; }
+  .qa-consultation-section .qa-container { width: min(100% - 36px, 560px); }
   .qa-contact .qa-container,
   .qa-footer .qa-container {
     width: min(100% - 36px, 560px);

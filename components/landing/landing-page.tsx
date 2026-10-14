@@ -1,6 +1,5 @@
 import { AudienceSection } from "@/components/landing/sections/audience-section";
 import { ContactSection } from "@/components/landing/sections/contact-section";
-import { DemoVideoSection } from "@/components/landing/sections/demo-video-section";
 import { FaqSection } from "@/components/landing/sections/faq-section";
 import { FeaturesSection } from "@/components/landing/sections/features-section";
 import { HeroSection } from "@/components/landing/sections/hero-section";
@@ -20,7 +19,6 @@ export const LandingPage = () => (
     <main id="top" className="qa-site">
       <SiteHeader />
       <HeroSection />
-      <DemoVideoSection />
       {/* <ClientLogosSection /> */}
       <ValueStrip />
 

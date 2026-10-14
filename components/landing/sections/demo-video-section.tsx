@@ -1,15 +1,8 @@
-import { Play } from "lucide-react";
-
-// Paste the YouTube video ID here, for example: "dQw4w9WgXcQ".
-const YOUTUBE_VIDEO_ID = "";
+import Image from "next/image";
+import Link from "next/link";
+import { WHATSAPP_DEMO_URL } from "@/lib/contact";
 
 export const DemoVideoSection = () => {
-  const embedUrl = YOUTUBE_VIDEO_ID
-    ? "https://www.youtube-nocookie.com/embed/" +
-      YOUTUBE_VIDEO_ID +
-      "?rel=0"
-    : null;
-
   return (
     <section className="qa-demo-video-section" aria-label="QuickAccounts software demo">
       <div className="qa-container">
@@ -30,27 +23,14 @@ export const DemoVideoSection = () => {
             <p>QuickAccounts software demo</p>
           </div> */}
 
-          <div className="qa-demo-video-player">
-            {embedUrl ? (
-              <iframe
-                src={embedUrl}
-                title="QuickAccounts software demo"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                loading="lazy"
-              />
-            ) : (
-              <div className="qa-demo-video-placeholder">
-                <span className="qa-demo-video-play" aria-hidden="true">
-                  <Play fill="currentColor" />
-                </span>
-                <strong>Your software demo will play here.</strong>
-                <p>
-                  Add your YouTube video ID in{" "}
-                  <code>demo-video-section.tsx</code>.
-                </p>
-              </div>
-            )}
+          <div className="qa-demo-video-player qa-demo-evidence-panel">
+            <Image src="/assets/feature5-ledger.png" alt="QuickAccounts ledger and stock workflow preview" width={1200} height={760} />
+            <div className="qa-demo-evidence-copy">
+              <p className="qa-eyebrow">Product walkthrough</p>
+              <h2>See the records your team works with every day.</h2>
+              <p>Review stock, serials, customer accounts and warranty workflows in a guided demo built around your operation.</p>
+              <Link className="qa-button" href={WHATSAPP_DEMO_URL} target="_blank" rel="noopener noreferrer">Book a guided demo</Link>
+            </div>
           </div>
         </div>
       </div>

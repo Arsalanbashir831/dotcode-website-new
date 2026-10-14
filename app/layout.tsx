@@ -42,14 +42,12 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     siteName: "Dotcode Solutions",
     title: "Stock & Inventory Software for CCTV, RAM & Hardware Dealers | QuickAccounts",
     description:
       "Manage stock, serial numbers, warranty claims and RMA returns for CCTV distributors, RAM dealers and computer hardware wholesalers across UAE, UK, USA and Pakistan.",
-    url: "/",
     images: [{ url: "/assets/dotcode-logo.png", alt: "QuickAccounts by Dotcode Solutions" }],
   },
   twitter: {
