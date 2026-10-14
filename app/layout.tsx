@@ -40,11 +40,6 @@ export const metadata: Metadata = {
       "Manage inventory across outlets and warehouses, track serial numbers, handle warranty workflows and organize wholesale accounts with QuickAccounts.",
     images: ["/assets/dotcode-logo.png"],
   },
-  icons: {
-    icon: "/assets/favicon.png",
-    shortcut: "/assets/favicon.png",
-    apple: "/assets/favicon.png",
-  },
 };
 
 export default function RootLayout({
