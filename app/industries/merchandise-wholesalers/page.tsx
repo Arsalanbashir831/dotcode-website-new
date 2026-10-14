@@ -2,10 +2,22 @@ import type { Metadata } from "next";
 import { SeoLandingPage } from "@/components/seo/seo-landing-page";
 
 export const metadata: Metadata = {
-  title: "Inventory Software for General Merchandise Wholesalers",
-  description: "Manage general merchandise inventory, purchases, customer accounts, cash and ledgers in one wholesale business system with QuickAccounts.",
+  title: "Wholesale Stock Management Software for General Merchandise Dealers | UAE & Pakistan",
+  description: "QuickAccounts is practical stock management software for general merchandise and goods wholesalers in UAE, Pakistan, UK and USA. Manage stock, purchases, customer ledgers and accounts in one system — with setup, migration and training included.",
+  keywords: [
+    "wholesale stock management software",
+    "general merchandise inventory software",
+    "goods wholesaler software Pakistan",
+    "wholesale business software UAE",
+    "stock and accounts software for traders",
+    "merchandise dealer software",
+    "wholesale ledger management software",
+    "trading business software Pakistan",
+    "goods distributor software UAE",
+    "wholesale purchase management software",
+  ],
   alternates: { canonical: "/industries/merchandise-wholesalers" },
-  openGraph: { title: "Inventory Software for Merchandise Wholesalers | QuickAccounts", description: "Organize product stock, purchasing, customer accounts, cash and ledgers in one wholesale system.", url: "/industries/merchandise-wholesalers" },
+  openGraph: { title: "Wholesale Stock Management Software for General Merchandise Dealers | QuickAccounts", description: "Organize stock, purchases, customer accounts and ledgers for wholesale merchandise businesses in UAE, Pakistan, UK and USA.", url: "/industries/merchandise-wholesalers" },
 };
 
 export default function MerchandiseWholesalersPage() {

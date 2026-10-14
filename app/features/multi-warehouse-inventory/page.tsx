@@ -2,12 +2,24 @@ import type { Metadata } from "next";
 import { SeoLandingPage } from "@/components/seo/seo-landing-page";
 
 export const metadata: Metadata = {
-  title: "Multi-Warehouse Inventory Management Software",
-  description: "See how QuickAccounts supports stock visibility and movement across warehouses and outlets for wholesale and distribution businesses.",
+  title: "Multi-Warehouse & Multi-Branch Inventory Software for Wholesale Distributors | UAE, Pakistan",
+  description: "QuickAccounts manages stock across multiple warehouses, godowns and outlets for electronics, CCTV and hardware distributors in UAE, Pakistan, UK and USA. Track inventory, transfers and purchases across all your locations in one system.",
+  keywords: [
+    "multi-warehouse inventory management",
+    "multi-branch stock management software",
+    "godown management software Pakistan",
+    "multi-location inventory UAE",
+    "warehouse stock management for distributors",
+    "branch inventory tracking software",
+    "stock transfer between warehouses",
+    "wholesale warehouse management software",
+    "multi-outlet inventory control",
+    "distributor warehouse software UK",
+  ],
   alternates: { canonical: "/features/multi-warehouse-inventory" },
   openGraph: {
-    title: "Multi-Warehouse Inventory Management | QuickAccounts",
-    description: "Manage stock across warehouses, outlets and branches with QuickAccounts wholesale inventory software.",
+    title: "Multi-Warehouse Inventory Software for Wholesale Distributors | QuickAccounts",
+    description: "Track and transfer stock across multiple warehouses, godowns and branches for electronics, CCTV and hardware distributors in UAE, Pakistan, UK and USA.",
     url: "/features/multi-warehouse-inventory",
   },
 };

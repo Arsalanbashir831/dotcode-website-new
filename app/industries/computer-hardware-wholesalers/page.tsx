@@ -2,10 +2,22 @@ import type { Metadata } from "next";
 import { SeoLandingPage } from "@/components/seo/seo-landing-page";
 
 export const metadata: Metadata = {
-  title: "Computer Hardware Inventory and Serial Tracking Software",
-  description: "Manage computer hardware stock, serial number traceability, invoice lookup, warranty requests and distributor accounts with QuickAccounts.",
+  title: "Inventory Software for RAM, Hard Drive & Computer Hardware Wholesalers | UAE, Pakistan, UK",
+  description: "QuickAccounts is stock management software for RAM dealers, hard drive distributors, processor wholesalers and computer accessories businesses. Track serial numbers, manage warranty claims and control multi-branch inventory across UAE, Pakistan, UK and USA.",
+  keywords: [
+    "RAM wholesaler inventory software",
+    "hard drive distributor stock management",
+    "computer hardware wholesaler software",
+    "computer parts dealer software UAE",
+    "computer accessories distributor Pakistan",
+    "serial number tracking RAM hard drives",
+    "processor wholesaler inventory management",
+    "SSD HDD serial tracking software",
+    "computer hardware warranty management",
+    "IT hardware distributor software UK",
+  ],
   alternates: { canonical: "/industries/computer-hardware-wholesalers" },
-  openGraph: { title: "Computer Hardware Inventory Software | QuickAccounts", description: "Manage hardware stock, serial traceability, invoice lookup and warranty workflows for wholesalers.", url: "/industries/computer-hardware-wholesalers" },
+  openGraph: { title: "Inventory Software for RAM, Hard Drive & Computer Hardware Wholesalers | QuickAccounts", description: "Track RAM, HDDs, SSDs and computer parts by serial number. Manage warranty claims, stock and purchases for computer hardware wholesalers in UAE, Pakistan, UK and USA.", url: "/industries/computer-hardware-wholesalers" },
 };
 
 export default function ComputerHardwareWholesalersPage() {

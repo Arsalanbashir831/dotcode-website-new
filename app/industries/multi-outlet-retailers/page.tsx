@@ -2,10 +2,22 @@ import type { Metadata } from "next";
 import { SeoLandingPage } from "@/components/seo/seo-landing-page";
 
 export const metadata: Metadata = {
-  title: "Multi-Outlet Retail Inventory Management Software",
-  description: "Coordinate product stock, purchases, customer accounts and branch records across multiple retail outlets with QuickAccounts.",
+  title: "Multi-Branch Retail Inventory Software for Electronics & Hardware Dealers | UAE, Pakistan",
+  description: "QuickAccounts helps electronics and hardware retailers with multiple branches or outlets track stock, transfers, purchases and customer accounts across all locations. Ideal for CCTV retailers, computer accessory stores and hardware dealers in UAE, Pakistan and UK.",
+  keywords: [
+    "multi-branch inventory management software",
+    "multi-outlet retail software UAE",
+    "electronics retail stock management",
+    "multi-location inventory Pakistan",
+    "stock transfer between branches software",
+    "retail stock management UAE",
+    "hardware store multi-outlet software",
+    "computer shop inventory software",
+    "branch stock control software",
+    "CCTV retail stock management",
+  ],
   alternates: { canonical: "/industries/multi-outlet-retailers" },
-  openGraph: { title: "Multi-Outlet Retail Inventory Management | QuickAccounts", description: "Coordinate product stock, transfers and account records across stores and warehouses.", url: "/industries/multi-outlet-retailers" },
+  openGraph: { title: "Multi-Branch Retail Inventory Software for Electronics & Hardware Dealers | QuickAccounts", description: "Track and transfer stock across multiple outlets and branches. Manage electronics, CCTV and hardware retail operations in UAE, Pakistan and UK.", url: "/industries/multi-outlet-retailers" },
 };
 
 export default function MultiOutletRetailersPage() {

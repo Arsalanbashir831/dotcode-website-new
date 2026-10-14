@@ -2,12 +2,24 @@ import type { Metadata } from "next";
 import { SeoLandingPage } from "@/components/seo/seo-landing-page";
 
 export const metadata: Metadata = {
-  title: "Serial Number Tracking Software for Distributors",
-  description: "Track serialized products from purchase and sale through invoice lookup and warranty verification with QuickAccounts for electronics distributors.",
+  title: "Serial Number Tracking Software for CCTV, RAM & Hard Drive Distributors",
+  description: "Track CCTV cameras, RAM modules, hard drives and electronics products by serial number from purchase to sale. Find invoices instantly during warranty checks. QuickAccounts serial tracking software for distributors in UAE, Pakistan, UK and USA.",
+  keywords: [
+    "serial number tracking software",
+    "CCTV serial number tracking",
+    "hard drive serial tracking software",
+    "RAM serial number management",
+    "electronics serial number traceability",
+    "invoice lookup by serial number",
+    "serialized inventory management",
+    "serial number tracking for distributors UAE",
+    "product traceability software",
+    "barcode serial tracking electronics",
+  ],
   alternates: { canonical: "/features/serial-number-tracking" },
   openGraph: {
-    title: "Serial Number Tracking Software | QuickAccounts",
-    description: "Follow electronics and hardware products by serial number through sales, invoice lookup and warranty checks.",
+    title: "Serial Number Tracking Software for CCTV, RAM & Hard Drive Distributors | QuickAccounts",
+    description: "Track CCTV cameras, RAM, HDDs and electronics by serial number. Find invoices and sales records instantly for warranty and support checks.",
     url: "/features/serial-number-tracking",
   },
 };

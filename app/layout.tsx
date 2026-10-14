@@ -6,11 +6,30 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://dotcodesolutions.com"),
   title: {
-    default: "Inventory Management Software for Wholesalers | QuickAccounts",
+    default: "Stock & Inventory Management Software for CCTV, RAM & Hardware Dealers | QuickAccounts",
     template: "%s | QuickAccounts by Dotcode",
   },
   description:
-    "Manage wholesale inventory across outlets and warehouses, track serial numbers, support warranty and replacement workflows, and keep purchases, customer accounts and ledgers organized with QuickAccounts.",
+    "QuickAccounts is wholesale inventory and stock management software for CCTV distributors, RAM dealers and computer hardware wholesalers in UAE, UK, USA and Pakistan. Track serial numbers, manage warranty claims, handle RMA returns and control multi-warehouse stock across all your branches.",
+  keywords: [
+    "inventory management software UAE",
+    "stock management software Pakistan",
+    "CCTV distributor inventory software",
+    "RAM wholesaler stock management",
+    "hard drive distributor software",
+    "serial number tracking software",
+    "warranty management software for distributors",
+    "RMA management software",
+    "wholesale inventory software UK",
+    "electronics distributor software USA",
+    "multi-warehouse inventory management",
+    "computer hardware wholesaler software",
+    "wholesale stock tracking software",
+    "CCTV dealer management software",
+    "electronics warranty tracking",
+    "QuickAccounts",
+    "Dotcode Solutions",
+  ],
   applicationName: "QuickAccounts",
   category: "Business software",
   robots: {
@@ -27,17 +46,17 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: "Dotcode Solutions",
-    title: "Inventory Management Software for Wholesalers | QuickAccounts",
+    title: "Stock & Inventory Software for CCTV, RAM & Hardware Dealers | QuickAccounts",
     description:
-      "Manage inventory across outlets and warehouses, track serial numbers, handle warranty workflows and organize wholesale accounts with QuickAccounts.",
+      "Manage stock, serial numbers, warranty claims and RMA returns for CCTV distributors, RAM dealers and computer hardware wholesalers across UAE, UK, USA and Pakistan.",
     url: "/",
-    images: [{ url: "/assets/dotcode-logo.png", alt: "Dotcode Solutions" }],
+    images: [{ url: "/assets/dotcode-logo.png", alt: "QuickAccounts by Dotcode Solutions" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Inventory Management Software for Wholesalers | QuickAccounts",
+    title: "Stock & Inventory Software for CCTV, RAM & Hardware Dealers | QuickAccounts",
     description:
-      "Manage inventory across outlets and warehouses, track serial numbers, handle warranty workflows and organize wholesale accounts with QuickAccounts.",
+      "Manage stock, serial numbers, warranty claims and RMA returns for CCTV distributors, RAM dealers and hardware wholesalers in UAE, UK, USA and Pakistan.",
     images: ["/assets/dotcode-logo.png"],
   },
 };

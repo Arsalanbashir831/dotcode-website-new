@@ -2,10 +2,22 @@ import type { Metadata } from "next";
 import { SeoLandingPage } from "@/components/seo/seo-landing-page";
 
 export const metadata: Metadata = {
-  title: "ERP and Inventory Software for Electronics Distributors",
-  description: "Track electronics stock, serial numbers, warranty claims, returns and replacements with QuickAccounts software for distributors.",
+  title: "Inventory & Warranty Software for CCTV and Electronics Distributors in UAE, UK & Pakistan",
+  description: "QuickAccounts helps CCTV camera distributors, Hikvision & Dahua dealers, RAM and hard drive wholesalers manage stock, track serial numbers, process warranty claims and handle RMA returns. Trusted by electronics distributors in UAE, Pakistan, UK and USA.",
+  keywords: [
+    "CCTV distributor inventory software",
+    "electronics distributor software UAE",
+    "Hikvision dealer stock management",
+    "Dahua distributor software",
+    "CCTV warranty management software",
+    "electronics wholesale software Pakistan",
+    "serial number tracking CCTV",
+    "RMA management for electronics distributors",
+    "security camera dealer software",
+    "NVR DVR distributor stock tracking",
+  ],
   alternates: { canonical: "/industries/electronics-distributors" },
-  openGraph: { title: "Inventory and Warranty Software for Electronics Distributors | QuickAccounts", description: "Track electronics products by serial number and connect warranty, return and replacement workflows with sales records.", url: "/industries/electronics-distributors" },
+  openGraph: { title: "Inventory & Warranty Software for CCTV and Electronics Distributors | QuickAccounts", description: "Track CCTV cameras, NVRs, DVRs and electronics products by serial number. Manage warranty claims and RMA returns for distributors in UAE, UK, Pakistan and USA.", url: "/industries/electronics-distributors" },
 };
 
 export default function ElectronicsDistributorsPage() {

@@ -2,12 +2,24 @@ import type { Metadata } from "next";
 import { SeoLandingPage } from "@/components/seo/seo-landing-page";
 
 export const metadata: Metadata = {
-  title: "Warranty Claim and RMA Management for Distributors",
-  description: "Manage warranty inquiries, verify product serials and invoices, and coordinate returns and replacements for wholesale distributors with QuickAccounts.",
+  title: "Warranty Management & RMA Software for CCTV, Electronics & Hardware Distributors",
+  description: "Manage warranty claims, RMA returns and product replacements for CCTV cameras, hard drives, RAM and electronics. QuickAccounts connects serial tracking, invoice lookup and warranty workflows for distributors in UAE, Pakistan, UK and USA.",
+  keywords: [
+    "warranty management software for distributors",
+    "RMA software for electronics dealers",
+    "CCTV warranty claim management",
+    "hardware warranty tracking software",
+    "warranty and returns management UAE",
+    "product replacement workflow software",
+    "warranty verification by serial number",
+    "electronics RMA management Pakistan",
+    "after-sales management software",
+    "distributor warranty software UK",
+  ],
   alternates: { canonical: "/features/warranty-management" },
   openGraph: {
-    title: "Warranty and RMA Management | QuickAccounts",
-    description: "Connect warranty verification, product traceability, invoice lookup and replacement workflows for distributors.",
+    title: "Warranty & RMA Management Software for Electronics Distributors | QuickAccounts",
+    description: "Handle warranty claims and RMA returns for CCTV cameras, RAM, hard drives and electronics. Connect serial tracking and invoice lookup for distributors in UAE, Pakistan, UK and USA.",
     url: "/features/warranty-management",
   },
 };
