@@ -1,11 +1,32 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import { useEffect, useState } from "react";
 import { RotatingWords } from "@/components/landing/shared/rotating-words";
 import { DEMO_APPLICATION_URL, WHATSAPP_DEMO_URL } from "@/lib/contact";
 import { WhatsAppButton } from "@/components/ui/whatsapp-button";
 
-export const HeroSection = () => (
-  <section className="qa-hero" id="quickaccounts">
+const youtubeVideoId = "LiBz35AcQLM";
+const youtubeEmbedUrl = `https://www.youtube.com/embed/${youtubeVideoId}?autoplay=1&rel=0`;
+const youtubeThumbnailUrl = `https://img.youtube.com/vi/${youtubeVideoId}/maxresdefault.jpg`;
+
+export const HeroSection = () => {
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
+
+  useEffect(() => {
+    if (!isVideoOpen) return;
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setIsVideoOpen(false);
+    };
+    document.addEventListener("keydown", closeOnEscape);
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", closeOnEscape);
+      document.body.style.overflow = "";
+    };
+  }, [isVideoOpen]);
+
+  return <section className="qa-hero" id="quickaccounts">
     <div className="qa-container qa-hero-grid">
       <div className="qa-hero-intro">
         <h1>
@@ -28,15 +49,22 @@ export const HeroSection = () => (
         </div>
       </div>
       <div className="qa-hero-visual" data-reveal>
-        <Image
-          src="/assets/hero-section-image.png"
-          alt="QuickAccounts dashboard with sales, purchases, inventory, warranty and RMA records"
-          width={1672}
-          height={941}
-          sizes="(min-width: 1280px) 1160px, calc(100vw - 40px)"
-          priority
-        />
+        <button type="button" className="qa-hero-video-trigger" aria-label="Play the QuickAccounts product video" onClick={() => setIsVideoOpen(true)}>
+          <img className="qa-hero-video" src={youtubeThumbnailUrl} alt="QuickAccounts product video preview" />
+          <span className="qa-hero-video-overlay" aria-hidden="true">
+            <span className="qa-hero-video-play-icon">▶</span>
+            <span>Watch with sound</span>
+          </span>
+        </button>
       </div>
     </div>
-  </section>
-);
+    {isVideoOpen && (
+      <div className="qa-video-modal" role="dialog" aria-modal="true" aria-label="QuickAccounts product video" onClick={() => setIsVideoOpen(false)}>
+        <div className="qa-video-modal-content" onClick={(event) => event.stopPropagation()}>
+          <button type="button" className="qa-video-modal-close" aria-label="Close video" onClick={() => setIsVideoOpen(false)}>×</button>
+          <iframe className="qa-video-modal-player" src={youtubeEmbedUrl} title="QuickAccounts product video" allow="autoplay; encrypted-media; picture-in-picture" allowFullScreen />
+        </div>
+      </div>
+    )}
+  </section>;
+};
