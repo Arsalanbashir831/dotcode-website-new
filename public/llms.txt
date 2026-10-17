@@ -1,0 +1,24 @@
+# QuickAccounts by Dotcode Solutions
+> Wholesale inventory, serial-number, warranty, RMA, and accounting software for distributors and stock-led businesses.
+
+## Product
+- [QuickAccounts overview](https://dotcodesolutions.com/): Product capabilities, company information, pricing summary, and implementation support
+- [Pricing](https://dotcodesolutions.com/pricing): Offline and online lifetime-license options and hosting costs
+- [Implementation](https://dotcodesolutions.com/implementation): Setup, supported migration, and team training
+- [Custom ERP development](https://dotcodesolutions.com/custom-erp-development): Custom accounting, sales, purchasing, team, outlet, and workflow software
+
+## Core workflows
+- [Wholesale inventory](https://dotcodesolutions.com/solutions/wholesale-inventory): Stock, purchasing, sales, customer accounts, cash, and ledgers
+- [Serial-number tracking](https://dotcodesolutions.com/features/serial-number-tracking): Unit-level traceability and invoice lookup
+- [Warranty management](https://dotcodesolutions.com/features/warranty-management): Warranty claims, RMAs, returns, and replacements
+- [Multi-warehouse inventory](https://dotcodesolutions.com/features/multi-warehouse-inventory): Stock visibility and transfers across locations
+- [Business accounting](https://dotcodesolutions.com/features/business-accounting): Customer, supplier, cash, and ledger records
+
+## Guides
+- [Warranty claim management](https://dotcodesolutions.com/guides/warranty-claim-management)
+- [Serial-number inventory tracking](https://dotcodesolutions.com/guides/serial-number-inventory-tracking)
+- [Excel-to-ERP migration](https://dotcodesolutions.com/guides/excel-to-erp-migration)
+
+## Official identity
+- [Dotcode on LinkedIn](https://pk.linkedin.com/company/dotcode-solutions)
+- [Contact Dotcode Solutions](https://dotcodesolutions.com/#contact)

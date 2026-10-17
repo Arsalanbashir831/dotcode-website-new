@@ -5,6 +5,7 @@ import { FeaturesSection } from "@/components/landing/sections/features-section"
 import { HeroSection } from "@/components/landing/sections/hero-section";
 import { PartnersSection } from "@/components/landing/sections/partners-section";
 import { PlatformPresenceSection } from "@/components/landing/sections/platform-presence-section";
+import { ProductDefinitionSection } from "@/components/landing/sections/product-definition-section";
 import { ProcessSection } from "@/components/landing/sections/process-section";
 import { SetupSection } from "@/components/landing/sections/setup-section";
 import { SiteFooter } from "@/components/landing/sections/site-footer";
@@ -19,7 +20,7 @@ export const LandingPage = () => (
     <main id="top" className="qa-site">
       <SiteHeader />
       <HeroSection />
-      {/* <ClientLogosSection /> */}
+      <ProductDefinitionSection />
       <ValueStrip />
 
       <FeaturesSection />

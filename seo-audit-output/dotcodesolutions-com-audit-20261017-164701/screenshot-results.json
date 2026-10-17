@@ -1,0 +1,32 @@
+{
+  "screenshots": [
+    {
+      "url": "https://dotcodesolutions.com/",
+      "output": "/Users/saadaanhassan/Documents/Projects/dotcode-website-new/seo-audit-output/dotcodesolutions-com-audit-20261017-164701/screenshots/dotcodesolutions-com-desktop.png",
+      "viewport": "desktop",
+      "success": false,
+      "error": "Playwright is unavailable. Install with: pip install playwright && playwright install chromium"
+    },
+    {
+      "url": "https://dotcodesolutions.com/",
+      "output": "/Users/saadaanhassan/Documents/Projects/dotcode-website-new/seo-audit-output/dotcodesolutions-com-audit-20261017-164701/screenshots/dotcodesolutions-com-laptop.png",
+      "viewport": "laptop",
+      "success": false,
+      "error": "Playwright is unavailable. Install with: pip install playwright && playwright install chromium"
+    },
+    {
+      "url": "https://dotcodesolutions.com/",
+      "output": "/Users/saadaanhassan/Documents/Projects/dotcode-website-new/seo-audit-output/dotcodesolutions-com-audit-20261017-164701/screenshots/dotcodesolutions-com-tablet.png",
+      "viewport": "tablet",
+      "success": false,
+      "error": "Playwright is unavailable. Install with: pip install playwright && playwright install chromium"
+    },
+    {
+      "url": "https://dotcodesolutions.com/",
+      "output": "/Users/saadaanhassan/Documents/Projects/dotcode-website-new/seo-audit-output/dotcodesolutions-com-audit-20261017-164701/screenshots/dotcodesolutions-com-mobile.png",
+      "viewport": "mobile",
+      "success": false,
+      "error": "Playwright is unavailable. Install with: pip install playwright && playwright install chromium"
+    }
+  ]
+}

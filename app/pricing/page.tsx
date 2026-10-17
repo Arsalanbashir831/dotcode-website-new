@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import { SeoLandingPage } from "@/components/seo/seo-landing-page";
 
 export const metadata: Metadata = {
-  title: "QuickAccounts Pricing for Wholesale Distributors",
+  title: "Wholesale ERP Pricing",
   description: "Compare QuickAccounts offline and online licensing for wholesale inventory, serial tracking, warranty and RMA workflows.",
   alternates: { canonical: "/pricing" },
 };
 
 export default function PricingPage() {
-  return <SeoLandingPage
+  return <SeoLandingPage path="/pricing"
     eyebrow="Simple licensing"
     title="Choose the setup that fits your operation"
     intro="Start with a guided demo, then choose the QuickAccounts setup that matches your team, locations and hosting needs."

@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import { SeoLandingPage } from "@/components/seo/seo-landing-page";
 
 export const metadata: Metadata = {
-  title: "ERP Implementation for Distributors | QuickAccounts",
+  title: "ERP Setup and Implementation",
   description: "Set up wholesale inventory, serial tracking, accounts and warranty workflows with guided implementation from Dotcode.",
   alternates: { canonical: "/implementation" },
 };
 
 export default function ImplementationPage() {
-  return <SeoLandingPage eyebrow="Implementation for distributors" title="Move from scattered records to a working wholesale system" intro="Dotcode helps distributors map their current process, configure QuickAccounts, migrate supported records and train the team before go-live." sections={[
+  return <SeoLandingPage path="/implementation" eyebrow="Implementation for distributors" title="Move from scattered records to a working wholesale system" intro="Dotcode helps distributors map their current process, configure QuickAccounts, migrate supported records and train the team before go-live." sections={[
     { heading: "Start with the real workflow", body: "Review receiving, purchasing, sales, customer accounts, stock transfers and after-sales service before deciding what the system should contain." },
     { heading: "Prepare and migrate supported records", body: "Agree the source files, product fields and customer information that can be migrated. The scope should be confirmed before implementation begins." },
     { heading: "Train the people who use it", body: "Team training covers the daily records your business relies on, from stock entry and invoice lookup to serial-based warranty checks." },

@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { SeoLandingPage } from "@/components/seo/seo-landing-page";
 
 export const metadata: Metadata = {
-  title: "Warranty Management & RMA Software for CCTV, Electronics & Hardware Distributors",
-  description: "Manage warranty claims, RMA returns and product replacements for CCTV cameras, hard drives, RAM and electronics. QuickAccounts connects serial tracking, invoice lookup and warranty workflows for distributors in UAE, Pakistan, UK and USA.",
+  title: "Warranty and RMA Software",
+  description: "Manage claims, returns and replacements with connected serial, customer and invoice records for electronics and hardware distribution.",
   keywords: [
     "warranty management software for distributors",
     "RMA software for electronics dealers",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 };
 
 export default function WarrantyManagementPage() {
-  return <SeoLandingPage
+  return <SeoLandingPage path="/features/warranty-management"
     eyebrow="After-sales support for distributors"
     title="Warranty claim and RMA management for wholesale distributors"
     intro="Bring product traceability, invoice lookup and customer service together when handling warranty claims, returns and replacements. QuickAccounts supports distributor workflows for electronics, hardware and accessories businesses."

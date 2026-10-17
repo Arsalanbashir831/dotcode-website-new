@@ -5,7 +5,7 @@ import gsap from "gsap";
 
 import { valueItems } from "@/components/landing/data/landing-content";
 
-const groupRepetitions = 6;
+const groupRepetitions = 1;
 const pixelsPerSecond = 34;
 
 type TickerTrackProps = {
@@ -103,7 +103,7 @@ const TickerTrack = ({ direction }: TickerTrackProps) => {
 };
 
 export const ValueStrip = () => (
-  <section className="qa-value-strip" aria-label="QuickAccounts benefits">
+  <section className="qa-value-strip" aria-label="QuickAccounts benefits" data-nosnippet>
     <TickerTrack direction="left" />
     <TickerTrack direction="right" />
   </section>

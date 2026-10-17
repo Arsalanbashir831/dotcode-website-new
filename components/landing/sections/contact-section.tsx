@@ -34,7 +34,7 @@ export const ContactSection = () => (
               </a>
             </div>
             <p className="qa-contact-details">
-              Prefer email? <a href="mailto:arsalanbashir831@gmail.com">arsalanbashir831@gmail.com</a>
+              Prefer email? <a href="mailto:info@dotcodesolutions.com">info@dotcodesolutions.com</a>
             </p>
           </div>
 

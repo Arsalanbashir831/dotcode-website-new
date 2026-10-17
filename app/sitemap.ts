@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 
 const BASE_URL = "https://dotcodesolutions.com";
+const LAST_CONTENT_UPDATE = new Date("2026-10-17T00:00:00.000Z");
 
 // Keep published, indexable routes grouped by search intent. Add each new page
 // here when it is published so it is included in the next sitemap response.
@@ -34,6 +35,8 @@ const routes = [
   "/",
   "/pricing",
   "/implementation",
+  "/features",
+  "/industries",
   "/features/rma-replacement-tracking",
   "/industries/cctv-distributors",
   "/industries/hard-drive-distributors",
@@ -49,7 +52,6 @@ const routes = [
 export default function sitemap(): MetadataRoute.Sitemap {
   return routes.map((route) => ({
     url: `${BASE_URL}${route}`,
-    changeFrequency: route === "/" ? "weekly" : "monthly",
-    priority: route === "/" ? 1 : 0.8,
+    lastModified: LAST_CONTENT_UPDATE,
   }));
 }

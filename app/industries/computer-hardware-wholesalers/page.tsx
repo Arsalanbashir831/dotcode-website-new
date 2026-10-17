@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { SeoLandingPage } from "@/components/seo/seo-landing-page";
 
 export const metadata: Metadata = {
-  title: "Inventory Software for RAM, Hard Drive & Computer Hardware Wholesalers | UAE, Pakistan, UK",
-  description: "QuickAccounts is stock management software for RAM dealers, hard drive distributors, processor wholesalers and computer accessories businesses. Track serial numbers, manage warranty claims and control multi-branch inventory across UAE, Pakistan, UK and USA.",
+  title: "Computer Hardware Inventory Software",
+  description: "Track RAM, drives and computer hardware by serial number while managing stock, branches, warranty claims and accounts.",
   keywords: [
     "RAM wholesaler inventory software",
     "hard drive distributor stock management",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 };
 
 export default function ComputerHardwareWholesalersPage() {
-  return <SeoLandingPage
+  return <SeoLandingPage path="/industries/computer-hardware-wholesalers"
     eyebrow="QuickAccounts for computer hardware wholesalers"
     title="Computer hardware inventory software with serial traceability"
     intro="Keep hardware stock and purchase records organized, trace individual components and devices by serial number, and help staff find invoice details when a customer needs warranty support."

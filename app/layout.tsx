@@ -1,16 +1,18 @@
 import type { Metadata } from "next";
 import "@fontsource-variable/manrope";
 
+import { JsonLd } from "@/components/seo/json-ld";
+import { siteEntityGraph } from "@/lib/seo";
 import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://dotcodesolutions.com"),
   title: {
-    default: "Stock & Inventory Management Software for CCTV, RAM & Hardware Dealers | QuickAccounts",
-    template: "%s | QuickAccounts by Dotcode",
+    default: "Wholesale Inventory & RMA Software | QuickAccounts",
+    template: "%s | QuickAccounts",
   },
   description:
-    "QuickAccounts is wholesale inventory and stock management software for CCTV distributors, RAM dealers and computer hardware wholesalers in UAE, UK, USA and Pakistan. Track serial numbers, manage warranty claims, handle RMA returns and control multi-warehouse stock across all your branches.",
+    "QuickAccounts connects wholesale inventory, serial tracking, warranty, RMA and accounting workflows, with setup, migration and team training.",
   keywords: [
     "inventory management software UAE",
     "stock management software Pakistan",
@@ -45,16 +47,16 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: "Dotcode Solutions",
-    title: "Stock & Inventory Software for CCTV, RAM & Hardware Dealers | QuickAccounts",
+    title: "Wholesale Inventory & RMA Software | QuickAccounts",
     description:
-      "Manage stock, serial numbers, warranty claims and RMA returns for CCTV distributors, RAM dealers and computer hardware wholesalers across UAE, UK, USA and Pakistan.",
+      "Manage wholesale stock, serial numbers, warranty claims, RMA returns and accounts in one connected system.",
     images: [{ url: "/assets/dotcode-logo.png", alt: "QuickAccounts by Dotcode Solutions" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Stock & Inventory Software for CCTV, RAM & Hardware Dealers | QuickAccounts",
+    title: "Wholesale Inventory & RMA Software | QuickAccounts",
     description:
-      "Manage stock, serial numbers, warranty claims and RMA returns for CCTV distributors, RAM dealers and hardware wholesalers in UAE, UK, USA and Pakistan.",
+      "Manage wholesale stock, serial numbers, warranty claims, RMA returns and accounts in one connected system.",
     images: ["/assets/dotcode-logo.png"],
   },
 };
@@ -64,7 +66,10 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body suppressHydrationWarning>{children}</body>
+      <body suppressHydrationWarning>
+        <JsonLd data={siteEntityGraph} />
+        {children}
+      </body>
     </html>
   );
 }

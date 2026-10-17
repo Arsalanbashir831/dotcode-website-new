@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { SeoLandingPage } from "@/components/seo/seo-landing-page";
 
 export const metadata: Metadata = {
-  title: "Wholesale Stock Management Software for General Merchandise Dealers | UAE & Pakistan",
-  description: "QuickAccounts is practical stock management software for general merchandise and goods wholesalers in UAE, Pakistan, UK and USA. Manage stock, purchases, customer ledgers and accounts in one system — with setup, migration and training included.",
+  title: "Merchandise Wholesale Software",
+  description: "Manage stock, purchases, customer ledgers and accounts for general merchandise wholesale operations in one system.",
   keywords: [
     "wholesale stock management software",
     "general merchandise inventory software",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 };
 
 export default function MerchandiseWholesalersPage() {
-  return <SeoLandingPage
+  return <SeoLandingPage path="/industries/merchandise-wholesalers"
     eyebrow="QuickAccounts for merchandise wholesalers"
     title="General merchandise inventory software for wholesale businesses"
     intro="Organize product stock, purchases, customer accounts, cash and ledgers in one straightforward system for businesses that buy and sell merchandise."

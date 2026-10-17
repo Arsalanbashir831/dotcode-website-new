@@ -1,0 +1,457 @@
+{
+  "title": "Stock & Inventory Management Software for CCTV, RAM & Hardware Dealers | QuickAccounts",
+  "meta_description": "QuickAccounts is wholesale inventory and stock management software for CCTV distributors, RAM dealers and computer hardware wholesalers in UAE, UK, USA and Pakistan. Track serial numbers, manage warranty claims, handle RMA returns and control multi-warehouse stock across all your branches.",
+  "meta_robots": "index, follow",
+  "canonical": "https://dotcodesolutions.com",
+  "h1": [
+    "Inventory, Warranty & RMA Management for Wholesalers Wholesalers, distributors and retailers"
+  ],
+  "h2": [
+    "The workflows behind your daily trade.",
+    "Made for stock-led businesses.",
+    "Manage inventory, trade and accounts in one place.",
+    "Your trade. Your stock. All connected.",
+    "Don\u2019t take our word for it. Hear it from our clients.",
+    "Trusted on Fiverr and Upwork.",
+    "From first conversation to your team\u2019s first day.",
+    "Software is only useful when your team can put it to work.",
+    "Clear answers before you choose.",
+    "Give your clients a practical software option.",
+    "Tell us what you need to organize.",
+    "Bring all your wholesale operations into one system."
+  ],
+  "h3": [
+    "Outlets and warehouses",
+    "Stock tracking",
+    "Purchases and sales",
+    "Serials and warranty claims",
+    "Accounts and ledgers",
+    "From purchase to payment.",
+    "Know what\u2019s in stock.",
+    "Keep every location connected.",
+    "Tell us how you work",
+    "Choose a license",
+    "Get set up and trained",
+    "Get to work",
+    "Tell us how you work",
+    "Choose a license",
+    "Get set up and trained",
+    "Get to work",
+    "Setup and integration",
+    "Standard data migration",
+    "Team training",
+    "Optional small changes",
+    "Referral Partner",
+    "Certified Reseller",
+    "Interested in selling under your own brand?"
+  ],
+  "images": [
+    {
+      "src": "https://dotcodesolutions.com/_next/image?url=%2Fassets%2Fdotcode-logo.png&w=3840&q=75",
+      "alt": "Dotcode Solutions",
+      "width": "1711",
+      "height": "530",
+      "loading": null
+    },
+    {
+      "src": "https://img.youtube.com/vi/LiBz35AcQLM/maxresdefault.jpg",
+      "alt": "QuickAccounts product video preview",
+      "width": null,
+      "height": null,
+      "loading": null
+    },
+    {
+      "src": "https://dotcodesolutions.com/_next/image?url=%2Fassets%2Fcta-image.png&w=3840&q=75",
+      "alt": "QuickAccounts dashboard showing sales, purchases, stock value and product categories",
+      "width": null,
+      "height": null,
+      "loading": "lazy"
+    },
+    {
+      "src": "https://dotcodesolutions.com/_next/image?url=%2Fassets%2Fdotcode-logo-light.png&w=3840&q=75",
+      "alt": "Dotcode",
+      "width": "1711",
+      "height": "530",
+      "loading": "lazy"
+    }
+  ],
+  "links": {
+    "internal": [
+      {
+        "href": "https://dotcodesolutions.com/",
+        "text": "",
+        "rel": []
+      },
+      {
+        "href": "https://dotcodesolutions.com/",
+        "text": "Home",
+        "rel": []
+      },
+      {
+        "href": "https://dotcodesolutions.com/solutions/wholesale-inventory",
+        "text": "Explore features",
+        "rel": []
+      },
+      {
+        "href": "https://dotcodesolutions.com/solutions/wholesale-inventory",
+        "text": "Wholesale inventory Organize stock, purchases and customer accounts for trade.",
+        "rel": []
+      },
+      {
+        "href": "https://dotcodesolutions.com/features/multi-warehouse-inventory",
+        "text": "Multi-warehouse inventory See stock across warehouses, outlets and branches.",
+        "rel": []
+      },
+      {
+        "href": "https://dotcodesolutions.com/features/serial-number-tracking",
+        "text": "Serial number tracking Trace individual products from receiving to invoice lookup.",
+        "rel": []
+      },
+      {
+        "href": "https://dotcodesolutions.com/features/warranty-management",
+        "text": "Warranty and RMA Connect warranty checks, returns and replacements to sales records.",
+        "rel": []
+      },
+      {
+        "href": "https://dotcodesolutions.com/features/business-accounting",
+        "text": "Business accounting Keep cash, customer accounts and ledgers alongside stock.",
+        "rel": []
+      },
+      {
+        "href": "https://dotcodesolutions.com/industries/electronics-distributors",
+        "text": "Explore industries",
+        "rel": []
+      },
+      {
+        "href": "https://dotcodesolutions.com/industries/electronics-distributors",
+        "text": "Electronics distributors Serial traceability and after-sales workflows for electronics trade.",
+        "rel": []
+      },
+      {
+        "href": "https://dotcodesolutions.com/industries/computer-hardware-wholesalers",
+        "text": "Computer hardware wholesalers Manage hardware stock, sales records and warranty inquiries.",
+        "rel": []
+      },
+      {
+        "href": "https://dotcodesolutions.com/industries/multi-outlet-retailers",
+        "text": "Multi-outlet retailers Coordinate product records and accounts across retail branches.",
+        "rel": []
+      },
+      {
+        "href": "https://dotcodesolutions.com/industries/merchandise-wholesalers",
+        "text": "General merchandise wholesalers Keep purchasing, stock and customer ledgers in one workflow.",
+        "rel": []
+      },
+      {
+        "href": "https://dotcodesolutions.com/custom-erp-development",
+        "text": "Custom ERP Development",
+        "rel": []
+      },
+      {
+        "href": "https://dotcodesolutions.com/#process",
+        "text": "How it works",
+        "rel": []
+      },
+      {
+        "href": "https://dotcodesolutions.com/features/multi-warehouse-inventory",
+        "text": "Learn more",
+        "rel": []
+      },
+      {
+        "href": "https://dotcodesolutions.com/solutions/wholesale-inventory",
+        "text": "Learn more",
+        "rel": []
+      },
+      {
+        "href": "https://dotcodesolutions.com/solutions/wholesale-inventory",
+        "text": "Learn more",
+        "rel": []
+      },
+      {
+        "href": "https://dotcodesolutions.com/features/serial-number-tracking",
+        "text": "Learn more",
+        "rel": []
+      },
+      {
+        "href": "https://dotcodesolutions.com/features/business-accounting",
+        "text": "Learn more",
+        "rel": []
+      },
+      {
+        "href": "https://dotcodesolutions.com/solutions/wholesale-inventory",
+        "text": "Explore wholesale tools",
+        "rel": []
+      },
+      {
+        "href": "https://dotcodesolutions.com/industries/merchandise-wholesalers",
+        "text": "Explore merchandise tools",
+        "rel": []
+      },
+      {
+        "href": "https://dotcodesolutions.com/features/multi-warehouse-inventory",
+        "text": "Explore multiple locations",
+        "rel": []
+      },
+      {
+        "href": "https://dotcodesolutions.com/#quickaccounts",
+        "text": "QuickAccounts",
+        "rel": []
+      },
+      {
+        "href": "https://dotcodesolutions.com/#features",
+        "text": "Features",
+        "rel": []
+      },
+      {
+        "href": "https://dotcodesolutions.com/solutions/wholesale-inventory",
+        "text": "Wholesale inventory",
+        "rel": []
+      },
+      {
+        "href": "https://dotcodesolutions.com/features/business-accounting",
+        "text": "Stock and accounts",
+        "rel": []
+      },
+      {
+        "href": "https://dotcodesolutions.com/features/multi-warehouse-inventory",
+        "text": "Multi-warehouse inventory",
+        "rel": []
+      },
+      {
+        "href": "https://dotcodesolutions.com/features/serial-number-tracking",
+        "text": "Serial number tracking",
+        "rel": []
+      },
+      {
+        "href": "https://dotcodesolutions.com/features/warranty-management",
+        "text": "Warranty and RMA",
+        "rel": []
+      },
+      {
+        "href": "https://dotcodesolutions.com/custom-erp-development",
+        "text": "Custom ERP development",
+        "rel": []
+      },
+      {
+        "href": "https://dotcodesolutions.com/#faq",
+        "text": "FAQs",
+        "rel": []
+      },
+      {
+        "href": "https://dotcodesolutions.com/#partners",
+        "text": "Partner program",
+        "rel": []
+      },
+      {
+        "href": "https://dotcodesolutions.com/#process",
+        "text": "How it works",
+        "rel": []
+      },
+      {
+        "href": "https://dotcodesolutions.com/industries/electronics-distributors",
+        "text": "Electronics distributors",
+        "rel": []
+      },
+      {
+        "href": "https://dotcodesolutions.com/industries/computer-hardware-wholesalers",
+        "text": "Computer hardware wholesalers",
+        "rel": []
+      },
+      {
+        "href": "https://dotcodesolutions.com/industries/multi-outlet-retailers",
+        "text": "Multi-outlet retailers",
+        "rel": []
+      },
+      {
+        "href": "https://dotcodesolutions.com/industries/merchandise-wholesalers",
+        "text": "Merchandise wholesalers",
+        "rel": []
+      }
+    ],
+    "external": [
+      {
+        "href": "https://wa.me/923071257828?text=Hi%2C%20I%E2%80%99d%20like%20to%20book%20a%20QuickAccounts%20demo%20for%20my%20business.",
+        "text": "Contact Us",
+        "rel": [
+          "noopener",
+          "noreferrer"
+        ]
+      },
+      {
+        "href": "https://wa.me/923071257828?text=Hi%2C%20I%E2%80%99d%20like%20to%20book%20a%20QuickAccounts%20demo%20for%20my%20business.",
+        "text": "Contact Us",
+        "rel": [
+          "noopener",
+          "noreferrer"
+        ]
+      },
+      {
+        "href": "https://quick-accounts-fe.vercel.app/c/demo-company/home",
+        "text": "Check Demo Application",
+        "rel": [
+          "noopener",
+          "noreferrer"
+        ]
+      },
+      {
+        "href": "https://www.fiverr.com/sellers/dot_code",
+        "text": "View fiverr profile",
+        "rel": [
+          "noopener",
+          "noreferrer"
+        ]
+      },
+      {
+        "href": "https://www.upwork.com/freelancers/~01be48d2e9b5d45443?mp_source=share",
+        "text": "View upwork profile",
+        "rel": [
+          "noopener",
+          "noreferrer"
+        ]
+      },
+      {
+        "href": "https://wa.me/923071257828?text=Hi%2C%20I%E2%80%99d%20like%20to%20learn%20more%20about%20QuickAccounts.",
+        "text": "Contact Us",
+        "rel": [
+          "noopener",
+          "noreferrer"
+        ]
+      },
+      {
+        "href": "https://quick-accounts-fe.vercel.app/c/demo-company/home",
+        "text": "Get a Demo",
+        "rel": [
+          "noopener",
+          "noreferrer"
+        ]
+      },
+      {
+        "href": "https://wa.me/923071257828?text=Hi%2C%20I%E2%80%99d%20like%20to%20book%20a%20QuickAccounts%20demo%20for%20my%20business.",
+        "text": "Book Free Consultation",
+        "rel": [
+          "noopener",
+          "noreferrer"
+        ]
+      },
+      {
+        "href": "mailto:arsalanbashir831@gmail.com",
+        "text": "arsalanbashir831@gmail.com",
+        "rel": []
+      },
+      {
+        "href": "https://wa.me/923071257828?text=Hi%2C%20I%E2%80%99d%20like%20to%20learn%20more%20about%20QuickAccounts.",
+        "text": "Contact Us",
+        "rel": [
+          "noopener",
+          "noreferrer"
+        ]
+      },
+      {
+        "href": "mailto:arsalanbashir831@gmail.com",
+        "text": "arsalanbashir831@gmail.com",
+        "rel": []
+      },
+      {
+        "href": "https://wa.me/923071257828?text=Hi%2C%20I%E2%80%99d%20like%20to%20learn%20more%20about%20QuickAccounts.",
+        "text": "+92 307 1257828",
+        "rel": [
+          "noopener",
+          "noreferrer"
+        ]
+      }
+    ]
+  },
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://dotcodesolutions.com/#organization",
+      "name": "Dotcode Solutions",
+      "url": "https://dotcodesolutions.com",
+      "logo": "https://dotcodesolutions.com/assets/dotcode-logo.png",
+      "email": "arsalanbashir831@gmail.com",
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Pakistan"
+        },
+        {
+          "@type": "Country",
+          "name": "United Arab Emirates"
+        },
+        {
+          "@type": "Country",
+          "name": "United Kingdom"
+        },
+        {
+          "@type": "Country",
+          "name": "United States"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lahore",
+        "addressCountry": "PK"
+      },
+      "makesOffer": {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "SoftwareApplication",
+          "@id": "https://dotcodesolutions.com/#quickaccounts",
+          "name": "QuickAccounts",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web",
+          "url": "https://dotcodesolutions.com",
+          "description": "Inventory and stock management software for CCTV distributors, computer hardware wholesalers and electronics dealers in UAE, UK, USA and Pakistan. Track serial numbers, manage warranty claims, RMA returns and multi-warehouse stock across branches.",
+          "featureList": [
+            "Serial number tracking for CCTV cameras, RAM, hard drives and electronics",
+            "Warranty claim and RMA management for distributors",
+            "Multi-warehouse and multi-outlet inventory management",
+            "Stock transfers between branches and warehouses",
+            "Invoice lookup by serial number",
+            "Purchase and stock records for wholesale businesses",
+            "Customer accounts, cash records and ledgers",
+            "Returns and product replacement workflows",
+            "Business setup, data migration and team training",
+            "Suitable for CCTV dealers, RAM distributors, hard drive wholesalers"
+          ],
+          "offers": [
+            {
+              "@type": "Offer",
+              "name": "Offline single-user lifetime license",
+              "price": "1200",
+              "priceCurrency": "USD",
+              "description": "One-time software license for one user; setup, supported migration and team training included."
+            },
+            {
+              "@type": "Offer",
+              "name": "Online unlimited-user lifetime license",
+              "price": "850",
+              "priceCurrency": "USD",
+              "description": "One-time software license for unlimited users, plus $40 per month for hosting; setup, supported migration and team training included."
+            }
+          ],
+          "publisher": {
+            "@id": "https://dotcodesolutions.com/#organization"
+          }
+        }
+      }
+    }
+  ],
+  "open_graph": {
+    "og:title": "Stock & Inventory Software for CCTV, RAM & Hardware Dealers | QuickAccounts",
+    "og:description": "Manage stock, serial numbers, warranty claims and RMA returns for CCTV distributors, RAM dealers and computer hardware wholesalers across UAE, UK, USA and Pakistan.",
+    "og:site_name": "Dotcode Solutions",
+    "og:image": "https://dotcodesolutions.com/assets/dotcode-logo.png",
+    "og:image:alt": "QuickAccounts by Dotcode Solutions",
+    "og:type": "website"
+  },
+  "twitter_card": {
+    "twitter:card": "summary_large_image",
+    "twitter:title": "Stock & Inventory Software for CCTV, RAM & Hardware Dealers | QuickAccounts",
+    "twitter:description": "Manage stock, serial numbers, warranty claims and RMA returns for CCTV distributors, RAM dealers and hardware wholesalers in UAE, UK, USA and Pakistan.",
+    "twitter:image": "https://dotcodesolutions.com/assets/dotcode-logo.png"
+  },
+  "word_count": 2247,
+  "hreflang": []
+}

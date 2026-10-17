@@ -1,0 +1,40 @@
+{
+  "cache_type": "audit-scores",
+  "analyzed_at": "2026-10-17T16:55:00Z",
+  "domain": "dotcodesolutions.com",
+  "business_type": "B2B inventory and ERP software",
+  "industry": "wholesale inventory, warranty, RMA, and custom ERP software",
+  "overall_score": 60,
+  "category_scores": {
+    "technical": 78,
+    "content": 49,
+    "on_page": 55,
+    "schema": 43,
+    "performance_provisional": 60,
+    "geo": 54,
+    "images": 82,
+    "sitemap": 88,
+    "sxo": 51
+  },
+  "crawl_summary": {
+    "sitemap_urls": 23,
+    "http_200": 23,
+    "single_h1": 23,
+    "matching_absolute_canonical": 23,
+    "titles_over_60_characters": 23,
+    "meta_descriptions_over_160_characters": 9,
+    "urls_with_json_ld": 2
+  },
+  "priority_issues": [
+    {"severity": "high", "issue": "Nine strategic feature and industry pages are thin and template-heavy."},
+    {"severity": "high", "issue": "All 23 sitemap titles exceed 60 characters and nine meta descriptions exceed 160 characters."},
+    {"severity": "high", "issue": "Product-specific trust, legal, security, authorship, and case-study evidence is incomplete."},
+    {"severity": "high", "issue": "The www hostname serves duplicate 200 pages instead of redirecting to the apex host."},
+    {"severity": "high", "issue": "Only two of 23 sitemap URLs contain JSON-LD structured data."}
+  ],
+  "limitations": [
+    "No GSC, GA4, CrUX, paid SERP, DataForSEO, Moz, or Bing Webmaster credentials were available.",
+    "PageSpeed API returned HTTP 429 quota exhaustion; performance is provisional.",
+    "Automated Playwright visual analysis was unavailable."
+  ]
+}

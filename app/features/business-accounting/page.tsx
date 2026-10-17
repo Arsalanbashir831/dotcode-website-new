@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { SeoLandingPage } from "@/components/seo/seo-landing-page";
 
 export const metadata: Metadata = {
-  title: "Inventory and Accounting Records for Wholesalers",
+  title: "Inventory Accounting Software",
   description: "Keep wholesale stock, purchases, customer accounts, cash and ledgers organized with QuickAccounts business software.",
   alternates: { canonical: "/features/business-accounting" },
   openGraph: {
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 };
 
 export default function BusinessAccountingPage() {
-  return <SeoLandingPage
+  return <SeoLandingPage path="/features/business-accounting"
     eyebrow="Business records in one place"
     title="Wholesale inventory software with customer accounts and ledgers"
     intro="QuickAccounts helps trade-led businesses keep stock, purchases, customer accounts, cash and ledgers organized together. Choose a single-user offline license or online access with unlimited users."

@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { RotatingWords } from "@/components/landing/shared/rotating-words";
 import { DEMO_APPLICATION_URL, WHATSAPP_DEMO_URL } from "@/lib/contact";
@@ -8,7 +9,6 @@ import { WhatsAppButton } from "@/components/ui/whatsapp-button";
 
 const youtubeVideoId = "LiBz35AcQLM";
 const youtubeEmbedUrl = `https://www.youtube.com/embed/${youtubeVideoId}?autoplay=1&rel=0`;
-const youtubeThumbnailUrl = `https://img.youtube.com/vi/${youtubeVideoId}/maxresdefault.jpg`;
 
 export const HeroSection = () => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
@@ -29,7 +29,7 @@ export const HeroSection = () => {
   return <section className="qa-hero" id="quickaccounts">
     <div className="qa-container qa-hero-grid">
       <div className="qa-hero-intro">
-        <h1>
+        <h1 aria-label="Inventory, warranty and RMA management for wholesalers, distributors and retailers">
           <span className="qa-hero-heading-line">Inventory, Warranty &amp; RMA</span>
           <span className="qa-hero-heading-row">
             <span>Management for</span>
@@ -50,7 +50,15 @@ export const HeroSection = () => {
       </div>
       <div className="qa-hero-visual" data-reveal>
         <button type="button" className="qa-hero-video-trigger" aria-label="Play the QuickAccounts product video" onClick={() => setIsVideoOpen(true)}>
-          <img className="qa-hero-video" src={youtubeThumbnailUrl} alt="QuickAccounts product video preview" />
+          <Image
+            className="qa-hero-video"
+            src="/assets/hero-section-image.png"
+            alt="QuickAccounts inventory dashboard product video preview"
+              width={1672}
+              height={941}
+            sizes="(min-width: 1200px) 1160px, 100vw"
+            priority
+          />
           <span className="qa-hero-video-overlay" aria-hidden="true">
             <span className="qa-hero-video-play-icon">▶</span>
             <span>Watch with sound</span>

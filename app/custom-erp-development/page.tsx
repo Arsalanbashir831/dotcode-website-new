@@ -22,7 +22,7 @@ const contactUrl = getWhatsAppContactUrl(
 );
 
 export const metadata: Metadata = {
-  title: "Custom ERP Development for Business Operations",
+  title: "Custom ERP Development",
   description:
     "Build custom ERP software for accounting, sales, purchase orders, teams, outlets and business-specific workflows with Dotcode Solutions.",
   keywords: [
@@ -218,21 +218,6 @@ const faqSchema = {
   })),
 };
 
-const howToSchema = {
-  "@context": "https://schema.org",
-  "@type": "HowTo",
-  name: "How Dotcode develops a custom ERP system",
-  description: "A five-stage process for planning, building, testing and launching custom ERP software.",
-  datePublished: publishedDate,
-  dateModified: publishedDate,
-  step: processSteps.map((step, index) => ({
-    "@type": "HowToStep",
-    position: index + 1,
-    name: step.name,
-    text: step.text,
-  })),
-};
-
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -243,7 +228,7 @@ const breadcrumbSchema = {
 };
 
 export default function CustomErpDevelopmentPage() {
-  const schemas = [serviceSchema, faqSchema, howToSchema, breadcrumbSchema];
+  const schemas = [serviceSchema, faqSchema, breadcrumbSchema];
 
   return (
     <main className="qa-site custom-erp-page" id="top">

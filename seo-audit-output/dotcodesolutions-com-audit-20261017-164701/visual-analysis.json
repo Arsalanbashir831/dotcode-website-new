@@ -1,0 +1,17 @@
+{
+  "url": "https://dotcodesolutions.com/",
+  "status": "automated_visual_run_unavailable",
+  "reason": "Playwright was unavailable in the audit environment.",
+  "discarded_pipeline_assertions": [
+    "h1_visible=false",
+    "cta_visible=false",
+    "viewport_meta=false"
+  ],
+  "source_verified": {
+    "viewport_meta_present": true,
+    "responsive_breakpoints_present": true,
+    "smallest_observed_control_css_size_px": 38,
+    "recommended_primary_touch_target_px": 48
+  },
+  "recommendation": "Run a real mobile and desktop browser pass before treating visual/CWV findings as measured evidence."
+}

@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { SeoLandingPage } from "@/components/seo/seo-landing-page";
 
 export const metadata: Metadata = {
-  title: "Multi-Branch Retail Inventory Software for Electronics & Hardware Dealers | UAE, Pakistan",
-  description: "QuickAccounts helps electronics and hardware retailers with multiple branches or outlets track stock, transfers, purchases and customer accounts across all locations. Ideal for CCTV retailers, computer accessory stores and hardware dealers in UAE, Pakistan and UK.",
+  title: "Multi-Outlet Inventory Software",
+  description: "Track stock, transfers, purchases and customer accounts across electronics and hardware retail branches and outlets.",
   keywords: [
     "multi-branch inventory management software",
     "multi-outlet retail software UAE",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 };
 
 export default function MultiOutletRetailersPage() {
-  return <SeoLandingPage
+  return <SeoLandingPage path="/industries/multi-outlet-retailers"
     eyebrow="QuickAccounts for multi-outlet retail"
     title="Inventory management software for retailers with multiple outlets"
     intro="Keep product stock visible across stores and warehouses, coordinate stock transfers and keep purchasing and account records organized as your retail operation grows."

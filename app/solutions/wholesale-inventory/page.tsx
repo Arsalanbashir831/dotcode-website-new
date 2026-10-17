@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { SeoLandingPage } from "@/components/seo/seo-landing-page";
 
 export const metadata: Metadata = {
-  title: "Wholesale Inventory Software for Stock and Accounts",
-  description: "Organize stock, purchases, customer accounts, cash and ledgers with QuickAccounts wholesale business software. Includes setup, supported migration and team training.",
+  title: "Wholesale Inventory Software",
+  description: "Organize wholesale stock, purchases, customer accounts, cash and ledgers with setup, supported migration and team training.",
   alternates: { canonical: "/solutions/wholesale-inventory" },
   openGraph: {
     title: "Wholesale Inventory Software | QuickAccounts",
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 };
 
 export default function WholesaleInventoryPage() {
-  return <SeoLandingPage
+  return <SeoLandingPage path="/solutions/wholesale-inventory"
     eyebrow="QuickAccounts for wholesalers"
     title="Wholesale inventory software for everyday stock and accounts"
     intro="QuickAccounts brings stock records, purchases, customer accounts, cash and ledgers together for trade-led businesses. Dotcode helps configure the system, migrate supported records and train your team."

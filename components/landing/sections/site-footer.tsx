@@ -75,7 +75,7 @@ export const SiteFooter = () => (
       <div className="qa-footer-contact">
         <p>Contact</p>
         <span>Email</span>
-        <a href="mailto:arsalanbashir831@gmail.com">arsalanbashir831@gmail.com</a>
+        <a href="mailto:info@dotcodesolutions.com">info@dotcodesolutions.com</a>
         <span>WhatsApp</span>
         <a href={WHATSAPP_CONTACT_URL} target="_blank" rel="noopener noreferrer">+92 307 1257828</a>
         <span>Wholesale accounting software</span>

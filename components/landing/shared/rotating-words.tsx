@@ -34,15 +34,11 @@ export const RotatingWords = () => {
   }, []);
 
   return (
-    <span className="qa-rotating-word-slot">
+    <span className="qa-rotating-word-slot" aria-hidden="true">
       <span
-        aria-hidden="true"
         className={`qa-rotating-word ${isVisible ? "is-visible" : ""}`}
       >
         {words[activeIndex]}
-      </span>
-      <span className="sr-only">
-        Wholesalers, distributors and retailers
       </span>
     </span>
   );

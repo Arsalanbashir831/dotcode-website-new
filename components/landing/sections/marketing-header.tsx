@@ -87,7 +87,7 @@ export function MarketingHeader() {
                   <div className="qa-mega-intro">
                     <p className="qa-eyebrow">QuickAccounts {menuName.toLowerCase()}</p>
                     <h2>{menuName === "Features" ? "The workflows behind your daily trade." : "Made for stock-led businesses."}</h2>
-                    <Link href={menuName === "Features" ? "/solutions/wholesale-inventory" : "/industries/electronics-distributors"} onClick={closeMenus}>
+                    <Link href={menuName === "Features" ? "/features" : "/industries"} onClick={closeMenus}>
                       Explore {menuName.toLowerCase()} <ArrowRight aria-hidden="true" />
                     </Link>
                   </div>

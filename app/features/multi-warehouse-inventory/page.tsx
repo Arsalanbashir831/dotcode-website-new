@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { SeoLandingPage } from "@/components/seo/seo-landing-page";
 
 export const metadata: Metadata = {
-  title: "Multi-Warehouse & Multi-Branch Inventory Software for Wholesale Distributors | UAE, Pakistan",
-  description: "QuickAccounts manages stock across multiple warehouses, godowns and outlets for electronics, CCTV and hardware distributors in UAE, Pakistan, UK and USA. Track inventory, transfers and purchases across all your locations in one system.",
+  title: "Multi-Warehouse Inventory Software",
+  description: "Track stock, transfers and purchases across warehouses, godowns, branches and outlets in one distributor inventory system.",
   keywords: [
     "multi-warehouse inventory management",
     "multi-branch stock management software",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 };
 
 export default function MultiWarehouseInventoryPage() {
-  return <SeoLandingPage
+  return <SeoLandingPage path="/features/multi-warehouse-inventory"
     eyebrow="Stock control across locations"
     title="Multi-warehouse inventory management for wholesalers and distributors"
     intro="Get a clearer view of stock across warehouses, outlets and branches. QuickAccounts helps distribution teams organize stock records and stock movements alongside purchasing and customer account workflows."

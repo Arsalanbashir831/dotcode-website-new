@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { SeoLandingPage } from "@/components/seo/seo-landing-page";
 
 export const metadata: Metadata = {
-  title: "Inventory & Warranty Software for CCTV and Electronics Distributors in UAE, UK & Pakistan",
-  description: "QuickAccounts helps CCTV camera distributors, Hikvision & Dahua dealers, RAM and hard drive wholesalers manage stock, track serial numbers, process warranty claims and handle RMA returns. Trusted by electronics distributors in UAE, Pakistan, UK and USA.",
+  title: "Electronics Distributor Software",
+  description: "Manage electronics stock, serial numbers, sales, warranty claims and RMA returns in one connected distributor workflow.",
   keywords: [
     "CCTV distributor inventory software",
     "electronics distributor software UAE",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 };
 
 export default function ElectronicsDistributorsPage() {
-  return <SeoLandingPage
+  return <SeoLandingPage path="/industries/electronics-distributors"
     eyebrow="QuickAccounts for electronics trade"
     title="Inventory and warranty software for electronics distributors"
     intro="Manage electronics stock and purchase records, trace products by serial number, and give your team a clearer workflow for invoice checks, warranty inquiries, returns and replacements."

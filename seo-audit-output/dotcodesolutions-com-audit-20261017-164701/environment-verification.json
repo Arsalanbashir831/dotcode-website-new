@@ -1,0 +1,164 @@
+{
+  "python": {
+    "ok": true,
+    "version": "3.14.5",
+    "required": "3.10+"
+  },
+  "dependencies": [
+    {
+      "package": "beautifulsoup4",
+      "module": "bs4",
+      "ok": true,
+      "version": "4.15.0"
+    },
+    {
+      "package": "defusedxml",
+      "module": "defusedxml",
+      "ok": true,
+      "version": "0.7.1"
+    },
+    {
+      "package": "google-analytics-data",
+      "module": "google.analytics.data",
+      "ok": false,
+      "error": "No module named 'google'"
+    },
+    {
+      "package": "google-auth",
+      "module": "google.auth",
+      "ok": false,
+      "error": "No module named 'google'"
+    },
+    {
+      "package": "google-auth-httplib2",
+      "module": "google_auth_httplib2",
+      "ok": false,
+      "error": "No module named 'google_auth_httplib2'"
+    },
+    {
+      "package": "google-auth-oauthlib",
+      "module": "google_auth_oauthlib",
+      "ok": false,
+      "error": "No module named 'google_auth_oauthlib'"
+    },
+    {
+      "package": "google-api-python-client",
+      "module": "googleapiclient",
+      "ok": false,
+      "error": "No module named 'googleapiclient'"
+    },
+    {
+      "package": "lxml",
+      "module": "lxml",
+      "ok": true,
+      "version": "6.1.3"
+    },
+    {
+      "package": "Markdown",
+      "module": "markdown",
+      "ok": true,
+      "version": "3.11.1"
+    },
+    {
+      "package": "matplotlib",
+      "module": "matplotlib",
+      "ok": false,
+      "error": "No module named 'matplotlib'"
+    },
+    {
+      "package": "openpyxl",
+      "module": "openpyxl",
+      "ok": false,
+      "error": "No module named 'openpyxl'"
+    },
+    {
+      "package": "Pillow",
+      "module": "PIL",
+      "ok": true,
+      "version": "12.3.0"
+    },
+    {
+      "package": "requests",
+      "module": "requests",
+      "ok": true,
+      "version": "2.34.2"
+    },
+    {
+      "package": "playwright",
+      "module": "playwright.sync_api",
+      "ok": false,
+      "error": "No module named 'playwright'"
+    },
+    {
+      "package": "rapidocr-onnxruntime",
+      "module": "rapidocr_onnxruntime",
+      "ok": false,
+      "error": "No module named 'rapidocr_onnxruntime'"
+    },
+    {
+      "package": "validators",
+      "module": "validators",
+      "ok": true,
+      "version": "0.36.0"
+    },
+    {
+      "package": "weasyprint",
+      "module": "weasyprint",
+      "ok": false,
+      "error": "No module named 'weasyprint'"
+    }
+  ],
+  "playwright_browser": {
+    "ok": false,
+    "error": "No module named 'playwright'"
+  },
+  "paths": {
+    "cache": {
+      "ok": true,
+      "path": "/private/tmp/dotcode-seo-runtime/.seo-cache"
+    },
+    "output": {
+      "ok": true,
+      "path": "/private/tmp/dotcode-seo-runtime/output"
+    }
+  },
+  "target": {
+    "ok": true,
+    "url": "https://dotcodesolutions.com/",
+    "status_code": 200
+  },
+  "capabilities": {
+    "core_ready": true,
+    "visual_ready": false,
+    "premium_report_ready": false,
+    "google_api_package_ready": false,
+    "full_ready": false
+  },
+  "missing_required": [],
+  "missing_visual": [
+    "playwright"
+  ],
+  "missing_report": [
+    "matplotlib",
+    "openpyxl",
+    "weasyprint"
+  ],
+  "missing_google_api": [
+    "google-analytics-data",
+    "google-auth",
+    "google-auth-httplib2",
+    "google-auth-oauthlib",
+    "google-api-python-client"
+  ],
+  "missing_optional": [
+    "rapidocr-onnxruntime"
+  ],
+  "ready": true,
+  "notes": [
+    "Missing visual packages: playwright.",
+    "Missing premium report packages: matplotlib, openpyxl, weasyprint.",
+    "Missing Google API packages: google-analytics-data, google-auth, google-auth-httplib2, google-auth-oauthlib, google-api-python-client.",
+    "Missing optional packages: rapidocr-onnxruntime.",
+    "Core analysis workflows are ready. Extended visual, PDF, or Google API workflows remain degraded until the listed setup items are fixed."
+  ]
+}
