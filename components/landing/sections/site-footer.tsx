@@ -10,6 +10,7 @@ const productLinks = [
   ["Multi-warehouse inventory", "/features/multi-warehouse-inventory"],
   ["Serial number tracking", "/features/serial-number-tracking"],
   ["Warranty and RMA", "/features/warranty-management"],
+  ["Custom ERP development", "/custom-erp-development"],
   ["FAQs", "/#faq"],
 ];
 

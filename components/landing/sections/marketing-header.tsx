@@ -60,7 +60,7 @@ export function MarketingHeader() {
         <Link href="/" aria-label="Dotcode home" onClick={closeMenus}>
           <Image src="/assets/dotcode-logo.png" width={1711} height={530} alt="Dotcode Solutions" priority className="qa-logo" />
         </Link>
-        <nav className={`qa-nav-links qa-primary-nav ${mobileOpen ? "is-open" : ""}`} aria-label="Main navigation">
+        <nav id="main-navigation" className={`qa-nav-links qa-primary-nav ${mobileOpen ? "is-open" : ""}`} aria-label="Main navigation">
           <Link href="/" onClick={closeMenus}>Home</Link>
           {(Object.keys(menus) as MenuName[]).map((menuName) => (
             <div
@@ -103,11 +103,12 @@ export function MarketingHeader() {
               </div>
             </div>
           ))}
+          <Link href="/custom-erp-development" onClick={closeMenus}>Custom ERP Development</Link>
           <Link href="/#process" onClick={closeMenus}>How it works</Link>
         </nav>
         <div className="qa-nav-actions">
           <WhatsAppButton href={WHATSAPP_DEMO_URL} className="qa-nav-demo" />
-          <button className="qa-menu-button" onClick={() => setMobileOpen((open) => !open)} aria-expanded={mobileOpen} aria-label={mobileOpen ? "Close navigation" : "Open navigation"}>
+          <button type="button" className="qa-menu-button" onClick={() => setMobileOpen((open) => !open)} aria-controls="main-navigation" aria-expanded={mobileOpen} aria-label={mobileOpen ? "Close navigation" : "Open navigation"}>
             {mobileOpen ? <X /> : <Menu />}
           </button>
         </div>

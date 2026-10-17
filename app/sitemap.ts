@@ -5,6 +5,7 @@ const BASE_URL = "https://dotcodesolutions.com";
 // Keep published, indexable routes grouped by search intent. Add each new page
 // here when it is published so it is included in the next sitemap response.
 const commercialRoutes = [
+  "/custom-erp-development",
   "/solutions/wholesale-inventory",
   "/features/business-accounting",
   "/features/multi-warehouse-inventory",

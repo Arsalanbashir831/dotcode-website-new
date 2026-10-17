@@ -30,9 +30,9 @@ export function WhatsAppButton({
       size={size}
       className={`${themeClass} ${className ?? ""}`}
     >
-      <a href={href} target="_blank" rel="noopener noreferrer">
+      <a href={href} target="_blank" rel="noopener noreferrer" aria-label={label}>
         {showIcon ? <WhatsappLogoIcon size={20} weight="fill" aria-hidden="true" /> : null}
-        {label}
+        <span className="whatsapp-button-label">{label}</span>
       </a>
     </Button>
   );
