@@ -8,11 +8,11 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://dotcodesolutions.com"),
   title: {
-    default: "Wholesale Inventory & RMA Software | QuickAccounts",
-    template: "%s | QuickAccounts",
+    default: "Wholesale Inventory & RMA Software | Dotcode Solutions",
+    template: "%s | Dotcode Solutions",
   },
   description:
-    "QuickAccounts connects wholesale inventory, serial tracking, warranty, RMA and accounting workflows, with setup, migration and team training.",
+    "Dotcode Solutions connects wholesale inventory, serial tracking, warranty, RMA and accounting workflows, with setup, migration and team training.",
   keywords: [
     "inventory management software UAE",
     "stock management software Pakistan",
@@ -32,8 +32,12 @@ export const metadata: Metadata = {
     "QuickAccounts",
     "Dotcode Solutions",
   ],
-  applicationName: "QuickAccounts",
+  applicationName: "Dotcode Solutions",
   category: "Business software",
+  icons: {
+    icon: [{ url: "/favicon.png", type: "image/png", sizes: "1254x1254" }],
+    apple: [{ url: "/favicon.png", sizes: "1254x1254" }],
+  },
   robots: {
     index: true,
     follow: true,
@@ -47,14 +51,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: "Dotcode Solutions",
-    title: "Wholesale Inventory & RMA Software | QuickAccounts",
+    title: "Wholesale Inventory & RMA Software | Dotcode Solutions",
     description:
       "Manage wholesale stock, serial numbers, warranty claims, RMA returns and accounts in one connected system.",
-    images: [{ url: "/assets/dotcode-logo.png", alt: "QuickAccounts by Dotcode Solutions" }],
+    images: [{ url: "/assets/dotcode-logo.png", alt: "Dotcode Solutions" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Wholesale Inventory & RMA Software | QuickAccounts",
+    title: "Wholesale Inventory & RMA Software | Dotcode Solutions",
     description:
       "Manage wholesale stock, serial numbers, warranty claims, RMA returns and accounts in one connected system.",
     images: ["/assets/dotcode-logo.png"],
