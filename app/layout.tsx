@@ -3,6 +3,8 @@ import "@fontsource-variable/manrope";
 
 import { JsonLd } from "@/components/seo/json-ld";
 import { siteEntityGraph } from "@/lib/seo";
+import { Analytics } from "@vercel/analytics/next"
+
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -73,6 +75,7 @@ export default function RootLayout({
       <body suppressHydrationWarning>
         <JsonLd data={siteEntityGraph} />
         {children}
+        <Analytics />
       </body>
     </html>
   );
