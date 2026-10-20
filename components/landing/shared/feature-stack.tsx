@@ -106,7 +106,7 @@ export const FeatureStack = () => {
               href={href}
               className="qa-feature-stack-link"
             >
-              Learn more <ArrowRight aria-hidden="true" />
+              Explore {title} <ArrowRight aria-hidden="true" />
             </Link>
           </div>
           <div className="qa-feature-stack-media">

@@ -15,7 +15,10 @@ export const SectionHeading = ({
   description,
   isDark = false,
 }: SectionHeadingProps) => (
-  <div className="qa-section-heading" data-reveal>
+  <div
+    className={cn("qa-section-heading", isDark && "qa-section-heading-dark")}
+    data-reveal
+  >
     <p className="qa-eyebrow">{eyebrow}</p>
     <h2 className={cn(isDark && "text-white")}>{title}</h2>
     {description ? (

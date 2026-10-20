@@ -5,7 +5,7 @@
 :root {
   --font-manrope: "Manrope Variable";
   --brand-orange: #f45a21;
-  --deep-orange: #d94712;
+  --deep-orange: #c43d0c;
   --pale-orange: #fff0e9;
   --soft-peach: #ff986f;
   --main-ink: #171717;
@@ -1175,7 +1175,7 @@ body {
   align-items: center;
   gap: 9px;
   margin-bottom: 19px;
-  color: #d94712;
+  color: var(--deep-orange);
   font-size: 0.77rem;
   font-weight: 800;
   letter-spacing: 0.13em;
@@ -1192,6 +1192,9 @@ body {
   max-width: 960px;
   margin: 0 auto 52px;
   text-align: center;
+}
+.qa-section-heading-dark .qa-eyebrow {
+  color: #ff986f;
 }
 #pricing .qa-section-heading { max-width: 1100px; }
 #pricing .qa-section-heading h2 { font-size: clamp(2.35rem, 4.5vw, 4.25rem); }
@@ -1303,7 +1306,7 @@ body {
 }
 .qa-feature-stack-number {
   align-self: flex-end;
-  color: #aaa7a4;
+  color: #68635f;
   font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.12em;
@@ -1343,7 +1346,7 @@ body {
   width: fit-content;
   align-items: center;
   gap: 9px;
-  color: #d94712;
+  color: var(--deep-orange);
   font-size: 0.92rem;
   font-weight: 750;
 }
@@ -1730,7 +1733,7 @@ body {
   padding: 6px 11px;
   border: 1px solid #f2c4ae;
   border-radius: 999px;
-  color: #ff986f;
+  color: #b53a10;
   background: #fff0e9;
   font-size: 0.7rem;
   font-weight: 800;
@@ -1775,7 +1778,7 @@ body {
 }
 .qa-process-steps article > span {
   padding-top: 3px;
-  color: #ff986f;
+  color: #b53a10;
   font-size: 0.7rem;
   font-weight: 800;
   letter-spacing: 0.1em;
@@ -2322,10 +2325,10 @@ body {
   letter-spacing: -0.04em;
 }
 .qa-platform-proof.fiverr .qa-platform-proof-logo {
-  background: #1dbf73;
+  background: #087f4a;
 }
 .qa-platform-proof.upwork .qa-platform-proof-logo {
-  background: #14a800;
+  background: #0b7c00;
 }
 .qa-platform-rating {
   display: grid;
@@ -2526,10 +2529,10 @@ body {
   letter-spacing: -0.04em;
 }
 .qa-testimonial-avatar.fiverr {
-  background: #1dbf73;
+  background: #087f4a;
 }
 .qa-testimonial-avatar.upwork {
-  background: #14a800;
+  background: #0b7c00;
 }
 .qa-testimonial-card > p {
   position: relative;
@@ -2557,7 +2560,7 @@ body {
   letter-spacing: -0.02em;
 }
 .qa-testimonial-card footer span {
-  color: #85807b;
+  color: #6f6964;
   font-size: 0.82rem;
   line-height: 1.5;
 }
@@ -2706,7 +2709,7 @@ body {
   padding: 10px 16px;
   border: 1px solid #ffede3;
   border-radius: 999px;
-  color: #ef520c !important;
+  color: #b33a00 !important;
   background: #fff2eb;
   font-size: 0.76rem;
   font-weight: 750;
@@ -2761,7 +2764,7 @@ body {
 .qa-contact-actions svg { width: 21px; height: 21px; }
 .qa-contact-primary {
   color: white;
-  background: #ff5a08;
+  background: #c13f00;
   box-shadow: 0 12px 24px rgba(255, 90, 8, 0.2);
 }
 .qa-contact-primary:hover { background: #ed4d00; box-shadow: 0 15px 28px rgba(255, 90, 8, 0.25); }
@@ -2783,7 +2786,7 @@ body {
 .qa-consultation-form label { display: grid; gap: 7px; color: #303842; font-size: .85rem; font-weight: 750; }
 .qa-consultation-form input, .qa-consultation-form textarea { width: 100%; border: 1px solid #d6dce0; border-radius: 10px; padding: 11px 12px; color: #17202a; background: #fbfcfd; font: inherit; }
 .qa-consultation-form textarea { resize: vertical; }
-.qa-consultation-form button { width: fit-content; border: 0; border-radius: 999px; padding: 12px 18px; color: #fff; background: #ff5a08; font-weight: 750; cursor: pointer; }
+.qa-consultation-form button { width: fit-content; border: 0; border-radius: 999px; padding: 12px 18px; color: #fff; background: #c13f00; font-weight: 750; cursor: pointer; }
 .qa-contact-visual {
   position: relative;
   min-height: 470px;
@@ -2838,7 +2841,7 @@ body {
 .qa-footer nav > p,
 .qa-footer-contact > p {
   margin-bottom: 6px;
-  color: #77716b;
+  color: #918b85;
   font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.11em;
