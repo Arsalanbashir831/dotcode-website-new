@@ -35,10 +35,10 @@ export const SiteFooter = () => (
           src="/assets/dotcode-logo-light.png"
           width={1711}
           height={530}
-          alt="Dotcode"
+          alt="Dotcode Solutions"
         />
         <p>
-          QuickAccounts by Dotcode.
+          QuickAccounts by Dotcode Solutions.
           <br />
           Practical software, set up for the way you work.
         </p>
@@ -83,7 +83,7 @@ export const SiteFooter = () => (
       </div>
     </div>
     <div className="qa-container qa-footer-bottom">
-      <p>© {new Date().getFullYear()} Dotcode. All rights reserved.</p>
+      <p>© {new Date().getFullYear()} Dotcode Solutions. All rights reserved.</p>
       <p>QuickAccounts · Unlimited users</p>
     </div>
   </footer>

@@ -10,8 +10,8 @@ export const SetupSection = () => (
           <span>your team can put it to work.</span>
         </h2>
         <p>
-          Dotcode helps you move from your current tools to QuickAccounts with a
-          practical setup for your agreed workflow.
+          Dotcode Solutions helps you move from your current tools to
+          QuickAccounts with a practical setup for your agreed workflow.
         </p>
       </div>
       <div>

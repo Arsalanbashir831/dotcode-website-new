@@ -10,6 +10,8 @@ export const siteEntityGraph = {
       "@type": "Organization",
       "@id": ORGANIZATION_ID,
       name: "Dotcode Solutions",
+      legalName: "Dotcode Solutions",
+      alternateName: "Dotcode",
       url: `${SITE_URL}/`,
       logo: {
         "@type": "ImageObject",
@@ -23,7 +25,7 @@ export const siteEntityGraph = {
       },
       contactPoint: {
         "@type": "ContactPoint",
-        telephone: "+923071257828",
+        telephone: "+923035555992",
         contactType: "sales",
         availableLanguage: "English",
       },
@@ -38,7 +40,7 @@ export const siteEntityGraph = {
       "@id": WEBSITE_ID,
       url: `${SITE_URL}/`,
       name: "Dotcode Solutions",
-      alternateName: "dotcodesolutions.com",
+      alternateName: ["Dotcode", "dotcodesolutions.com"],
       publisher: { "@id": ORGANIZATION_ID },
       inLanguage: "en",
     },

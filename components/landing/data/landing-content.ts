@@ -263,7 +263,7 @@ export const partnerOptions = [
     title: "Referral Partner",
     rate: "3–5%",
     description:
-      "Introduce a business to Dotcode. We handle the demo, sale, setup and customer support.",
+      "Introduce a business to Dotcode Solutions. We handle the demo, sale, setup and customer support.",
   },
   {
     title: "Certified Reseller",
@@ -302,11 +302,11 @@ export const faqItems = [
   {
     question: "Are setup, data migration and training included?",
     answer:
-      "Yes. Dotcode includes standard setup, supported data migration and team training.",
+      "Yes. Dotcode Solutions includes standard setup, supported data migration and team training.",
   },
   {
     question: "Can QuickAccounts be customized?",
     answer:
-      "Small customizations may be possible. Dotcode confirms scope and cost before work begins.",
+      "Small customizations may be possible. Dotcode Solutions confirms scope and cost before work begins.",
   },
 ];

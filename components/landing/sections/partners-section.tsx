@@ -6,7 +6,7 @@ export const PartnersSection = () => (
   <section className="qa-section bg-[#F4F1ED]" id="partners">
     <div className="qa-container">
       <SectionHeading
-        eyebrow="Partner with Dotcode"
+        eyebrow="Partner with Dotcode Solutions"
         title="Give your clients a practical software option."
         description="Recommend or resell QuickAccounts to wholesalers and merchandise businesses."
       />

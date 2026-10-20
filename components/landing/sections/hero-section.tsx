@@ -38,8 +38,8 @@ export const HeroSection = () => {
         </h1>
         <p className="qa-hero-copy">
           Keep stock, purchases, customer accounts, cash and ledgers in one
-          straightforward wholesale business system. Dotcode sets it up, helps
-          migrate supported records and trains your team.
+          straightforward wholesale business system. Dotcode Solutions sets it
+          up, helps migrate supported records and trains your team.
         </p>
         <div className="qa-hero-actions">
           <WhatsAppButton href={WHATSAPP_DEMO_URL} size="lg" />
