@@ -6,7 +6,7 @@ const contentSecurityPolicy = [
   "object-src 'none'",
   "frame-ancestors 'none'",
   "form-action 'self'",
-  "script-src 'self' 'unsafe-inline' https://www.youtube.com",
+  `script-src 'self' 'unsafe-inline'${process.env.NODE_ENV === "development" ? " 'unsafe-eval'" : ""} https://www.youtube.com`,
   "style-src 'self' 'unsafe-inline'",
   "img-src 'self' data: blob: https://img.youtube.com",
   "font-src 'self' data:",

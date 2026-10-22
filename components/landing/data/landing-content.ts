@@ -4,6 +4,7 @@ import {
   ClipboardList,
   Database,
   GraduationCap,
+  MonitorSmartphone,
   PackageCheck,
   ShoppingBag,
   Store,
@@ -17,7 +18,7 @@ export type FeatureItem = {
   icon: LucideIcon;
   title: string;
   description: string;
-  graphic: "locations" | "stock" | "trading" | "serials" | "accounts";
+  graphic: "locations" | "stock" | "trading" | "pos" | "serials" | "accounts";
   href: string;
 };
 
@@ -69,6 +70,14 @@ export const features: FeatureItem[] = [
       "Record buying and selling activity in a connected workflow, keeping transaction history alongside your inventory records.",
     graphic: "trading",
     href: "/solutions/wholesale-inventory",
+  },
+  {
+    icon: MonitorSmartphone,
+    title: "POS system integration",
+    description:
+      "Connect counter sales from your POS system so every bill updates stock, serial records, and customer accounts automatically.",
+    graphic: "pos",
+    href: "/features/pos-system-integration",
   },
   {
     icon: PackageCheck,

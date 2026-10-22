@@ -13,6 +13,7 @@
 - [Warranty management](https://dotcodesolutions.com/features/warranty-management): Warranty claims, RMAs, returns, and replacements
 - [Multi-warehouse inventory](https://dotcodesolutions.com/features/multi-warehouse-inventory): Stock visibility and transfers across locations
 - [Business accounting](https://dotcodesolutions.com/features/business-accounting): Customer, supplier, cash, and ledger records
+- [POS system integration](https://dotcodesolutions.com/features/pos-system-integration): Counter sales synced with stock, serials, and accounts
 
 ## Guides
 - [Warranty claim management](https://dotcodesolutions.com/guides/warranty-claim-management)

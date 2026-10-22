@@ -70,6 +70,14 @@ const evidenceByPath: Record<string, {
     alt: "QuickAccounts RMA screen showing serial verification, warranty status and claim stages",
     caption: "Demo screen: serial and invoice verification within an RMA case.",
   },
+  "/features/pos-system-integration": {
+    title: "Every counter sale reflected in one system.",
+    body: "A POS bill captures the products, quantities, serials, customer and payment at the counter. Once synced, the same sale updates stock, serial history and the customer account, so counter and office staff work from the same records.",
+    steps: [["Bill", "Select or scan products and record payment at the counter."], ["Sync", "Send the bill to your central stock and accounts automatically."], ["Review", "See updated quantities, serials and balances in the dashboard."]],
+    image: "/assets/hero-section-image.png", imageWidth: 1672, imageHeight: 941,
+    alt: "QuickAccounts dashboard showing sales totals and recent counter sales",
+    caption: "Demo screen: sales totals and recent counter sales reflected in the central dashboard.",
+  },
   "/industries/electronics-distributors": {
     title: "Serialized electronics remain traceable after the sale.",
     body: "Electronics teams can follow an individual unit through receipt, location transfer, sale and warranty return. The activity reference, customer or supplier, location and serial stay visible in one chronology for faster service checks.",
@@ -193,6 +201,7 @@ export function SeoLandingPage({
               <Link href="/features/warranty-management">Warranty and RMA management</Link>
               <Link href="/features/multi-warehouse-inventory">Multi-warehouse inventory</Link>
               <Link href="/features/business-accounting">Business accounting</Link>
+              <Link href="/features/pos-system-integration">POS system integration</Link>
             </div>
           </nav>
           <section className="seo-cta">

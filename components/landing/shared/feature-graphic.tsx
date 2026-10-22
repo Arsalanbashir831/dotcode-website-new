@@ -5,7 +5,9 @@ import {
   ClipboardCheck,
   Headphones,
   Laptop,
+  MonitorSmartphone,
   Package,
+  ReceiptText,
   ScanLine,
   ShieldCheck,
   ShoppingBag,
@@ -22,6 +24,8 @@ const descriptions = {
     "Example stock overview showing 48 laptops, 120 accessories and 36 components available.",
   trading:
     "A supplier purchase adds goods to your stock. A customer sale records goods leaving stock.",
+  pos:
+    "A POS counter sale syncs to your central stock and updates the customer account.",
   serials:
     "Look up a product serial, check its warranty and record a return or replacement claim.",
   accounts:
@@ -139,6 +143,56 @@ function Trading() {
   );
 }
 
+function Pos() {
+  return (
+    <div className="qa-fg-trading">
+      <div className="qa-fg-trade-route">
+        <div>
+          <span className="qa-fg-icon">
+            <MonitorSmartphone />
+          </span>
+          <strong>POS counter</strong>
+        </div>
+        <ArrowRight className="qa-fg-arrow" />
+        <div>
+          <span className="qa-fg-icon qa-fg-icon-primary">
+            <Boxes />
+          </span>
+          <strong>Your stock</strong>
+        </div>
+        <ArrowRight className="qa-fg-arrow" />
+        <div>
+          <span className="qa-fg-icon">
+            <ReceiptText />
+          </span>
+          <strong>Accounts</strong>
+        </div>
+      </div>
+      <div className="qa-fg-receipts">
+        <div>
+          <span>01 / POS BILL</span>
+          <strong>Sale at counter</strong>
+          <small>
+            <Check />
+            Bill synced
+          </small>
+        </div>
+        <div>
+          <span>02 / UPDATE</span>
+          <strong>Stock and ledger</strong>
+          <small>
+            <Check />
+            Updated automatically
+          </small>
+        </div>
+      </div>
+      <p className="qa-fg-caption">
+        Every counter sale, reflected everywhere.
+      </p>
+    </div>
+  );
+}
+
 function Serials() {
   return (
     <div className="qa-fg-serials">
@@ -196,6 +250,7 @@ const graphics = {
   locations: Locations,
   stock: Stock,
   trading: Trading,
+  pos: Pos,
   serials: Serials,
   accounts: Accounts,
 };

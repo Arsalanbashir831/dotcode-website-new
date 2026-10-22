@@ -19,6 +19,7 @@ const features = [
   ["RMA replacement tracking", "/features/rma-replacement-tracking", "Keep returned and replacement units connected to the original sale."],
   ["Multi-warehouse inventory", "/features/multi-warehouse-inventory", "Review stock and movements across warehouses, branches and outlets."],
   ["Business accounting", "/features/business-accounting", "Keep purchases, sales, cash, customer accounts and ledgers beside stock records."],
+  ["POS system integration", "/features/pos-system-integration", "Sync counter sales with stock, serial numbers, customer accounts and ledgers."],
 ] as const;
 
 export default function FeaturesPage() {

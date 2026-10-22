@@ -15,6 +15,7 @@ const menus = {
     { title: "Serial number tracking", href: "/features/serial-number-tracking", description: "Trace individual products from receiving to invoice lookup." },
     { title: "Warranty and RMA", href: "/features/warranty-management", description: "Connect warranty checks, returns and replacements to sales records." },
     { title: "Business accounting", href: "/features/business-accounting", description: "Keep cash, customer accounts and ledgers alongside stock." },
+    { title: "POS system integration", href: "/features/pos-system-integration", description: "Sync counter sales with stock, serials and customer accounts." },
   ],
   Industries: [
     { title: "Electronics distributors", href: "/industries/electronics-distributors", description: "Serial traceability and after-sales workflows for electronics trade." },

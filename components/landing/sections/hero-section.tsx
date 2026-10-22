@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { Play } from "lucide-react";
 import { RotatingWords } from "@/components/landing/shared/rotating-words";
 import { DEMO_APPLICATION_URL, WHATSAPP_DEMO_URL } from "@/lib/contact";
 import { WhatsAppButton } from "@/components/ui/whatsapp-button";
@@ -60,7 +61,7 @@ export const HeroSection = () => {
             priority
           />
           <span className="qa-hero-video-overlay" aria-hidden="true">
-            <span className="qa-hero-video-play-icon">▶</span>
+            <span className="qa-hero-video-play-icon"><Play aria-hidden="true" /></span>
             <span>Watch with sound</span>
           </span>
         </button>
