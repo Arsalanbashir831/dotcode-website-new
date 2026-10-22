@@ -217,6 +217,7 @@ export function SeoLandingPage({
       </article>
       <footer className="qa-footer"><div className="qa-container qa-footer-bottom">
         <p>© {new Date().getFullYear()} Dotcode Solutions</p>
+        <Link href="/company">Our company</Link>
         <Link href="/">QuickAccounts home</Link>
         <a href="mailto:info@dotcodesolutions.com">info@dotcodesolutions.com</a>
       </div></footer>

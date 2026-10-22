@@ -22,6 +22,7 @@ const industryLinks = [
 ];
 
 const companyLinks = [
+  ["Our company", "/company"],
   ["Partner program", "/#partners"],
   ["How it works", "/#process"],
   ["Contact Us", WHATSAPP_CONTACT_URL],
@@ -75,7 +76,7 @@ export const SiteFooter = () => (
       <div className="qa-footer-contact">
         <p>Contact</p>
         <span>Email</span>
-        <a href="mailto:arsalanbashir831@gmail.com">hell@dotcodesolutions.com</a>
+        <a href="mailto:info@dotcodesolutions.com">info@dotcodesolutions.com</a>
         <span>WhatsApp</span>
         <a href={WHATSAPP_CONTACT_URL} target="_blank" rel="noopener noreferrer">+92 303 555 5992</a>
         <span>Wholesale accounting software</span>

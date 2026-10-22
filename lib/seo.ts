@@ -12,6 +12,15 @@ export const siteEntityGraph = {
       name: "Dotcode Solutions",
       legalName: "Dotcode Solutions",
       alternateName: "Dotcode",
+      parentOrganization: {
+        "@type": "Organization",
+        name: "Lordevs LLC",
+        address: {
+          "@type": "PostalAddress",
+          addressRegion: "New Mexico",
+          addressCountry: "US",
+        },
+      },
       url: `${SITE_URL}/`,
       logo: {
         "@type": "ImageObject",
@@ -99,7 +108,7 @@ export function pageSchema({
   path: string;
   name: string;
   description: string;
-  type?: "WebPage" | "CollectionPage" | "BlogPosting";
+  type?: "WebPage" | "CollectionPage" | "BlogPosting" | "AboutPage";
   datePublished?: string;
   dateModified?: string;
 }) {

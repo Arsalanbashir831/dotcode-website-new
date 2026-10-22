@@ -466,6 +466,96 @@ body {
   .qa-demo-evidence-panel > img { min-height: 240px; max-height: 300px; }
 }
 
+/* Company page */
+.qa-container.company-content {
+  width: min(1500px, calc(100% - 48px));
+  max-width: 1500px;
+  padding: 4.5rem 0 5rem;
+}
+.company-overview {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+  gap: clamp(2rem, 4vw, 5rem);
+  align-items: start;
+  padding-bottom: 4.5rem;
+  border-bottom: 1px solid #e8e6df;
+}
+.company-overview h2,
+.company-section-heading h2,
+.company-certificate h2,
+.company-cta h2 {
+  margin: 0 0 1.1rem;
+  color: #171717;
+  font-size: clamp(2rem, 3.2vw, 3rem);
+  font-weight: 700;
+  line-height: 1.06;
+  letter-spacing: -0.05em;
+  text-wrap: balance;
+}
+.company-overview p:not(.qa-eyebrow),
+.company-certificate p:not(.qa-eyebrow),
+.company-cta p:not(.qa-eyebrow) {
+  max-width: 780px;
+  margin: 0 0 1rem;
+  color: #5e5b54;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+.company-links { display: flex; flex-wrap: wrap; gap: 1rem 1.75rem; margin-top: 1.6rem; }
+.company-links a { display: inline-flex; align-items: center; gap: .45rem; color: #9f3210; font-weight: 750; text-decoration: underline; text-underline-offset: 4px; }
+.company-links svg { width: 1rem; height: 1rem; }
+.company-facts { margin: 0; padding: 1.75rem; border: 1px solid #e3ded8; border-radius: 1.25rem; background: #f7f5f1; }
+.company-facts div + div { margin-top: 1.1rem; padding-top: 1.1rem; border-top: 1px solid #e3ded8; }
+.company-facts dt { color: #8a8078; font-size: .72rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.company-facts dd { margin: .35rem 0 0; color: #171717; font-size: 1.05rem; font-weight: 700; line-height: 1.45; }
+.company-branches { padding: 4.5rem 0; border-bottom: 1px solid #e8e6df; }
+.company-section-heading { max-width: 900px; margin-bottom: 2.5rem; }
+.company-branch-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
+.company-branch { position: relative; padding: 2.25rem; border: 1px solid #e3ded8; border-radius: 1.5rem; background: #fff; }
+.company-branch-tag { display: inline-flex; padding: .45rem .8rem; border: 1px solid #ffd9c7; border-radius: 999px; color: #b33a00; background: #fff2eb; font-size: .72rem; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
+.company-branch-icon { display: grid; width: 52px; height: 52px; place-items: center; margin: 1.4rem 0 1.1rem; border-radius: 14px; color: #c43d10; background: #fff0e9; }
+.company-branch-icon svg { width: 24px; height: 24px; }
+.company-branch h3 { margin: 0 0 .4rem; color: #171717; font-size: 1.65rem; line-height: 1.2; letter-spacing: -.035em; }
+.company-branch-location { display: flex; align-items: center; gap: .4rem; margin: 0 0 1.2rem !important; color: #9f3210 !important; font-size: .92rem !important; font-weight: 750; }
+.company-branch-location svg { width: 1rem; height: 1rem; flex: 0 0 auto; }
+.company-branch > p { margin: 0; color: #5e5b54; font-size: 1rem; line-height: 1.75; }
+.company-branch ul { margin: 1.4rem 0 0; padding: 1.2rem 0 0; border-top: 1px solid #ece8e2; list-style: none; }
+.company-branch li { position: relative; padding-left: 1.35rem; color: #4a4841; font-size: .98rem; line-height: 1.7; }
+.company-branch li + li { margin-top: .45rem; }
+.company-branch li::before { content: ""; position: absolute; left: 0; top: .62em; width: 6px; height: 6px; border-radius: 50%; background: #f45a21; }
+.company-certificate { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(2rem, 4vw, 4rem); align-items: center; margin-top: 4.5rem; padding: clamp(2rem, 4vw, 3.5rem); border-radius: 1.5rem; background: #171717; color: #fff; }
+.company-certificate .qa-eyebrow { color: #ff986f; }
+.company-certificate h2 { color: #fff; }
+.company-certificate p:not(.qa-eyebrow) { color: #c5c0bb; }
+.company-certificate .company-certificate-meta { margin: 1.4rem 0 0; color: #8f8a84; font-size: .84rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.company-documents { display: grid; gap: .75rem; }
+.company-document { display: flex; align-items: center; gap: 1rem; padding: 1rem 1.15rem; border: 1px solid rgba(255, 255, 255, .14); border-radius: 1rem; color: #fff; background: rgba(255, 255, 255, .04); text-decoration: none; transition: background-color .2s ease, border-color .2s ease, transform .2s ease; }
+.company-document:hover { border-color: rgba(244, 90, 33, .6); background: rgba(244, 90, 33, .1); transform: translateY(-1px); }
+.company-document:focus-visible { outline: 3px solid rgba(255, 255, 255, .55); outline-offset: 3px; }
+.company-document-icon { display: grid; width: 44px; height: 44px; flex: 0 0 auto; place-items: center; border-radius: 12px; color: #ff986f; background: rgba(244, 90, 33, .16); }
+.company-document-icon svg { width: 20px; height: 20px; }
+.company-document-copy { display: flex; min-width: 0; flex: 1; flex-direction: column; gap: .2rem; }
+.company-document-copy strong { font-size: .98rem; line-height: 1.35; }
+.company-document-copy small { color: #aaa39c; font-size: .8rem; line-height: 1.45; }
+.company-document > svg { width: 20px; height: 20px; flex: 0 0 auto; color: #ff986f; }
+.company-cta { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2rem; align-items: center; margin-top: 2rem; padding: 2.5rem; border-radius: 1.5rem; background: #f5f4ef; }
+.company-cta h2 { font-size: clamp(1.8rem, 2.6vw, 2.4rem); }
+.company-cta p:not(.qa-eyebrow) { margin-bottom: 0; }
+.company-cta-actions { display: flex; flex-direction: column; align-items: flex-start; gap: 1rem; }
+.company-cta-actions > a:last-child { color: #9f3210; font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
+@media (max-width: 960px) {
+  .company-overview, .company-certificate, .company-cta { grid-template-columns: 1fr; }
+  .company-branch-grid { grid-template-columns: 1fr; }
+  .company-cta-actions { flex-direction: row; align-items: center; flex-wrap: wrap; }
+}
+@media (max-width: 600px) {
+  .company-content { padding: 3rem 0 3.5rem; }
+  .company-branch { padding: 1.6rem; }
+  .company-certificate, .company-cta { padding: 1.75rem; }
+  .company-document { padding: .9rem; }
+  .company-branch-tag { font-size: .68rem; }
+}
+
 /* QuickAccounts landing page — adapted from the supplied static source. */
 .qa-site {
   background: #fbfaf8;

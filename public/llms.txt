@@ -20,6 +20,9 @@
 - [Serial-number inventory tracking](https://dotcodesolutions.com/guides/serial-number-inventory-tracking)
 - [Excel-to-ERP migration](https://dotcodesolutions.com/guides/excel-to-erp-migration)
 
+## Company
+- [Our company](https://dotcodesolutions.com/company): Lordevs LLC (parent company, New Mexico, USA) and Dotcode (SMC-Private) Limited (Pakistan), with downloadable formation and incorporation documents
+
 ## Official identity
 - [Dotcode on LinkedIn](https://pk.linkedin.com/company/dotcode-solutions)
 - [Contact Dotcode Solutions](https://dotcodesolutions.com/#contact)

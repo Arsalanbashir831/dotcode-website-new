@@ -34,6 +34,7 @@ const resourceRoutes = [
 
 const routes = [
   "/",
+  "/company",
   "/pricing",
   "/implementation",
   "/features",

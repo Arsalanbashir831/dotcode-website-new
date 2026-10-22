@@ -63,6 +63,7 @@ export function MarketingHeader() {
         </Link>
         <nav id="main-navigation" className={`qa-nav-links qa-primary-nav ${mobileOpen ? "is-open" : ""}`} aria-label="Main navigation">
           <Link href="/" onClick={closeMenus}>Home</Link>
+          <Link href="/company" onClick={closeMenus}>Our Company</Link>
           {(Object.keys(menus) as MenuName[]).map((menuName) => (
             <div
               className="qa-nav-menu"
@@ -104,8 +105,8 @@ export function MarketingHeader() {
               </div>
             </div>
           ))}
-          <Link href="/custom-erp-development" onClick={closeMenus}>Custom ERP Development</Link>
           <Link href="/#process" onClick={closeMenus}>How it works</Link>
+          <Link href="/custom-erp-development" onClick={closeMenus}>Custom ERP Development</Link>
         </nav>
         <div className="qa-nav-actions">
           <WhatsAppButton href={WHATSAPP_DEMO_URL} className="qa-nav-demo" />
