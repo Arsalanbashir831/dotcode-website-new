@@ -125,13 +125,11 @@ export function SeoLandingPage({
   faqs,
 }: SeoLandingPageProps) {
   const section = path.split("/").filter(Boolean)[0];
-  const sectionNames: Record<string, string> = {
-    features: "Features",
-    guides: "Guides",
-    industries: "Industries",
-    regions: "Regions",
-    solutions: "Solutions",
+  const sectionHubs: Record<string, { label: string; href: string }> = {
+    features: { label: "Features", href: "/features" },
+    industries: { label: "Industries", href: "/industries" },
   };
+  const hub = sectionHubs[section];
   const evidence = evidenceByPath[path] ?? {
     title: "A practical record trail from stock to service.",
     body: "A distributor can receive a serialized product, sell it against a customer account, find the original invoice later, and review a warranty or RMA request without rebuilding the history from separate spreadsheets.",
@@ -150,7 +148,7 @@ export function SeoLandingPage({
           <div className="qa-container">
             <nav className="seo-breadcrumbs" aria-label="Breadcrumb">
               <Link href="/">Home</Link>
-              {sectionNames[section] ? <><span aria-hidden="true">/</span><Link href={`/${section}`}>{sectionNames[section]}</Link></> : null}
+              {hub ? <><span aria-hidden="true">/</span><Link href={hub.href}>{hub.label}</Link></> : null}
               <span aria-hidden="true">/</span><span aria-current="page">{title}</span>
             </nav>
             <p className="qa-eyebrow">{eyebrow}</p>

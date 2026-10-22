@@ -12,6 +12,7 @@ const commercialRoutes = [
   "/features/multi-warehouse-inventory",
   "/features/serial-number-tracking",
   "/features/warranty-management",
+  "/features/pos-system-integration",
 ];
 
 const industryRoutes = [
