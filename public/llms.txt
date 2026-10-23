@@ -15,6 +15,25 @@
 - [Business accounting](https://dotcodesolutions.com/features/business-accounting): Customer, supplier, cash, and ledger records
 - [POS system integration](https://dotcodesolutions.com/features/pos-system-integration): Counter sales synced with stock, serials, and accounts
 
+## Industries
+- [Industries overview](https://dotcodesolutions.com/industries): Workflow pages for distribution and stock-led retail trades
+- [FMCG wholesalers and distributors](https://dotcodesolutions.com/industries/fmcg-wholesalers-distributors): High-volume stock, supplier purchasing, and retailer account balances
+- [Clothing and garment retailers/wholesalers](https://dotcodesolutions.com/industries/clothing-garment-retailers-wholesalers): Garment catalogue, shop and warehouse stock, retail and trade sales
+- [Cosmetics and beauty product distributors](https://dotcodesolutions.com/industries/cosmetics-beauty-distributors): Broad catalogue, salon and retailer accounts, returns
+- [Automotive and motorcycle spare-parts dealers](https://dotcodesolutions.com/industries/automotive-motorcycle-spare-parts): Part lookup, counter sales, workshop accounts
+- [Grocery stores and supermarkets](https://dotcodesolutions.com/industries/grocery-stores-supermarkets): Counter sales synced with stock and purchasing
+- [Building materials, tiles, and sanitary ware dealers](https://dotcodesolutions.com/industries/building-materials-tiles-sanitary-ware): Bulk stock, supplier purchasing, contractor accounts
+- [Pharmaceutical and medical supply distributors](https://dotcodesolutions.com/industries/pharmaceutical-medical-supply): Organized purchasing, stock, invoicing, and account records
+- [Footwear and leather goods retailers](https://dotcodesolutions.com/industries/footwear-leather-goods): Shop and warehouse stock with invoice-linked exchanges
+- [Furniture and home furnishing businesses](https://dotcodesolutions.com/industries/furniture-home-furnishing): Showroom and warehouse stock, high-value sales history
+- [Food and restaurant supply wholesalers](https://dotcodesolutions.com/industries/food-restaurant-supply): Repeat wholesale orders and customer balances
+- [Stationery and school supply distributors](https://dotcodesolutions.com/industries/stationery-school-supply): Seasonal buying and institutional accounts
+- [Agricultural supply distributors](https://dotcodesolutions.com/industries/agricultural-supply): Seasonal stock and dealer accounts across warehouses
+- [Electronics distributors](https://dotcodesolutions.com/industries/electronics-distributors): Serial traceability and after-sales workflows
+- [Computer hardware wholesalers](https://dotcodesolutions.com/industries/computer-hardware-wholesalers): Hardware stock, sales records, and warranty inquiries
+- [Multi-outlet retailers](https://dotcodesolutions.com/industries/multi-outlet-retailers): Product records and accounts across retail branches
+- [General merchandise wholesalers](https://dotcodesolutions.com/industries/merchandise-wholesalers): Purchasing, stock, and customer ledgers in one workflow
+
 ## Guides
 - [Warranty claim management](https://dotcodesolutions.com/guides/warranty-claim-management)
 - [Serial-number inventory tracking](https://dotcodesolutions.com/guides/serial-number-inventory-tracking)

@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 const BASE_URL = "https://dotcodesolutions.com";
-const LAST_CONTENT_UPDATE = new Date("2026-10-17T00:00:00.000Z");
+const LAST_CONTENT_UPDATE = new Date("2026-10-23T00:00:00.000Z");
 
 // Keep published, indexable routes grouped by search intent. Add each new page
 // here when it is published so it is included in the next sitemap response.
@@ -16,6 +16,18 @@ const commercialRoutes = [
 ];
 
 const industryRoutes = [
+  "/industries/fmcg-wholesalers-distributors",
+  "/industries/clothing-garment-retailers-wholesalers",
+  "/industries/cosmetics-beauty-distributors",
+  "/industries/automotive-motorcycle-spare-parts",
+  "/industries/grocery-stores-supermarkets",
+  "/industries/building-materials-tiles-sanitary-ware",
+  "/industries/pharmaceutical-medical-supply",
+  "/industries/footwear-leather-goods",
+  "/industries/furniture-home-furnishing",
+  "/industries/food-restaurant-supply",
+  "/industries/stationery-school-supply",
+  "/industries/agricultural-supply",
   "/industries/electronics-distributors",
   "/industries/computer-hardware-wholesalers",
   "/industries/multi-outlet-retailers",

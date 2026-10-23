@@ -18,6 +18,18 @@ const menus = {
     { title: "POS system integration", href: "/features/pos-system-integration", description: "Sync counter sales with stock, serials and customer accounts." },
   ],
   Industries: [
+    { title: "FMCG wholesalers & distributors", href: "/industries/fmcg-wholesalers-distributors", description: "High-volume stock, supplier purchasing and retailer accounts." },
+    { title: "Clothing & garment trade", href: "/industries/clothing-garment-retailers-wholesalers", description: "Retail and wholesale stock across shops and warehouses." },
+    { title: "Cosmetics & beauty distributors", href: "/industries/cosmetics-beauty-distributors", description: "Large catalogues, salon accounts and return records." },
+    { title: "Automotive & motorcycle parts", href: "/industries/automotive-motorcycle-spare-parts", description: "Part lookup, counter sales and workshop accounts." },
+    { title: "Grocery stores & supermarkets", href: "/industries/grocery-stores-supermarkets", description: "Counter sales synced with stock and replenishment." },
+    { title: "Building materials & sanitary ware", href: "/industries/building-materials-tiles-sanitary-ware", description: "Bulk stock, site orders and contractor accounts." },
+    { title: "Pharmaceutical & medical supply", href: "/industries/pharmaceutical-medical-supply", description: "Organized purchasing, sales and account records." },
+    { title: "Footwear & leather goods", href: "/industries/footwear-leather-goods", description: "Retail and trade stock with invoice-linked exchanges." },
+    { title: "Furniture & home furnishing", href: "/industries/furniture-home-furnishing", description: "Showroom and warehouse stock for high-value items." },
+    { title: "Food & restaurant supply", href: "/industries/food-restaurant-supply", description: "Repeat wholesale orders and customer account balances." },
+    { title: "Stationery & school supply", href: "/industries/stationery-school-supply", description: "Seasonal buying and institutional customer accounts." },
+    { title: "Agricultural supply", href: "/industries/agricultural-supply", description: "Seasonal stock and dealer accounts across regions." },
     { title: "Electronics distributors", href: "/industries/electronics-distributors", description: "Serial traceability and after-sales workflows for electronics trade." },
     { title: "Computer hardware wholesalers", href: "/industries/computer-hardware-wholesalers", description: "Manage hardware stock, sales records and warranty inquiries." },
     { title: "Multi-outlet retailers", href: "/industries/multi-outlet-retailers", description: "Coordinate product records and accounts across retail branches." },
@@ -84,7 +96,7 @@ export function MarketingHeader() {
               >
                 {menuName}<ChevronDown aria-hidden="true" />
               </button>
-              <div id={`mega-${menuName.toLowerCase()}`} className={`qa-mega-menu ${activeMenu === menuName ? "is-open" : ""}`}>
+              <div id={`mega-${menuName.toLowerCase()}`} className={`qa-mega-menu ${menuName === "Industries" ? "mega-wide" : ""} ${activeMenu === menuName ? "is-open" : ""}`}>
                 <div className="qa-mega-inner">
                   <div className="qa-mega-intro">
                     <p className="qa-eyebrow">QuickAccounts {menuName.toLowerCase()}</p>
