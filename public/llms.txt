@@ -1,43 +1,36 @@
 # QuickAccounts by Dotcode Solutions
-> Wholesale inventory, serial-number, warranty, RMA, and accounting software for distributors and stock-led businesses.
+> Easy accounting software for consulting and service firms: client invoicing, retainers, expenses, project profitability and reports. One-time license, setup and training included.
 
 ## Product
-- [QuickAccounts overview](https://dotcodesolutions.com/): Product capabilities, company information, pricing summary, and implementation support
-- [Pricing](https://dotcodesolutions.com/pricing): Offline and online lifetime-license options and hosting costs
-- [Implementation](https://dotcodesolutions.com/implementation): Setup, supported migration, and team training
-- [Custom ERP development](https://dotcodesolutions.com/custom-erp-development): Custom accounting, sales, purchasing, team, outlet, and workflow software
+- [QuickAccounts overview](https://dotcodesolutions.com/): What QuickAccounts does, who it is for, and how to get started
+- [Pricing](https://dotcodesolutions.com/pricing): Online $850 one-time + $40/month hosting (unlimited users); Offline $1,200 one-time (1 user)
+- [Setup, data transfer and training](https://dotcodesolutions.com/implementation): How we set you up and train your team
+- [Custom software](https://dotcodesolutions.com/custom-software): Custom business software built around your processes
 
-## Core workflows
-- [Wholesale inventory](https://dotcodesolutions.com/solutions/wholesale-inventory): Stock, purchasing, sales, customer accounts, cash, and ledgers
-- [Serial-number tracking](https://dotcodesolutions.com/features/serial-number-tracking): Unit-level traceability and invoice lookup
-- [Warranty management](https://dotcodesolutions.com/features/warranty-management): Warranty claims, RMAs, returns, and replacements
-- [Multi-warehouse inventory](https://dotcodesolutions.com/features/multi-warehouse-inventory): Stock visibility and transfers across locations
-- [Business accounting](https://dotcodesolutions.com/features/business-accounting): Customer, supplier, cash, and ledger records
-- [POS system integration](https://dotcodesolutions.com/features/pos-system-integration): Counter sales synced with stock, serials, and accounts
+## Features
+- [All features](https://dotcodesolutions.com/features)
+- [Client invoicing](https://dotcodesolutions.com/features/client-invoicing): Branded invoices with your terms and payment details
+- [Time and fee billing](https://dotcodesolutions.com/features/time-and-fee-billing): Hourly, fixed-fee, milestone and retainer billing
+- [Recurring billing](https://dotcodesolutions.com/features/recurring-billing): Retainers, support contracts and subscriptions that invoice themselves
+- [Client balances](https://dotcodesolutions.com/features/client-balances): Running client balances, overdue alerts and aging
+- [Expense tracking](https://dotcodesolutions.com/features/expense-tracking): Expenses by category and by project
+- [Project profitability](https://dotcodesolutions.com/features/project-profitability): Revenue against cost for each client, matter or project
+- [Cash and bank](https://dotcodesolutions.com/features/cash-and-bank): Every bank account and cash balance in one view
+- [Vendor bills](https://dotcodesolutions.com/features/vendor-bills): Bills from contractors, landlords and software vendors
+- [Reports](https://dotcodesolutions.com/features/reports): Profit and loss, balance sheet, cash flow and aging
+- [Multi-office](https://dotcodesolutions.com/features/multi-office): Per-office and firm-wide revenue, costs and cash
 
-## Industries
-- [Industries overview](https://dotcodesolutions.com/industries): Workflow pages for distribution and stock-led retail trades
-- [FMCG wholesalers and distributors](https://dotcodesolutions.com/industries/fmcg-wholesalers-distributors): High-volume stock, supplier purchasing, and retailer account balances
-- [Clothing and garment retailers/wholesalers](https://dotcodesolutions.com/industries/clothing-garment-retailers-wholesalers): Garment catalogue, shop and warehouse stock, retail and trade sales
-- [Cosmetics and beauty product distributors](https://dotcodesolutions.com/industries/cosmetics-beauty-distributors): Broad catalogue, salon and retailer accounts, returns
-- [Automotive and motorcycle spare-parts dealers](https://dotcodesolutions.com/industries/automotive-motorcycle-spare-parts): Part lookup, counter sales, workshop accounts
-- [Grocery stores and supermarkets](https://dotcodesolutions.com/industries/grocery-stores-supermarkets): Counter sales synced with stock and purchasing
-- [Building materials, tiles, and sanitary ware dealers](https://dotcodesolutions.com/industries/building-materials-tiles-sanitary-ware): Bulk stock, supplier purchasing, contractor accounts
-- [Pharmaceutical and medical supply distributors](https://dotcodesolutions.com/industries/pharmaceutical-medical-supply): Organized purchasing, stock, invoicing, and account records
-- [Footwear and leather goods retailers](https://dotcodesolutions.com/industries/footwear-leather-goods): Shop and warehouse stock with invoice-linked exchanges
-- [Furniture and home furnishing businesses](https://dotcodesolutions.com/industries/furniture-home-furnishing): Showroom and warehouse stock, high-value sales history
-- [Food and restaurant supply wholesalers](https://dotcodesolutions.com/industries/food-restaurant-supply): Repeat wholesale orders and customer balances
-- [Stationery and school supply distributors](https://dotcodesolutions.com/industries/stationery-school-supply): Seasonal buying and institutional accounts
-- [Agricultural supply distributors](https://dotcodesolutions.com/industries/agricultural-supply): Seasonal stock and dealer accounts across warehouses
-- [Electronics distributors](https://dotcodesolutions.com/industries/electronics-distributors): Serial traceability and after-sales workflows
-- [Computer hardware wholesalers](https://dotcodesolutions.com/industries/computer-hardware-wholesalers): Hardware stock, sales records, and warranty inquiries
-- [Multi-outlet retailers](https://dotcodesolutions.com/industries/multi-outlet-retailers): Product records and accounts across retail branches
-- [General merchandise wholesalers](https://dotcodesolutions.com/industries/merchandise-wholesalers): Purchasing, stock, and customer ledgers in one workflow
-
-## Guides
-- [Warranty claim management](https://dotcodesolutions.com/guides/warranty-claim-management)
-- [Serial-number inventory tracking](https://dotcodesolutions.com/guides/serial-number-inventory-tracking)
-- [Excel-to-ERP migration](https://dotcodesolutions.com/guides/excel-to-erp-migration)
+## Who it's for
+- [All industries](https://dotcodesolutions.com/who-its-for): Accounting for firms that sell expertise
+- [Consulting firms](https://dotcodesolutions.com/who-its-for/consulting-firms): Engagements, retainers and client margins
+- [Law firms](https://dotcodesolutions.com/who-its-for/law-firms): Billing by client and matter, fees and disbursements
+- [Tech and software companies](https://dotcodesolutions.com/who-its-for/tech-and-software-companies): Projects, support contracts and subscriptions
+- [IT services and managed service providers](https://dotcodesolutions.com/who-its-for/it-services-and-managed-service-providers): Recurring contracts billed automatically
+- [Marketing, design and creative agencies](https://dotcodesolutions.com/who-its-for/marketing-and-creative-agencies): Retainers, project fees and client margins
+- [Accounting, audit and tax practices](https://dotcodesolutions.com/who-its-for/accounting-audit-and-tax-practices): Engagement billing and your own firm's books
+- [Architects and engineering firms](https://dotcodesolutions.com/who-its-for/architects-and-engineering-firms): Milestone billing and project costs
+- [Recruitment and staffing agencies](https://dotcodesolutions.com/who-its-for/recruitment-and-staffing-agencies): Placement fees and contractor billing
+- [Training, coaching and education providers](https://dotcodesolutions.com/who-its-for/training-coaching-and-education-providers): Course fees in, costs out
 
 ## Company
 - [Our company](https://dotcodesolutions.com/company): Lordevs LLC (parent company, New Mexico, USA) and Dotcode (SMC-Private) Limited (Pakistan), with downloadable formation and incorporation documents

@@ -109,13 +109,12 @@ export const ProcessJourney = () => {
           <div>
             <p className="qa-process-kicker">How it works</p>
             <h2>
-              <span>From first conversation</span>
-              <span>to your team’s first day.</span>
+              <span>Up and running in</span>
+              <span>four simple steps.</span>
             </h2>
           </div>
           <p>
-            Four practical steps take you from an initial workflow review to a
-            configured system your whole team can use.
+            From a short call about how your firm bills to your first invoice.
           </p>
         </div>
         <div className="qa-process-body">

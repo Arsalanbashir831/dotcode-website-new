@@ -16,21 +16,20 @@ export const ContactSection = () => (
       <div className="qa-container">
         <div className="qa-contact-card">
           <div className="qa-contact-copy">
-            <p className="qa-contact-kicker"><span aria-hidden="true" />Ready to streamline your business?</p>
+            <p className="qa-contact-kicker"><span aria-hidden="true" />Ready for simpler books?</p>
             <h2>
-              <span>Bring all your wholesale</span>
-              <span><em>operations into one system.</em></span>
+              <span>Less time on billing and books.</span>
+              <span><em>More time with clients.</em></span>
             </h2>
             <p>
-              Manage stock, purchases, sales, customers, suppliers and accounting
-              in one simple platform. No per-user fees. Just one powerful ERP.
+              See QuickAccounts in action with a free walkthrough built around how your firm works.
             </p>
             <div className="qa-contact-actions">
               <a className="qa-contact-primary" href={DEMO_APPLICATION_URL} target="_blank" rel="noopener noreferrer">
-                Get a Demo <ArrowRight aria-hidden="true" />
+                Get a Free Demo <ArrowRight aria-hidden="true" />
               </a>
               <a className="qa-contact-secondary" href={WHATSAPP_DEMO_URL} target="_blank" rel="noopener noreferrer">
-                <CalendarDays aria-hidden="true" /> Book Free Consultation
+                <CalendarDays aria-hidden="true" /> Book a Free Consultation
               </a>
             </div>
             <p className="qa-contact-details">
@@ -42,7 +41,7 @@ export const ContactSection = () => (
             <Image
               className="qa-contact-image"
               src="/assets/cta-image.png"
-              alt="QuickAccounts dashboard showing sales, purchases, stock value and product categories"
+              alt="QuickAccounts dashboard showing sales and purchases"
               fill
               sizes="(min-width: 769px) 55vw, 100vw"
             />

@@ -32,8 +32,7 @@ export const PlatformPresenceSection = () => (
           Trusted on Fiverr and Upwork.
         </h2>
         <p>
-          A strong international track record, backed by independently rated
-          client work.
+          45+ clients served, backed by independently rated client work.
         </p>
       </div>
 

@@ -5,9 +5,9 @@ export const FeaturesSection = () => (
   <section className="qa-section bg-white" id="features">
     <div className="qa-container">
       <SectionHeading
-        eyebrow="One system for your business operations"
-        title="Manage inventory, trade and accounts in one place."
-        description="Keep stock, sales, warranties and financial records connected, across every outlet and warehouse."
+        eyebrow="Features at a glance"
+        title="Everything a service business needs to manage its money"
+        description="From the first invoice to the year-end report, without the complexity."
       />
       <FeatureStack />
     </div>

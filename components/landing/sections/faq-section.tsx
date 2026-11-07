@@ -10,8 +10,7 @@ export const FaqSection = () => (
           <span>you choose.</span>
         </h2>
         <p>
-          Learn how QuickAccounts licensing, setup and hosting work for your
-          business.
+          Plain answers about pricing, setup and how QuickAccounts works for your firm.
         </p>
       </div>
       <div>

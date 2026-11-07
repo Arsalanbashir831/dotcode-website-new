@@ -7,8 +7,8 @@ export const PartnersSection = () => (
     <div className="qa-container">
       <SectionHeading
         eyebrow="Partner with Dotcode Solutions"
-        title="Give your clients a practical software option."
-        description="Recommend or resell QuickAccounts to wholesalers and merchandise businesses."
+        title="Recommend QuickAccounts to the firms you work with."
+        description="Earn 3–5% of every license. Ideal for accountants, bookkeepers, business consultants and IT service providers."
       />
       <div className="qa-partner-grid">
         {partnerOptions.map(({ title, rate, description }) => (

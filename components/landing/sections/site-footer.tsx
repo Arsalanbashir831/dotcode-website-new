@@ -5,20 +5,21 @@ import { WHATSAPP_CONTACT_URL } from "@/lib/contact";
 const productLinks = [
   ["QuickAccounts", "/#quickaccounts"],
   ["Features", "/#features"],
-  ["Wholesale inventory", "/solutions/wholesale-inventory"],
-  ["Stock and accounts", "/features/business-accounting"],
-  ["Multi-warehouse inventory", "/features/multi-warehouse-inventory"],
-  ["Serial number tracking", "/features/serial-number-tracking"],
-  ["Warranty and RMA", "/features/warranty-management"],
-  ["Custom ERP development", "/custom-erp-development"],
+  ["Client invoicing", "/features/client-invoicing"],
+  ["Client balances", "/features/client-balances"],
+  ["Project profitability", "/features/project-profitability"],
+  ["Reports", "/features/reports"],
+  ["Pricing", "/pricing"],
+  ["Custom software", "/custom-software"],
   ["FAQs", "/#faq"],
 ];
 
 const industryLinks = [
-  ["Electronics distributors", "/industries/electronics-distributors"],
-  ["Computer hardware wholesalers", "/industries/computer-hardware-wholesalers"],
-  ["Multi-outlet retailers", "/industries/multi-outlet-retailers"],
-  ["Merchandise wholesalers", "/industries/merchandise-wholesalers"],
+  ["Consulting firms", "/who-its-for/consulting-firms"],
+  ["Law firms", "/who-its-for/law-firms"],
+  ["Tech and software companies", "/who-its-for/tech-and-software-companies"],
+  ["Marketing and creative agencies", "/who-its-for/marketing-and-creative-agencies"],
+  ["All industries", "/who-its-for"],
 ];
 
 const companyLinks = [
@@ -41,7 +42,7 @@ export const SiteFooter = () => (
         <p>
           QuickAccounts by Dotcode Solutions.
           <br />
-          Practical software, set up for the way you work.
+          Simple accounting for firms that sell expertise.
         </p>
         <span>Headquarters: Lahore, Pakistan</span>
         <span>Operations office: New Mexico, USA</span>
@@ -69,8 +70,8 @@ export const SiteFooter = () => (
           </a>
         ))}
       </nav>
-      <nav aria-label="Industries served">
-        <p>Industries</p>
+      <nav aria-label="Who it's for">
+        <p>Who it&apos;s for</p>
         {industryLinks.map(([label, href]) => <a href={href} key={href}>{label}</a>)}
       </nav>
       <div className="qa-footer-contact">
@@ -79,13 +80,13 @@ export const SiteFooter = () => (
         <a href="mailto:info@dotcodesolutions.com">info@dotcodesolutions.com</a>
         <span>WhatsApp</span>
         <a href={WHATSAPP_CONTACT_URL} target="_blank" rel="noopener noreferrer">+92 303 555 5992</a>
-        <span>Wholesale accounting software</span>
-        <span>Setup, migration and training</span>
+        <span>Accounting software for service firms</span>
+        <span>Setup, data transfer and training</span>
       </div>
     </div>
     <div className="qa-container qa-footer-bottom">
       <p>© {new Date().getFullYear()} Dotcode Solutions. All rights reserved.</p>
-      <p>QuickAccounts · Unlimited users</p>
+      <p>QuickAccounts · One-time license</p>
     </div>
   </footer>
 );

@@ -16,11 +16,11 @@ export default function NotFound() {
           <h1>Page not found</h1>
           <p className="seo-intro">
             The page may have moved or the address may be incorrect. Return to
-            the QuickAccounts homepage or explore the product guides.
+            the QuickAccounts homepage or explore the features.
           </p>
           <div className="seo-actions">
             <Link href="/">Return home</Link>
-            <Link href="/blog">Browse guides</Link>
+            <Link href="/features">Browse features</Link>
           </div>
         </div>
       </section>

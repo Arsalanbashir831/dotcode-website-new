@@ -1,25 +1,45 @@
 import type { Metadata } from "next";
 import { SeoLandingPage } from "@/components/seo/seo-landing-page";
 
+const description =
+  "Pay once, use it for life. Online from $850 + $40/month hosting, or offline for $1,200. Setup and training included.";
+
 export const metadata: Metadata = {
-  title: "Wholesale ERP Pricing",
-  description: "Compare QuickAccounts offline and online licensing for wholesale inventory, serial tracking, warranty and RMA workflows.",
+  title: "Simple, One-Time Pricing",
+  description,
   alternates: { canonical: "/pricing" },
+  openGraph: { title: "Simple, One-Time Pricing | QuickAccounts", description, url: "/pricing" },
 };
 
 export default function PricingPage() {
-  return <SeoLandingPage path="/pricing"
-    eyebrow="Simple licensing"
-    title="Choose the setup that fits your operation"
-    intro="Start with a guided demo, then choose the QuickAccounts setup that matches your team, locations and hosting needs."
-    sections={[
-      { heading: "Offline single-user license — $1,200 one time", body: "Keep the software and records on your own hardware for a single user. This option suits a business that wants local access without a recurring hosting fee." },
-      { heading: "Online unlimited-user license — $850 one time", body: "Give your team online access with unlimited users. Hosting is $40 per month. Review your locations, permissions and workflow with Dotcode before setup." },
-      { heading: "What is included", body: "Standard setup, supported data migration and team training are included. Any optional customization or migration scope should be confirmed during the demo." },
-    ]}
-    faqs={[
-      { question: "Can I see QuickAccounts before choosing a license?", answer: "Yes. Contact Dotcode to arrange a free guided demo around your inventory, serial and warranty workflow." },
-      { question: "Are there per-user fees?", answer: "The online license is described as unlimited-user access; hosting is charged separately at $40 per month." },
-    ]}
-  />;
+  return (
+    <SeoLandingPage
+      path="/pricing"
+      eyebrow="Pricing"
+      title="Simple pricing. Pay once, use it for life."
+      intro="No per-user fees, no yearly renewals. Setup, data transfer and training are always included."
+      description={description}
+      sections={[
+        {
+          heading: "Online — $850 one-time + $40/month hosting",
+          body: "Best for firms with partners, staff or remote teams.",
+          bullets: ["Unlimited users", "Secure cloud hosting", "Automatic backups", "Setup and training included"],
+        },
+        {
+          heading: "Offline — $1,200 one-time",
+          body: "Best for solo consultants and practitioners who want their data on their own computer.",
+          bullets: ["1 user", "Your data on your own hardware", "Setup and training included"],
+        },
+        {
+          heading: "What is always included",
+          body: "Setup, data transfer from Excel, QuickBooks or other software, and training for your team come with both plans. Small customizations are possible, and we agree the scope and cost with you first.",
+        },
+      ]}
+      faqs={[
+        { question: "Is there a yearly fee?", answer: "No software renewal fee on either plan. The online plan has a $40/month hosting fee." },
+        { question: "How many people can use it?", answer: "Online plan: unlimited users. Offline plan: one user." },
+        { question: "Can I see QuickAccounts before choosing a plan?", answer: "Yes. Ask for a free demo and we will walk you through it, built around how your firm bills clients." },
+      ]}
+    />
+  );
 }

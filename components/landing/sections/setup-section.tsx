@@ -6,12 +6,11 @@ export const SetupSection = () => (
       <div data-reveal>
         <p className="qa-eyebrow">Getting started</p>
         <h2>
-          <span>Software is only useful when</span>
-          <span>your team can put it to work.</span>
+          <span>Software only helps when</span>
+          <span>your team can use it.</span>
         </h2>
         <p>
-          Dotcode Solutions helps you move from your current tools to
-          QuickAccounts with a practical setup for your agreed workflow.
+          We set it up, bring over your records and train your staff, so you can start billing quickly.
         </p>
       </div>
       <div>

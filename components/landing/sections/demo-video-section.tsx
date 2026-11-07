@@ -11,7 +11,7 @@ export const DemoVideoSection = () => {
           <h2 id="demo-video-title">See QuickAccounts in action.</h2>
           <p>
             Watch a practical walkthrough of the software and see how your team
-            can manage everyday wholesale records in one place.
+            can manage invoices, retainers and reports in one place.
           </p>
         </div> */}
 
@@ -24,12 +24,12 @@ export const DemoVideoSection = () => {
           </div> */}
 
           <div className="qa-demo-video-player qa-demo-evidence-panel">
-            <Image src="/assets/feature5-ledger.png" alt="QuickAccounts ledger and stock workflow preview" width={1200} height={760} />
+            <Image src="/assets/feature5-ledger.png" alt="QuickAccounts client ledger preview" width={1200} height={760} />
             <div className="qa-demo-evidence-copy">
               <p className="qa-eyebrow">Product walkthrough</p>
-              <h2>See the records your team works with every day.</h2>
-              <p>Review stock, serials, customer accounts and warranty workflows in a guided demo built around your operation.</p>
-              <Link className="qa-button" href={WHATSAPP_DEMO_URL} target="_blank" rel="noopener noreferrer">Book a guided demo</Link>
+              <h2>See your firm&apos;s numbers in plain view.</h2>
+              <p>Review invoices, retainers, client balances and reports in a free demo built around your firm.</p>
+              <Link className="qa-button" href={WHATSAPP_DEMO_URL} target="_blank" rel="noopener noreferrer">Book a free demo</Link>
             </div>
           </div>
         </div>

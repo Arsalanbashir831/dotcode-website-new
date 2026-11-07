@@ -60,37 +60,39 @@ export const siteEntityGraph = {
       alternateName: "QuickAccounts",
       url: `${SITE_URL}/`,
       applicationCategory: "BusinessApplication",
-      applicationSubCategory: "Wholesale inventory, warranty and RMA software",
+      applicationSubCategory: "Accounting software for consulting and service firms",
       operatingSystem: "Web",
       description:
-        "Wholesale inventory, serial-number, warranty, RMA and accounting software for distributors and stock-led businesses.",
+        "Easy accounting software for consulting firms, law firms, tech companies, agencies and other service businesses: client invoicing, retainers, expenses, project profitability and reports.",
       publisher: { "@id": ORGANIZATION_ID },
       featureList: [
-        "Wholesale inventory management",
-        "Serial-number tracking",
-        "Warranty and RMA management",
-        "Multi-warehouse stock transfers",
-        "Customer and supplier accounts",
-        "Cash records and ledgers",
+        "Client invoicing",
+        "Hourly, fixed-fee, milestone and retainer billing",
+        "Recurring invoices",
+        "Client balances and aging",
+        "Expense tracking",
+        "Project and client profitability",
+        "Cash and bank accounts",
+        "Profit and loss, balance sheet and cash flow reports",
       ],
       offers: [
         {
           "@type": "Offer",
-          name: "Offline single-user lifetime license",
+          name: "Offline single-user license",
           price: "1200",
           priceCurrency: "USD",
-          category: "Lifetime software license",
+          category: "One-time software license",
           description:
-            "One-time offline license for one user with local data storage; standard setup, supported migration and team training included.",
+            "One-time offline license for one user with data on your own computer; setup, data transfer and training included.",
         },
         {
           "@type": "Offer",
-          name: "Online unlimited-user lifetime license",
+          name: "Online unlimited-user license",
           price: "850",
           priceCurrency: "USD",
-          category: "Lifetime software license",
+          category: "One-time software license",
           description:
-            "One-time online license for unlimited users; mandatory hosting is billed separately at USD 40 per month; standard setup, supported migration and team training included.",
+            "One-time online license for unlimited users; hosting is billed separately at USD 40 per month; setup, data transfer and training included.",
         },
       ],
     },
@@ -116,10 +118,7 @@ export function pageSchema({
   const section = path.split("/").filter(Boolean)[0];
   const sectionNames: Record<string, string> = {
     features: "Features",
-    industries: "Industries",
-    guides: "Guides",
-    regions: "Regions",
-    solutions: "Solutions",
+    "who-its-for": "Who it's for",
   };
   const itemListElement: Record<string, unknown>[] = [
     {

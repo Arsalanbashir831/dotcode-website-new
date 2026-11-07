@@ -12,12 +12,12 @@ export const PricingSection = () => (
         eyebrow="Straightforward licensing"
         title={
           <>
-            No-Subscription ERP Software
+            Simple pricing.
             <br />
-            for Wholesale Businesses
+            Pay once, use it for life.
           </>
         }
-        description="Explore QuickAccounts ERP for inventory, purchasing, sales and accounts. Choose an offline or online lifetime license, then discuss customizations for your workflow."
+        description="No per-user fees, no yearly renewals. Setup, data transfer and training are always included."
       />
       <div className="qa-pricing-grid">
         {pricingPlans.map((plan) => (
@@ -59,8 +59,8 @@ export const PricingSection = () => (
         ))}
       </div>
       <p className="qa-footnote">
-        <strong>Please note:</strong> All prices are in USD. The offline license
-        is for one user and stores data on your hardware. Online hosting is
+        <strong>Please note:</strong> All prices are in USD. The offline plan is for
+        one user and keeps your data on your own computer. Online hosting is
         billed separately at $40 per month. Customizations are quoted
         separately.
       </p>

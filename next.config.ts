@@ -27,6 +27,21 @@ const nextConfig: NextConfig = {
         destination: "https://dotcodesolutions.com/:path*",
         permanent: true,
       },
+      // Accounting repositioning: retired inventory, warranty and retail pages.
+      { source: "/solutions/wholesale-inventory", destination: "/", permanent: true },
+      { source: "/solutions/:path*", destination: "/", permanent: true },
+      { source: "/industries", destination: "/who-its-for", permanent: true },
+      { source: "/industries/:path*", destination: "/who-its-for", permanent: true },
+      { source: "/features/business-accounting", destination: "/features/client-balances", permanent: true },
+      { source: "/features/multi-warehouse-inventory", destination: "/features/multi-office", permanent: true },
+      { source: "/features/pos-system-integration", destination: "/features", permanent: true },
+      { source: "/features/serial-number-tracking", destination: "/features", permanent: true },
+      { source: "/features/warranty-management", destination: "/features", permanent: true },
+      { source: "/features/rma-replacement-tracking", destination: "/features", permanent: true },
+      { source: "/custom-erp-development", destination: "/custom-software", permanent: true },
+      { source: "/regions/:path*", destination: "/", permanent: true },
+      { source: "/guides/:path*", destination: "/features", permanent: true },
+      { source: "/blog", destination: "/", permanent: true },
     ];
   },
   async headers() {

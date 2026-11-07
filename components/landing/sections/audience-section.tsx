@@ -1,50 +1,35 @@
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
-import {
-  audienceItems,
-} from "@/components/landing/data/landing-content";
-import { AudienceGraphic } from "@/components/landing/shared/audience-graphic";
+import { audienceItems } from "@/components/landing/data/landing-content";
 import { SectionHeading } from "@/components/landing/shared/section-heading";
 
 export const AudienceSection = () => (
-  <section className="qa-section qa-audience-section">
+  <section className="qa-section qa-audience-section" id="who-its-for">
     <div className="qa-container">
       <SectionHeading
         isDark
-        eyebrow="Made for merchandise businesses"
-        title="Your trade. Your stock. All connected."
-        description="From the first purchase to the final payment, QuickAccounts brings the daily work of trading businesses together."
+        eyebrow="Who it's for"
+        title="Built for firms that bill for their expertise"
+        description="When your business runs on people's time and know-how, the money side is about billing clients, controlling costs and getting paid on time."
       />
-      <div className="qa-audience-grid">
-        {audienceItems.map((item, index) => {
-          const Icon = item.icon;
-          const isWide = index === audienceItems.length - 1;
-
-          return (
-            <article
-              className={`qa-audience-card ${isWide ? "qa-audience-card-wide" : ""}`}
-              key={item.label}
-              data-reveal
-            >
-              <div className="qa-audience-copy">
-                <p className="qa-audience-label">{item.label}</p>
-                <div className="qa-audience-title">
-                  <span>
-                    <Icon aria-hidden="true" />
-                  </span>
-                  <h3>{item.title}</h3>
-                </div>
-                <p>{item.description}</p>
-                <Link className="qa-audience-link" href={item.href}>
-                  {item.linkLabel}<ArrowUpRight aria-hidden="true" />
-                </Link>
+      <div className="qa-audience-grid qa-audience-grid-simple">
+        {audienceItems.map(({ icon: Icon, title, description, href }) => (
+          <article className="qa-audience-card qa-audience-card-simple" key={href} data-reveal>
+            <div className="qa-audience-copy">
+              <div className="qa-audience-title">
+                <span><Icon aria-hidden="true" /></span>
+                <h3>{title}</h3>
               </div>
-              <AudienceGraphic kind={item.graphic} />
-            </article>
-          );
-        })}
+              <p>{description}</p>
+              <Link className="qa-audience-link" href={href}>
+                Learn more<ArrowUpRight aria-hidden="true" />
+              </Link>
+            </div>
+          </article>
+        ))}
       </div>
+      <p className="qa-audience-all"><Link href="/who-its-for">See all industries we serve</Link></p>
     </div>
   </section>
 );

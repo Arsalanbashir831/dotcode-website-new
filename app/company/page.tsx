@@ -9,7 +9,7 @@ import { WhatsAppButton } from "@/components/ui/whatsapp-button";
 import { pageSchema } from "@/lib/seo";
 
 const description =
-  "Dotcode is operated by Lordevs LLC through its New Mexico branch, with product engineering, implementation and support delivered by the Dotcode Pakistan Branch in Lahore.";
+  "Dotcode builds QuickAccounts, simple accounting software for consultants, law firms, tech companies and agencies. It is operated by Lordevs LLC (New Mexico) with product, setup and support delivered from Lahore.";
 
 const LORDEVS_FORMATION_PATH = "/assets/lordevs-llc-formation-document.pdf";
 const DOTCODE_INCORPORATION_PATH = "/assets/dotcode-smc-private-limited-incorporation-certificate.pdf";
@@ -49,9 +49,9 @@ export default function CompanyPage() {
             <p className="qa-eyebrow">Our company</p>
             <h1>The company behind Dotcode</h1>
             <p className="seo-intro">
-              Dotcode is inventory, POS, serial-number, warranty and accounting
-              software for electronics and hardware distributors. The company
-              operates through two branches: Lordevs LLC in New Mexico and the
+              Dotcode builds QuickAccounts, simple accounting software for
+              consulting firms, law firms, tech companies and agencies. The
+              company operates through two branches: Lordevs LLC in New Mexico and the
               Dotcode Pakistan Branch in Lahore, registered as Dotcode
               (SMC-Private) Limited.
             </p>
@@ -71,31 +71,27 @@ export default function CompanyPage() {
           <section className="company-overview" aria-labelledby="company-overview-heading">
             <div>
               <p className="qa-eyebrow">Who we are</p>
-              <h2 id="company-overview-heading">Software built around the way distributors work</h2>
+              <h2 id="company-overview-heading">Accounting made simple for service businesses</h2>
               <p>
-                Dotcode connects purchasing, sales, POS billing, warehouse
-                stock, serial records, warranty and RMA, customer and supplier
-                accounts, cash records and product service history in one
-                system. It is built for electronics and hardware retailers,
-                wholesalers and distributors who need to trace stock beyond a
-                quantity on hand.
+                Dotcode builds QuickAccounts for consultants, law firms, tech
+                companies and agencies who want clear books without complicated
+                software. Our team sets you up, moves your records over, trains
+                your staff and stays with you for support.
               </p>
               <p>
-                Our teams own the product, the implementation and the support
-                behind it. Standard setup, supported data migration and team
-                training are included, and a guided demo is the best place to
-                confirm how Dotcode fits your operation.
+                Setup, data transfer and training are included, and a free demo
+                is the best place to see how QuickAccounts fits your firm.
               </p>
               <div className="company-links">
-                <Link href="/features">Explore the platform <ArrowRight aria-hidden="true" /></Link>
-                <Link href="/implementation">Review implementation <ArrowRight aria-hidden="true" /></Link>
+                <Link href="/features">Explore features <ArrowRight aria-hidden="true" /></Link>
+                <Link href="/implementation">Setup and training <ArrowRight aria-hidden="true" /></Link>
               </div>
             </div>
             <dl className="company-facts">
               <div><dt>Parent company</dt><dd>Lordevs LLC</dd></div>
               <div><dt>US branch</dt><dd>New Mexico, USA</dd></div>
               <div><dt>Pakistan entity</dt><dd>Dotcode (SMC-Private) Limited, Lahore</dd></div>
-              <div><dt>Focus</dt><dd>Electronics and hardware distribution</dd></div>
+              <div><dt>Focus</dt><dd>Accounting for consulting and service firms</dd></div>
             </dl>
           </section>
 
@@ -131,12 +127,12 @@ export default function CompanyPage() {
                   The Dotcode Pakistan Branch is where the platform is built and
                   delivered. Registered in Pakistan as Dotcode (SMC-Private)
                   Limited, the Lahore team works across product engineering,
-                  implementation, supported migration, team training and
-                  ongoing customer support.
+                  setup, data transfer, team training and ongoing customer
+                  support.
                 </p>
                 <ul>
                   <li>Product engineering and development</li>
-                  <li>Implementation, migration and training</li>
+                  <li>Setup, data transfer and training</li>
                   <li>Day-to-day customer support</li>
                 </ul>
               </article>
@@ -181,12 +177,12 @@ export default function CompanyPage() {
               <p className="qa-eyebrow">Work with us</p>
               <h2 id="company-cta-heading">Talk to the team behind Dotcode</h2>
               <p>
-                See how Dotcode handles your stock, serials, warranty and
-                account records in a guided demo, or reach out to either branch.
+                See how QuickAccounts handles your invoices, retainers and
+                reports in a free demo, or reach out to either branch.
               </p>
             </div>
             <div className="company-cta-actions">
-              <WhatsAppButton size="lg" theme="orange" label="Book a guided demo" />
+              <WhatsAppButton size="lg" theme="orange" label="Book a free demo" />
               <a href="mailto:info@dotcodesolutions.com">info@dotcodesolutions.com</a>
             </div>
           </section>

@@ -1,265 +1,273 @@
-import {
-  ArrowRight,
-  Boxes,
-  Check,
-  ClipboardCheck,
-  Headphones,
-  Laptop,
-  MonitorSmartphone,
-  Package,
-  ReceiptText,
-  ScanLine,
-  ShieldCheck,
-  ShoppingBag,
-  Store,
-  Warehouse,
-} from "lucide-react";
+import { Check, Repeat, Send } from "lucide-react";
 
 import type { FeatureItem } from "@/components/landing/data/landing-content";
 
-const descriptions = {
-  locations:
-    "One central warehouse connects to a main outlet, a second outlet and a reserve warehouse.",
-  stock:
-    "Example stock overview showing 48 laptops, 120 accessories and 36 components available.",
-  trading:
-    "A supplier purchase adds goods to your stock. A customer sale records goods leaving stock.",
-  pos:
-    "A POS counter sale syncs to your central stock and updates the customer account.",
-  serials:
-    "Look up a product serial, check its warranty and record a return or replacement claim.",
-  accounts:
-    "Example customer account: an invoice of 12,000 minus a payment of 8,000 leaves an outstanding balance of 4,000.",
+const descriptions: Record<FeatureItem["graphic"], string> = {
+  invoicing:
+    "Example invoice with three fee lines, a total of 4,800 due in 14 days, bank details and a send button.",
+  billing:
+    "Example timesheet: 32 billable hours across the week at 150 per hour gives an invoice of 4,800, alongside fixed fee, milestone and retainer options.",
+  recurring:
+    "Example schedule: a 2,500 retainer invoiced automatically each month, with the next invoice on the 1st.",
+  balances:
+    "Example client ledger: invoice of 12,000 less a payment of 8,000 leaves 4,000 outstanding, with an aging bar showing the overdue share.",
+  expenses:
+    "Example expense breakdown by category: salaries 14,200, rent 3,000, travel 1,240 and software 860.",
+  profitability:
+    "Example client profitability: three clients with revenue against cost and margin percentages.",
+  cash:
+    "Example cash position: a rising balance chart and three accounts totalling 35,300.",
+  reports:
+    "Example reports view: monthly revenue against expenses with a net profit of 9,400, and tabs for profit and loss, balance sheet and cash flow.",
 };
 
-function Locations() {
+function Invoicing() {
   return (
-    <div className="qa-fg-locations">
-      <div className="qa-fg-hub">
-        <span className="qa-fg-icon qa-fg-icon-primary">
-          <Warehouse />
-        </span>
-        <strong>Central warehouse</strong>
-        <span>One stock overview</span>
+    <div className="qa-vg qa-vg-invoice">
+      <div className="qa-vg-invoice-head">
+        <span className="qa-vg-logo">N</span>
+        <div>
+          <strong>Invoice INV-0042</strong>
+          <small>Issued 1 Nov · Due 15 Nov</small>
+        </div>
+        <span className="qa-vg-pill qa-vg-pill-warm">Due in 14 days</span>
       </div>
-      <div className="qa-fg-branches">
-        {[
-          { icon: Store, name: "Main outlet" },
-          { icon: Store, name: "Outlet 02" },
-          { icon: Warehouse, name: "Warehouse" },
-        ].map(({ icon: Icon, name }) => (
-          <div className="qa-fg-location" key={name}>
-            <Icon />
-            <strong>{name}</strong>
+      <div className="qa-vg-billto"><small>BILL TO</small><strong>Northstar Consulting Ltd</strong></div>
+      <table className="qa-vg-table">
+        <thead><tr><th>Description</th><th>Qty</th><th>Amount</th></tr></thead>
+        <tbody>
+          <tr><td>Strategy workshop</td><td>1</td><td>2,400</td></tr>
+          <tr><td>Advisory · 16 h × 100</td><td>16</td><td>1,600</td></tr>
+          <tr><td>Travel (client billable)</td><td>1</td><td>800</td></tr>
+        </tbody>
+      </table>
+      <div className="qa-vg-total"><span>Total</span><strong>4,800</strong></div>
+      <div className="qa-vg-invoice-foot">
+        <small>Pay by bank transfer · Net 14 days</small>
+        <span className="qa-vg-btn"><Send />Send invoice</span>
+      </div>
+    </div>
+  );
+}
+
+function Billing() {
+  const days = [
+    ["Mon", 6], ["Tue", 7], ["Wed", 5], ["Thu", 8], ["Fri", 6],
+  ] as const;
+  return (
+    <div className="qa-vg">
+      <div className="qa-vg-chips">
+        {["Hourly", "Fixed fee", "Milestone", "Retainer"].map((c, i) => (
+          <span key={c} className={i === 0 ? "is-active" : undefined}>{c}</span>
+        ))}
+      </div>
+      <div className="qa-vg-card">
+        <div className="qa-vg-card-head"><strong>Billable hours · this week</strong><small>32 h</small></div>
+        <svg viewBox="0 -12 260 122" className="qa-vg-svg" aria-hidden="true">
+          {days.map(([d, h], i) => (
+            <g key={d} transform={`translate(${14 + i * 50} 0)`}>
+              <rect x="0" y={88 - h * 10} width="30" height={h * 10} rx="6" className="qa-vg-bar" />
+              <text x="15" y="104" textAnchor="middle" className="qa-vg-axis">{d}</text>
+              <text x="15" y={82 - h * 10} textAnchor="middle" className="qa-vg-axis-strong">{h}</text>
+            </g>
+          ))}
+        </svg>
+      </div>
+      <div className="qa-vg-equation">
+        <span>32 h</span><b>×</b><span>150 / h</span><b>=</b><strong>4,800</strong>
+      </div>
+    </div>
+  );
+}
+
+function Recurring() {
+  const months = ["Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  return (
+    <div className="qa-vg">
+      <div className="qa-vg-card qa-vg-retainer">
+        <span className="qa-vg-icon"><Repeat /></span>
+        <div><strong>Monthly retainer</strong><small>Northstar Consulting · 1st of each month</small></div>
+        <strong className="qa-vg-amount">2,500</strong>
+      </div>
+      <div className="qa-vg-timeline">
+        {months.map((m, i) => (
+          <div key={m} className={i < 5 ? "is-done" : "is-next"}>
+            <span>{i < 5 ? <Check /> : <Repeat />}</span>
+            <small>{m}</small>
           </div>
         ))}
       </div>
-      <p className="qa-fg-caption">Every location. One connected business.</p>
+      <div className="qa-vg-card qa-vg-next">
+        <small>NEXT INVOICE</small>
+        <strong>1 Dec · created and sent automatically</strong>
+      </div>
     </div>
   );
 }
 
-function Stock() {
+function Balances() {
   return (
-    <div className="qa-fg-sheet">
-      <div className="qa-fg-sheet-heading">
-        <span className="qa-fg-icon">
-          <Boxes />
-        </span>
-        <strong>Stock at a glance</strong>
+    <div className="qa-vg">
+      <div className="qa-vg-card">
+        <div className="qa-vg-card-head"><strong>Northstar Consulting</strong><span className="qa-vg-pill qa-vg-pill-warm">1 overdue</span></div>
+        <table className="qa-vg-table qa-vg-ledger">
+          <thead><tr><th>Date</th><th>Entry</th><th>Amount</th><th>Balance</th></tr></thead>
+          <tbody>
+            <tr><td>03 Oct</td><td>INV-0038</td><td>12,000</td><td>12,000</td></tr>
+            <tr><td>19 Oct</td><td>Payment</td><td className="is-credit">−8,000</td><td>4,000</td></tr>
+          </tbody>
+        </table>
+        <div className="qa-vg-total"><span>Outstanding</span><strong>4,000</strong></div>
       </div>
-      <div className="qa-fg-stock-label">
-        <span>Product</span>
-        <span>Available</span>
-      </div>
-      {[
-        { icon: Laptop, name: "Laptops", count: "48" },
-        { icon: Headphones, name: "Accessories", count: "120" },
-        { icon: Package, name: "Components", count: "36" },
-      ].map(({ icon: Icon, name, count }) => (
-        <div className="qa-fg-stock-row" key={name}>
-          <span className="qa-fg-product-icon">
-            <Icon />
-          </span>
-          <strong>{name}</strong>
-          <span className="qa-fg-quantity">
-            {count}
-            <small>units</small>
-          </span>
+      <div className="qa-vg-card">
+        <div className="qa-vg-card-head"><strong>Receivables aging</strong></div>
+        <div className="qa-vg-aging" aria-hidden="true">
+          <span style={{ flex: 52 }} /><span style={{ flex: 26 }} /><span style={{ flex: 14 }} /><span style={{ flex: 8 }} />
         </div>
-      ))}
-      <span className="qa-fg-example">Example inventory</span>
+        <div className="qa-vg-legend"><span>Current</span><span>1–30</span><span>31–60</span><span>60+</span></div>
+      </div>
     </div>
   );
 }
 
-function Trading() {
+function Expenses() {
+  const slices = [
+    { name: "Salaries", value: 14200, color: "#f45a21" },
+    { name: "Rent", value: 3000, color: "#ffb08a" },
+    { name: "Travel", value: 1240, color: "#8a6e57" },
+    { name: "Software", value: 860, color: "#d9cdbf" },
+  ];
+  const total = slices.reduce((n, s) => n + s.value, 0);
+  const r = 42, c = 2 * Math.PI * r;
+  let offset = 0;
   return (
-    <div className="qa-fg-trading">
-      <div className="qa-fg-trade-route">
-        <div>
-          <span className="qa-fg-icon">
-            <Warehouse />
-          </span>
-          <strong>Supplier</strong>
-        </div>
-        <ArrowRight className="qa-fg-arrow" />
-        <div>
-          <span className="qa-fg-icon qa-fg-icon-primary">
-            <Boxes />
-          </span>
-          <strong>Your stock</strong>
-        </div>
-        <ArrowRight className="qa-fg-arrow" />
-        <div>
-          <span className="qa-fg-icon">
-            <ShoppingBag />
-          </span>
-          <strong>Customer</strong>
-        </div>
+    <div className="qa-vg">
+      <div className="qa-vg-card qa-vg-donut">
+        <svg viewBox="0 0 120 120" aria-hidden="true">
+          <circle cx="60" cy="60" r={r} fill="none" stroke="#f3eee8" strokeWidth="16" />
+          {slices.map((s) => {
+            const len = (s.value / total) * c;
+            const el = (
+              <circle key={s.name} cx="60" cy="60" r={r} fill="none" stroke={s.color} strokeWidth="16"
+                strokeDasharray={`${len - 2} ${c - len + 2}`} strokeDashoffset={-offset} transform="rotate(-90 60 60)" />
+            );
+            offset += len;
+            return el;
+          })}
+          <text x="60" y="56" textAnchor="middle" className="qa-vg-axis">This month</text>
+          <text x="60" y="73" textAnchor="middle" className="qa-vg-donut-total">19,300</text>
+        </svg>
+        <ul>
+          {slices.map((s) => (
+            <li key={s.name}><i style={{ background: s.color }} /><span>{s.name}</span><strong>{s.value.toLocaleString("en-US")}</strong></li>
+          ))}
+        </ul>
       </div>
-      <div className="qa-fg-receipts">
-        <div>
-          <span>01 / PURCHASE</span>
-          <strong>Goods received</strong>
-          <small>
-            <Check />
-            Purchase recorded
-          </small>
-        </div>
-        <div>
-          <span>02 / SALE</span>
-          <strong>Goods sold</strong>
-          <small>
-            <Check />
-            Sale recorded
-          </small>
-        </div>
+      <div className="qa-vg-card qa-vg-tagrow">
+        <span className="qa-vg-pill">Client-billable</span>
+        <small>Travel · Northstar project</small>
+        <strong>800</strong>
       </div>
-      <p className="qa-fg-caption">
-        A clear record of what comes in and goes out.
-      </p>
     </div>
   );
 }
 
-function Pos() {
+function Profitability() {
+  const rows = [
+    { name: "Northstar", rev: 18000, cost: 11000 },
+    { name: "Vertex Legal", rev: 12000, cost: 4800 },
+    { name: "Atlas Group", rev: 9000, cost: 8100 },
+  ];
+  const max = 18000;
   return (
-    <div className="qa-fg-trading">
-      <div className="qa-fg-trade-route">
-        <div>
-          <span className="qa-fg-icon">
-            <MonitorSmartphone />
-          </span>
-          <strong>POS counter</strong>
-        </div>
-        <ArrowRight className="qa-fg-arrow" />
-        <div>
-          <span className="qa-fg-icon qa-fg-icon-primary">
-            <Boxes />
-          </span>
-          <strong>Your stock</strong>
-        </div>
-        <ArrowRight className="qa-fg-arrow" />
-        <div>
-          <span className="qa-fg-icon">
-            <ReceiptText />
-          </span>
-          <strong>Accounts</strong>
-        </div>
+    <div className="qa-vg">
+      <div className="qa-vg-card">
+        <div className="qa-vg-card-head"><strong>Profit by client</strong><small>Revenue vs cost</small></div>
+        {rows.map((r) => {
+          const margin = Math.round(((r.rev - r.cost) / r.rev) * 100);
+          return (
+            <div className="qa-vg-prof" key={r.name}>
+              <div className="qa-vg-prof-head"><span>{r.name}</span><b className={margin < 20 ? "is-low" : undefined}>{margin}% margin</b></div>
+              <div className="qa-vg-prof-bars" aria-hidden="true">
+                <span className="rev" style={{ width: `${(r.rev / max) * 100}%` }} />
+                <span className="cost" style={{ width: `${(r.cost / max) * 100}%` }} />
+              </div>
+            </div>
+          );
+        })}
+        <div className="qa-vg-legend"><span><i className="rev" />Revenue</span><span><i className="cost" />Cost</span></div>
       </div>
-      <div className="qa-fg-receipts">
-        <div>
-          <span>01 / POS BILL</span>
-          <strong>Sale at counter</strong>
-          <small>
-            <Check />
-            Bill synced
-          </small>
-        </div>
-        <div>
-          <span>02 / UPDATE</span>
-          <strong>Stock and ledger</strong>
-          <small>
-            <Check />
-            Updated automatically
-          </small>
-        </div>
-      </div>
-      <p className="qa-fg-caption">
-        Every counter sale, reflected everywhere.
-      </p>
     </div>
   );
 }
 
-function Serials() {
+function Cash() {
   return (
-    <div className="qa-fg-serials">
-      <div className="qa-fg-serial-tag">
-        <span className="qa-fg-serial-label">PRODUCT SERIAL</span>
-        <div className="qa-fg-barcode" />
-        <strong>QA–00128</strong>
-        <span className="qa-fg-verified">
-          <ShieldCheck />
-          Linked to its sales record
-        </span>
+    <div className="qa-vg">
+      <div className="qa-vg-card">
+        <div className="qa-vg-card-head"><strong>Total cash</strong><span className="qa-vg-pill">+8.4% this month</span></div>
+        <strong className="qa-vg-big">35,300</strong>
+        <svg viewBox="0 0 260 80" className="qa-vg-svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="qa-cash-fill" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0" stopColor="#f45a21" stopOpacity=".25" /><stop offset="1" stopColor="#f45a21" stopOpacity="0" />
+            </linearGradient>
+          </defs>
+          <path d="M0 62 L40 54 L80 58 L120 40 L160 44 L200 24 L260 14 L260 80 L0 80 Z" fill="url(#qa-cash-fill)" />
+          <path d="M0 62 L40 54 L80 58 L120 40 L160 44 L200 24 L260 14" fill="none" stroke="#f45a21" strokeWidth="2.5" strokeLinejoin="round" strokeLinecap="round" />
+          <circle cx="260" cy="14" r="4" fill="#f45a21" />
+        </svg>
       </div>
-      <div className="qa-fg-serial-steps">
-        {[
-          { icon: ScanLine, name: "Find serial" },
-          { icon: ShieldCheck, name: "Check warranty" },
-          { icon: ClipboardCheck, name: "Record claim" },
-        ].map(({ icon: Icon, name }) => (
-          <div key={name}>
-            <span>
-              <Icon />
-            </span>
-            <strong>{name}</strong>
-          </div>
+      <div className="qa-vg-accounts">
+        {[["Operating", "24,500"], ["Savings", "10,000"], ["Petty cash", "800"]].map(([n, v]) => (
+          <div key={n}><small>{n}</small><strong>{v}</strong></div>
         ))}
       </div>
-      <p className="qa-fg-caption">Trace the product. Resolve the claim.</p>
     </div>
   );
 }
 
-function Accounts() {
+function Reports() {
+  const data = [[40, 28], [46, 30], [38, 31], [52, 33], [58, 34], [64, 36]];
   return (
-    <div className="qa-fg-sheet qa-fg-account">
-      <span className="qa-fg-serial-label">CUSTOMER ACCOUNT</span>
-      <strong className="qa-fg-account-title">Every entry adds up.</strong>
-      <div className="qa-fg-account-row">
-        <span>Sales invoice</span>
-        <strong>12,000</strong>
+    <div className="qa-vg">
+      <div className="qa-vg-chips">
+        {["Profit & loss", "Balance sheet", "Cash flow"].map((c, i) => (
+          <span key={c} className={i === 0 ? "is-active" : undefined}>{c}</span>
+        ))}
       </div>
-      <div className="qa-fg-account-row">
-        <span>Payment received</span>
-        <strong>−8,000</strong>
+      <div className="qa-vg-card">
+        <div className="qa-vg-card-head"><strong>Revenue vs expenses</strong><small>Last 6 months</small></div>
+        <svg viewBox="0 0 260 100" className="qa-vg-svg" aria-hidden="true">
+          {data.map(([rev, exp], i) => (
+            <g key={i} transform={`translate(${10 + i * 42} 0)`}>
+              <rect x="0" y={90 - rev} width="14" height={rev} rx="4" className="qa-vg-bar" />
+              <rect x="17" y={90 - exp} width="14" height={exp} rx="4" className="qa-vg-bar-alt" />
+            </g>
+          ))}
+        </svg>
+        <div className="qa-vg-total"><span>Net profit</span><strong>9,400</strong></div>
       </div>
-      <div className="qa-fg-balance">
-        <span>Outstanding balance</span>
-        <strong>4,000</strong>
-      </div>
-      <span className="qa-fg-example">Illustrative account entries</span>
     </div>
   );
 }
 
 const graphics = {
-  locations: Locations,
-  stock: Stock,
-  trading: Trading,
-  pos: Pos,
-  serials: Serials,
-  accounts: Accounts,
+  invoicing: Invoicing,
+  billing: Billing,
+  recurring: Recurring,
+  balances: Balances,
+  expenses: Expenses,
+  profitability: Profitability,
+  cash: Cash,
+  reports: Reports,
 };
 
 export function FeatureGraphic({ kind }: { kind: FeatureItem["graphic"] }) {
   const Graphic = graphics[kind];
   return (
     <div
-      className={`qa-feature-graphic qa-feature-graphic-${kind}`}
+      className="qa-feature-graphic qa-feature-graphic-accounting"
       role="img"
       aria-label={descriptions[kind]}
     >

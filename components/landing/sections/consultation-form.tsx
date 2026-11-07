@@ -23,8 +23,8 @@ export function ConsultationForm() {
     <form className="qa-consultation-form" onSubmit={handleSubmit}>
       <div>
         <p className="qa-eyebrow">Book a consultation</p>
-        <h2>Tell us what you need to organize.</h2>
-        <p>Share your business type, locations and the records you want to improve. We’ll use this to prepare a relevant walkthrough.</p>
+        <h2>Tell us how your firm bills clients.</h2>
+        <p>Share the kind of firm you run, how you charge clients and what you want to see more clearly. We’ll prepare a walkthrough around it.</p>
         <p className="qa-consultation-note">We’ll open WhatsApp with your details ready to review and send.</p>
       </div>
       <label>Name<input name="name" autoComplete="name" required /></label>

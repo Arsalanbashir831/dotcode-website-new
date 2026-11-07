@@ -1,66 +1,45 @@
 import type { MetadataRoute } from "next";
 
 const BASE_URL = "https://dotcodesolutions.com";
-const LAST_CONTENT_UPDATE = new Date("2026-10-23T00:00:00.000Z");
+const LAST_CONTENT_UPDATE = new Date("2026-11-07T00:00:00.000Z");
 
-// Keep published, indexable routes grouped by search intent. Add each new page
-// here when it is published so it is included in the next sitemap response.
-const commercialRoutes = [
-  "/custom-erp-development",
-  "/solutions/wholesale-inventory",
-  "/features/business-accounting",
-  "/features/multi-warehouse-inventory",
-  "/features/serial-number-tracking",
-  "/features/warranty-management",
-  "/features/pos-system-integration",
+// Keep published, indexable routes here. Add each new page when it is
+// published so it is included in the next sitemap response.
+const featureRoutes = [
+  "/features/client-invoicing",
+  "/features/time-and-fee-billing",
+  "/features/recurring-billing",
+  "/features/client-balances",
+  "/features/expense-tracking",
+  "/features/project-profitability",
+  "/features/cash-and-bank",
+  "/features/vendor-bills",
+  "/features/reports",
+  "/features/multi-office",
 ];
 
-const industryRoutes = [
-  "/industries/fmcg-wholesalers-distributors",
-  "/industries/clothing-garment-retailers-wholesalers",
-  "/industries/cosmetics-beauty-distributors",
-  "/industries/automotive-motorcycle-spare-parts",
-  "/industries/grocery-stores-supermarkets",
-  "/industries/building-materials-tiles-sanitary-ware",
-  "/industries/pharmaceutical-medical-supply",
-  "/industries/footwear-leather-goods",
-  "/industries/furniture-home-furnishing",
-  "/industries/food-restaurant-supply",
-  "/industries/stationery-school-supply",
-  "/industries/agricultural-supply",
-  "/industries/electronics-distributors",
-  "/industries/computer-hardware-wholesalers",
-  "/industries/multi-outlet-retailers",
-  "/industries/merchandise-wholesalers",
-];
-
-// Educational/resource routes can be added here as they go live.
-const educationalRoutes: string[] = [];
-
-const resourceRoutes = [
-  "/blog",
-  "/guides/warranty-claim-management",
-  "/guides/serial-number-inventory-tracking",
-  "/guides/excel-to-erp-migration",
+const audienceRoutes = [
+  "/who-its-for/consulting-firms",
+  "/who-its-for/law-firms",
+  "/who-its-for/tech-and-software-companies",
+  "/who-its-for/it-services-and-managed-service-providers",
+  "/who-its-for/marketing-and-creative-agencies",
+  "/who-its-for/accounting-audit-and-tax-practices",
+  "/who-its-for/architects-and-engineering-firms",
+  "/who-its-for/recruitment-and-staffing-agencies",
+  "/who-its-for/training-coaching-and-education-providers",
 ];
 
 const routes = [
   "/",
-  "/company",
+  "/features",
+  "/who-its-for",
   "/pricing",
   "/implementation",
-  "/features",
-  "/industries",
-  "/features/rma-replacement-tracking",
-  "/industries/cctv-distributors",
-  "/industries/hard-drive-distributors",
-  "/regions/uae",
-  "/regions/uk",
-  "/regions/us",
-  ...commercialRoutes,
-  ...industryRoutes,
-  ...educationalRoutes,
-  ...resourceRoutes,
+  "/company",
+  "/custom-software",
+  ...featureRoutes,
+  ...audienceRoutes,
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
