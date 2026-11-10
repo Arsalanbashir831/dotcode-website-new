@@ -70,11 +70,11 @@ Actions:
 Recommended `llms.txt`:
 
 ```text
-# QuickAccounts by Dotcode Solutions
+# Dotcode ERP by Dotcode Solutions
 > Inventory, serial-number, warranty, RMA, and accounting software for wholesale distributors and stock-led businesses.
 
 ## Product
-- [QuickAccounts overview](https://dotcodesolutions.com/): Product capabilities, company information, pricing summary, and implementation support
+- [Dotcode ERP overview](https://dotcodesolutions.com/): Product capabilities, company information, pricing summary, and implementation support
 - [Pricing](https://dotcodesolutions.com/pricing): Offline and online lifetime-license options and hosting costs
 - [Implementation](https://dotcodesolutions.com/implementation): Setup, supported migration, and team training
 - [Custom ERP development](https://dotcodesolutions.com/custom-erp-development): Custom accounting, sales, purchasing, team, outlet, and workflow software
@@ -106,15 +106,15 @@ Recommended `llms.txt`:
 
 ### Entity risks
 
-1. **QuickAccounts is ambiguous.** Sampled search results surfaced unrelated accounting businesses, an Estonian company, UK accounting content, and Bank of Cyprus reporting that uses the same term. Use the full entity name “QuickAccounts by Dotcode Solutions” plus “wholesale inventory, warranty, and RMA software” in titles, intros, schema, video descriptions, and external profiles.
+1. **Dotcode ERP is ambiguous.** Sampled search results surfaced unrelated accounting businesses, an Estonian company, UK accounting content, and Bank of Cyprus reporting that uses the same term. Use the full entity name “Dotcode ERP by Dotcode Solutions” plus “wholesale inventory, warranty, and RMA software” in titles, intros, schema, video descriptions, and external profiles.
 
 2. **Dotcode is ambiguous.** Search results include unrelated companies with similar names in several countries. Stable `@id` values and consistent `sameAs` links are essential.
 
-3. **The LinkedIn positioning does not match the product site closely enough.** The discoverable company page emphasizes Odoo, AI-powered workflows, and custom modules, while the website foregrounds QuickAccounts inventory/warranty software. Align the company description and featured posts around a clear parent-brand/product relationship.
+3. **The LinkedIn positioning does not match the product site closely enough.** The discoverable company page emphasizes Odoo, AI-powered workflows, and custom modules, while the website foregrounds Dotcode ERP inventory/warranty software. Align the company description and featured posts around a clear parent-brand/product relationship.
 
-4. **Weak platform diversity.** Sampled exact-name searches did not surface a Wikipedia/Wikidata entity, relevant Reddit discussion, or a clearly attributable QuickAccounts YouTube result. This is a sampled-search finding, not proof that no mention exists.
+4. **Weak platform diversity.** Sampled exact-name searches did not surface a Wikipedia/Wikidata entity, relevant Reddit discussion, or a clearly attributable Dotcode ERP YouTube result. This is a sampled-search finding, not proof that no mention exists.
 
-5. **External proof is not product-specific enough.** Fiverr/Upwork testimonials support delivery quality, but most do not document measurable QuickAccounts outcomes.
+5. **External proof is not product-specific enough.** Fiverr/Upwork testimonials support delivery quality, but most do not document measurable Dotcode ERP outcomes.
 
 ## Passage-level citability
 
@@ -133,9 +133,9 @@ Consolidate these into self-contained passages with a descriptive heading, direc
 
 ### Homepage: replace the short hero paragraph with an answer block
 
-Suggested heading: `What is QuickAccounts?`
+Suggested heading: `What is Dotcode ERP?`
 
-> QuickAccounts by Dotcode Solutions is inventory, serial-number, warranty, RMA, and accounting software for wholesale distributors and stock-led businesses. It connects purchasing, sales, warehouse stock, customer and supplier accounts, cash records, and product service history in one system. Teams can trace an individual CCTV camera, RAM module, hard drive, or other serialized product from receipt through sale, invoice lookup, warranty review, return, and replacement. Dotcode offers an online lifetime license for unlimited users at $850 plus $40 per month for hosting, and an offline single-user lifetime license for $1,200 with local data storage. Standard setup, supported data migration, and team training are included. Businesses should confirm required integrations, data formats, permissions, customizations, and deployment needs during a guided demo before selecting a license.
+> Dotcode ERP by Dotcode Solutions is inventory, serial-number, warranty, RMA, and accounting software for wholesale distributors and stock-led businesses. It connects purchasing, sales, warehouse stock, customer and supplier accounts, cash records, and product service history in one system. Teams can trace an individual CCTV camera, RAM module, hard drive, or other serialized product from receipt through sale, invoice lookup, warranty review, return, and replacement. Dotcode offers an online lifetime license for unlimited users at $850 plus $40 per month for hosting, and an offline single-user lifetime license for $1,200 with local data storage. Standard setup, supported data migration, and team training are included. Businesses should confirm required integrations, data formats, permissions, customizations, and deployment needs during a guided demo before selecting a license.
 
 ### Serial-number page: add a self-contained operational definition
 
@@ -153,7 +153,7 @@ Suggested heading: `What records are needed for a distributor warranty claim?`
 
 1. Create one `@graph` connecting Organization, WebSite, and SoftwareApplication with stable IDs.
 2. Add Organization `sameAs` for the verified LinkedIn, Fiverr, and Upwork identities and add a real `contactPoint`.
-3. Add `WebPage` and `BreadcrumbList` to every deep page, linking `about` to `#quickaccounts` where appropriate.
+3. Add `WebPage` and `BreadcrumbList` to every deep page, linking `about` to `#Dotcode ERP` where appropriate.
 4. Add `BlogPosting` and `Person` only after visible author name, credentials, publish date, and modified date are present.
 5. Add `VideoObject` for the owned product demo with name, description, thumbnail, upload date, duration, and embed/content URL.
 6. Use `ImageObject` for page-specific product screens and a dedicated 1200×630 social image.
@@ -162,8 +162,8 @@ Suggested heading: `What records are needed for a distributor warranty claim?`
 ## Top five highest-impact changes
 
 1. **Fix the stale indexed homepage representation.** Remove obsolete placeholder text and crawlable ticker duplication everywhere, then request recrawls and verify search snapshots.
-2. **Disambiguate the entity.** Consistently use “QuickAccounts by Dotcode Solutions — wholesale inventory, warranty, and RMA software” across the site, schema, LinkedIn, video metadata, and marketplace profiles.
-3. **Build product-specific authority.** Publish two to three attributed QuickAccounts case studies, named product experts, guide bylines, reviewed dates, and primary-source citations.
+2. **Disambiguate the entity.** Consistently use “Dotcode ERP by Dotcode Solutions — wholesale inventory, warranty, and RMA software” across the site, schema, LinkedIn, video metadata, and marketplace profiles.
+3. **Build product-specific authority.** Publish two to three attributed Dotcode ERP case studies, named product experts, guide bylines, reviewed dates, and primary-source citations.
 4. **Create extractable answer blocks.** Add 134–167 word direct answers to the homepage, feature pages, and guides, supported by tables, definitions, workflows, and explicit limitations.
 5. **Connect the entity graph and discovery files.** Deploy Organization/WebSite/SoftwareApplication/WebPage/Person/VideoObject relationships and a concise `/llms.txt`.
 

@@ -9,7 +9,7 @@
 
 The site has a sound crawl and indexation foundation: all 23 sitemap URLs returned 200, every audited page had one H1, an absolute self-canonical, server-rendered content, and indexable robots directives. HTTPS, HSTS, a valid sitemap, genuine 404 responses, and explicit access for major AI-search crawlers are also in place.
 
-The main constraint is content and SERP presentation rather than crawlability. All 23 titles are longer than 60 characters, nine meta descriptions exceed 160 characters, nine important feature/industry pages are short and structurally repetitive, and the blog index has only about 30 body words. Product-specific trust evidence is also weak: the site lacks clear About/team, privacy/terms, security/data-handling, support/SLA, and attributed QuickAccounts case-study pages.
+The main constraint is content and SERP presentation rather than crawlability. All 23 titles are longer than 60 characters, nine meta descriptions exceed 160 characters, nine important feature/industry pages are short and structurally repetitive, and the blog index has only about 30 body words. Product-specific trust evidence is also weak: the site lacks clear About/team, privacy/terms, security/data-handling, support/SLA, and attributed Dotcode ERP case-study pages.
 
 There is no verified CrUX or PageSpeed field dataset for this domain. The performance section therefore reports observable implementation risks—not measured Core Web Vitals. Google PageSpeed API returned 429 quota exhaustion during this audit.
 
@@ -53,7 +53,7 @@ Fix: expand each retained page around its exact job-to-be-done. Add actual scree
 
 - **23/23 titles exceed 60 characters.** Live lengths range from 65 to 119 characters.
 - **9/23 meta descriptions exceed 160 characters.** The homepage is 290 characters; several feature and industry descriptions are 235–264 characters.
-- The root title template adds `| QuickAccounts by Dotcode`, pushing otherwise reasonable page titles beyond typical display limits.
+- The root title template adds `| Dotcode ERP by Dotcode`, pushing otherwise reasonable page titles beyond typical display limits.
 
 Why it matters: widespread truncation reduces message control and encourages keyword-stacked snippets. Multiple product categories and countries are often packed into a single title or description.
 
@@ -67,10 +67,10 @@ Material gaps:
 
 - No clear About/team or leadership credentials
 - No privacy policy, terms, security/data-handling, hosting, backup, SLA, refund, or support-policy pages
-- No attributed QuickAccounts case studies with baseline-to-outcome evidence
+- No attributed Dotcode ERP case studies with baseline-to-outcome evidence
 - Guides have no author, reviewer, publish/modified dates, methodology, or primary-source citations
 - A Gmail address is used as the public business email
-- Existing marketplace testimonials validate general delivery more than QuickAccounts outcomes
+- Existing marketplace testimonials validate general delivery more than Dotcode ERP outcomes
 
 Fix: publish an About/team page, legal/trust pages, security and support documentation, and two to three attributable product case studies. Move public contact to the business domain. Add responsible author/reviewer and real update dates to guides.
 
@@ -133,7 +133,7 @@ Fix: create feature and industry hubs that explain the collection and link to ev
 
 ### Medium — Repeated visuals reduce differentiation
 
-All 21 sampled images had alt text, and Next.js image negotiation produced modern formats for local assets. However, many unrelated pages reuse the same workflow image and generic `QuickAccounts inventory workflow preview` alt text.
+All 21 sampled images had alt text, and Next.js image negotiation produced modern formats for local assets. However, many unrelated pages reuse the same workflow image and generic `Dotcode ERP inventory workflow preview` alt text.
 
 Fix: add page-specific screenshots, diagrams, tables, and captions. Create a purpose-built 1200×630 social image instead of using the logo as the default OG/Twitter image. Add intrinsic dimensions to the YouTube thumbnail.
 

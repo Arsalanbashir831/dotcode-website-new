@@ -7,8 +7,8 @@ export function getWhatsAppContactUrl(message: string) {
 }
 
 export const WHATSAPP_CONTACT_URL = getWhatsAppContactUrl(
-  "Hi, I’d like to learn more about QuickAccounts.",
+  "Hi, I’d like to learn more about Dotcode ERP.",
 );
 export const WHATSAPP_DEMO_URL = getWhatsAppContactUrl(
-  "Hi, I’d like to book a QuickAccounts demo for my business.",
+  "Hi, I’d like to book a Dotcode ERP demo for my business.",
 );

@@ -1,8 +1,8 @@
-# QuickAccounts by Dotcode Solutions
+# Dotcode ERP by Dotcode Solutions
 > Easy accounting software for consulting and service firms: client invoicing, retainers, expenses, project profitability and reports. One-time license, setup and training included.
 
 ## Product
-- [QuickAccounts overview](https://dotcodesolutions.com/): What QuickAccounts does, who it is for, and how to get started
+- [Dotcode ERP overview](https://dotcodesolutions.com/): What Dotcode ERP does, who it is for, and how to get started
 - [Pricing](https://dotcodesolutions.com/pricing): Online $850 one-time + $40/month hosting (unlimited users); Offline $1,200 one-time (1 user)
 - [Setup, data transfer and training](https://dotcodesolutions.com/implementation): How we set you up and train your team
 - [Custom software](https://dotcodesolutions.com/custom-software): Custom business software built around your processes

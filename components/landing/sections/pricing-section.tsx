@@ -1,41 +1,44 @@
+import { PriceText } from "@/components/currency/currency-provider";
 import { Check } from "lucide-react";
 
-import { pricingPlans } from "@/components/landing/data/landing-content";
+import { getLandingContent } from "@/components/landing/data/landing-content";
+import type { Locale } from "@/lib/i18n";
 import { SectionHeading } from "@/components/landing/shared/section-heading";
 import { WhatsAppButton } from "@/components/ui/whatsapp-button";
 import { getWhatsAppContactUrl, WHATSAPP_DEMO_URL } from "@/lib/contact";
 
-export const PricingSection = () => (
+/** Not currently rendered; kept for a future pricing block. Headings are English only. */
+export const PricingSection = ({ locale = "en" }: { locale?: Locale }) => (
   <section className="qa-section bg-white" id="pricing">
     <div className="qa-container">
       <SectionHeading
         eyebrow="Straightforward licensing"
         title={
           <>
-            Simple pricing.
+            Free software.
             <br />
-            Pay once, use it for life.
+            Just $50/month hosting.
           </>
         }
-        description="No per-user fees, no yearly renewals. Setup, data transfer and training are always included."
+        description="Dotcode ERP is free and open source. Pay only for hosting, with every feature, unlimited users and setup included."
       />
-      <div className="qa-pricing-grid">
-        {pricingPlans.map((plan) => (
+      <div className="qa-pricing-grid qa-pricing-grid-two">
+        {getLandingContent(locale).pricingPlans.map((plan) => (
           <article
             className={`qa-price-card ${plan.isPopular ? "popular" : ""}`}
             key={plan.name}
             data-reveal
           >
             {plan.isPopular ? (
-              <span className="qa-popular">ONLINE · UNLIMITED USERS</span>
+              <span className="qa-popular">ALL FEATURES · UNLIMITED USERS</span>
             ) : null}
             <h3>{plan.name}</h3>
-            <p>{plan.description}</p>
+            <p><PriceText>{plan.description}</PriceText></p>
             <div className="qa-price">
-              <strong>{plan.price}</strong>
+              <strong><PriceText>{plan.price}</PriceText></strong>
               <span>{plan.suffix}</span>
             </div>
-            <small>{plan.note}</small>
+            <small><PriceText>{plan.note}</PriceText></small>
             <WhatsAppButton
               className="qa-price-card-cta"
               href={
@@ -51,7 +54,7 @@ export const PricingSection = () => (
               {plan.features.map((feature) => (
                 <li key={feature}>
                   <Check />
-                  {feature}
+                  <PriceText>{feature}</PriceText>
                 </li>
               ))}
             </ul>
@@ -59,10 +62,10 @@ export const PricingSection = () => (
         ))}
       </div>
       <p className="qa-footnote">
-        <strong>Please note:</strong> All prices are in USD. The offline plan is for
-        one user and keeps your data on your own computer. Online hosting is
-        billed separately at $40 per month. Customizations are quoted
-        separately.
+        <strong>Please note:</strong>{" "}
+        <PriceText>
+          {"All prices are in USD. The software is free and open source with no license fee. Hosting is billed at $50 per month. Customizations are quoted separately."}
+        </PriceText>
       </p>
     </div>
   </section>

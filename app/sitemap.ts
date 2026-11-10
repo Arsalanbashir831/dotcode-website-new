@@ -1,50 +1,40 @@
 import type { MetadataRoute } from "next";
 
+import {
+  allIndustries,
+  coreFeatures,
+  featureHref,
+  industryHref,
+} from "@/components/landing/data/catalog";
+import { localizePath, locales } from "@/lib/i18n";
+
 const BASE_URL = "https://dotcodesolutions.com";
-const LAST_CONTENT_UPDATE = new Date("2026-11-07T00:00:00.000Z");
+const LAST_CONTENT_UPDATE = new Date("2026-11-10T00:00:00.000Z");
 
-// Keep published, indexable routes here. Add each new page when it is
-// published so it is included in the next sitemap response.
-const featureRoutes = [
-  "/features/client-invoicing",
-  "/features/time-and-fee-billing",
-  "/features/recurring-billing",
-  "/features/client-balances",
-  "/features/expense-tracking",
-  "/features/project-profitability",
-  "/features/cash-and-bank",
-  "/features/vendor-bills",
-  "/features/reports",
-  "/features/multi-office",
-];
-
-const audienceRoutes = [
-  "/who-its-for/consulting-firms",
-  "/who-its-for/law-firms",
-  "/who-its-for/tech-and-software-companies",
-  "/who-its-for/it-services-and-managed-service-providers",
-  "/who-its-for/marketing-and-creative-agencies",
-  "/who-its-for/accounting-audit-and-tax-practices",
-  "/who-its-for/architects-and-engineering-firms",
-  "/who-its-for/recruitment-and-staffing-agencies",
-  "/who-its-for/training-coaching-and-education-providers",
-];
-
+// Feature and industry routes come from the catalog, so new entries there are
+// added to the sitemap automatically. Add other new pages here.
 const routes = [
   "/",
   "/features",
-  "/who-its-for",
+  "/industries",
   "/pricing",
   "/implementation",
   "/company",
   "/custom-software",
-  ...featureRoutes,
-  ...audienceRoutes,
+  ...coreFeatures.map(({ slug }) => featureHref(slug)),
+  ...allIndustries.map(({ slug }) => industryHref(slug)),
 ];
 
+// Every page exists in English and Urdu; each entry lists both versions.
 export default function sitemap(): MetadataRoute.Sitemap {
-  return routes.map((route) => ({
-    url: `${BASE_URL}${route}`,
-    lastModified: LAST_CONTENT_UPDATE,
-  }));
+  return routes.flatMap((route) => {
+    const languages = Object.fromEntries(
+      locales.map((locale) => [locale, `${BASE_URL}${localizePath(locale, route)}`]),
+    );
+    return locales.map((locale) => ({
+      url: `${BASE_URL}${localizePath(locale, route)}`,
+      lastModified: LAST_CONTENT_UPDATE,
+      alternates: { languages },
+    }));
+  });
 }

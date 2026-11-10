@@ -1,14 +1,18 @@
 "use client";
 
 import type { FormEvent } from "react";
+import { getDictionary } from "@/components/i18n/dictionary";
+import { useLocale } from "@/components/i18n/locale-provider";
 import { getWhatsAppContactUrl } from "@/lib/contact";
 
 export function ConsultationForm() {
+  const t = getDictionary(useLocale()).consultation;
+
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
     const message = [
-      "Hi, I’d like to book a QuickAccounts consultation.",
+      "Hi, I’d like to book a Dotcode ERP consultation.",
       `Name: ${formData.get("name")}`,
       `Company: ${formData.get("company")}`,
       `Email: ${formData.get("email")}`,
@@ -22,17 +26,17 @@ export function ConsultationForm() {
   return (
     <form className="qa-consultation-form" onSubmit={handleSubmit}>
       <div>
-        <p className="qa-eyebrow">Book a consultation</p>
-        <h2>Tell us how your firm bills clients.</h2>
-        <p>Share the kind of firm you run, how you charge clients and what you want to see more clearly. We’ll prepare a walkthrough around it.</p>
-        <p className="qa-consultation-note">We’ll open WhatsApp with your details ready to review and send.</p>
+        <p className="qa-eyebrow">{t.eyebrow}</p>
+        <h2>{t.title}</h2>
+        <p>{t.body}</p>
+        <p className="qa-consultation-note">{t.note}</p>
       </div>
-      <label>Name<input name="name" autoComplete="name" required /></label>
-      <label>Company name<input name="company" autoComplete="organization" required /></label>
-      <label>Company email<input type="email" name="email" autoComplete="email" required /></label>
-      <label>WhatsApp number<input type="tel" name="phone" autoComplete="tel" placeholder="Include country code, e.g. +92 300 1234567" required /></label>
-      <label>What should we review?<textarea name="requirements" rows={4} required /></label>
-      <button type="submit">Continue to WhatsApp</button>
+      <label>{t.name}<input name="name" autoComplete="name" required /></label>
+      <label>{t.company}<input name="company" autoComplete="organization" required /></label>
+      <label>{t.email}<input type="email" name="email" autoComplete="email" required /></label>
+      <label>{t.phone}<input type="tel" name="phone" autoComplete="tel" dir="ltr" placeholder={t.phonePlaceholder} required /></label>
+      <label>{t.requirements}<textarea name="requirements" rows={4} required /></label>
+      <button type="submit">{t.submit}</button>
     </form>
   );
 }

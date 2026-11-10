@@ -20,7 +20,7 @@ Success checks: one-hop `www` redirect, unique rendered titles/descriptions, one
 |---|---|---:|---:|---|
 | High | Deepen or consolidate the nine template-heavy feature/industry pages | Very high | High | Content + product SMEs |
 | High | Create About/team, privacy, terms, security/data-handling, hosting/backups, support/SLA, and refund pages | High | Medium | Trust center |
-| High | Publish 2–3 attributed QuickAccounts case studies with baseline → intervention → outcome | Very high | High | Customer proof |
+| High | Publish 2–3 attributed Dotcode ERP case studies with baseline → intervention → outcome | Very high | High | Customer proof |
 | High | Replace public Gmail contact with a domain email | Medium | Low | Contact/footer/schema |
 | Medium | Create real Features and Industries hub pages | High | Medium | IA/navigation |
 | Medium | Add visible breadcrumbs to deep pages | Medium | Medium | Shared landing template |

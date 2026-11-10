@@ -1,7 +1,11 @@
+import { getDictionary } from "@/components/i18n/dictionary";
+import { localizePath } from "@/lib/i18n";
+import type { Locale } from "@/lib/i18n";
+
 export const SITE_URL = "https://dotcodesolutions.com";
 export const ORGANIZATION_ID = `${SITE_URL}/#organization`;
 export const WEBSITE_ID = `${SITE_URL}/#website`;
-export const SOFTWARE_ID = `${SITE_URL}/#quickaccounts`;
+export const SOFTWARE_ID = `${SITE_URL}/#dotcode-erp`;
 
 export const siteEntityGraph = {
   "@context": "https://schema.org",
@@ -56,43 +60,46 @@ export const siteEntityGraph = {
     {
       "@type": "SoftwareApplication",
       "@id": SOFTWARE_ID,
-      name: "QuickAccounts by Dotcode Solutions",
-      alternateName: "QuickAccounts",
+      name: "Dotcode ERP by Dotcode Solutions",
+      alternateName: "Dotcode ERP",
       url: `${SITE_URL}/`,
       applicationCategory: "BusinessApplication",
-      applicationSubCategory: "Accounting software for consulting and service firms",
+      applicationSubCategory: "Retail and wholesale business software: POS, inventory and accounting",
       operatingSystem: "Web",
       description:
-        "Easy accounting software for consulting firms, law firms, tech companies, agencies and other service businesses: client invoicing, retainers, expenses, project profitability and reports.",
+        "Complete business software for retailers, wholesalers and distributors: POS system, accounting, multiple outlets management, stock management and customer and supplier ledger tracking.",
       publisher: { "@id": ORGANIZATION_ID },
       featureList: [
-        "Client invoicing",
-        "Hourly, fixed-fee, milestone and retainer billing",
-        "Recurring invoices",
-        "Client balances and aging",
-        "Expense tracking",
-        "Project and client profitability",
-        "Cash and bank accounts",
-        "Profit and loss, balance sheet and cash flow reports",
+        "POS system",
+        "Accounting",
+        "Multiple outlets management",
+        "Stock management",
+        "Customer and supplier ledger tracking",
+        "Profit and loss, balance sheet and trial balance reports",
       ],
+      isAccessibleForFree: true,
       offers: [
         {
           "@type": "Offer",
-          name: "Offline single-user license",
-          price: "1200",
+          name: "Open-source software",
+          price: "0",
           priceCurrency: "USD",
-          category: "One-time software license",
-          description:
-            "One-time offline license for one user with data on your own computer; setup, data transfer and training included.",
+          description: "Dotcode ERP software is free and open source, with every feature included.",
         },
         {
           "@type": "Offer",
-          name: "Online unlimited-user license",
-          price: "850",
+          name: "Managed hosting",
+          price: "50",
           priceCurrency: "USD",
-          category: "One-time software license",
+          category: "Monthly hosting",
+          priceSpecification: {
+            "@type": "UnitPriceSpecification",
+            price: "50",
+            priceCurrency: "USD",
+            unitCode: "MON",
+          },
           description:
-            "One-time online license for unlimited users; hosting is billed separately at USD 40 per month; setup, data transfer and training included.",
+            "Secure cloud hosting with automatic backups, all features and unlimited users; setup, data transfer and training included.",
         },
       ],
     },
@@ -100,6 +107,7 @@ export const siteEntityGraph = {
 };
 
 export function pageSchema({
+  locale = "en",
   path,
   name,
   description,
@@ -107,6 +115,8 @@ export function pageSchema({
   datePublished,
   dateModified,
 }: {
+  locale?: Locale;
+  /** Locale-free path, e.g. "/pricing". */
   path: string;
   name: string;
   description: string;
@@ -114,18 +124,20 @@ export function pageSchema({
   datePublished?: string;
   dateModified?: string;
 }) {
-  const url = `${SITE_URL}${path}`;
+  const localUrl = (target: string) => `${SITE_URL}${localizePath(locale, target)}`;
+  const url = localUrl(path);
   const section = path.split("/").filter(Boolean)[0];
+  const { common } = getDictionary(locale);
   const sectionNames: Record<string, string> = {
-    features: "Features",
-    "who-its-for": "Who it's for",
+    features: common.features,
+    industries: common.industries,
   };
   const itemListElement: Record<string, unknown>[] = [
     {
       "@type": "ListItem",
       position: 1,
-      name: "Home",
-      item: `${SITE_URL}/`,
+      name: common.home,
+      item: localUrl("/"),
     },
   ];
 
@@ -134,7 +146,7 @@ export function pageSchema({
       "@type": "ListItem",
       position: 2,
       name: sectionNames[section],
-      item: `${SITE_URL}/${section}`,
+      item: localUrl(`/${section}`),
     });
   }
 
@@ -157,7 +169,7 @@ export function pageSchema({
         isPartOf: { "@id": WEBSITE_ID },
         about: { "@id": SOFTWARE_ID },
         publisher: { "@id": ORGANIZATION_ID },
-        inLanguage: "en",
+        inLanguage: locale,
         ...(datePublished ? { datePublished } : {}),
         ...(dateModified ? { dateModified } : {}),
         ...(type === "BlogPosting"

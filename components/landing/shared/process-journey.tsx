@@ -1,17 +1,24 @@
 "use client";
 
+import { PriceText } from "@/components/currency/currency-provider";
+
 import { type CSSProperties, useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Check } from "lucide-react";
 
-import { processSteps } from "@/components/landing/data/landing-content";
+import { getDictionary } from "@/components/i18n/dictionary";
+import { useLocale } from "@/components/i18n/locale-provider";
+
+type ProcessStep = { title: string; description: string; details: string[] };
 
 type ProcessCardStyle = CSSProperties & {
   "--process-card-index": number;
 };
 
-export const ProcessJourney = () => {
+export const ProcessJourney = ({ processSteps }: { processSteps: ProcessStep[] }) => {
+  const t = getDictionary(useLocale()).process;
+  const stepCount = processSteps.length;
   const journeyRef = useRef<HTMLDivElement>(null);
   const panelRef = useRef<HTMLDivElement>(null);
 
@@ -56,7 +63,7 @@ export const ProcessJourney = () => {
 
           timeline.to({}, { duration: 0.8 });
 
-          processSteps.slice(1).forEach((_, index) => {
+          Array.from({ length: stepCount - 1 }).forEach((_, index) => {
             const previousIndex = index;
             const nextIndex = index + 1;
 
@@ -100,22 +107,20 @@ export const ProcessJourney = () => {
     }, journey);
 
     return () => context.revert();
-  }, []);
+  }, [stepCount]);
 
   return (
     <div className="qa-process-journey" ref={journeyRef}>
       <div className="qa-process-panel" ref={panelRef}>
         <div className="qa-process-intro">
           <div>
-            <p className="qa-process-kicker">How it works</p>
+            <p className="qa-process-kicker">{t.kicker}</p>
             <h2>
-              <span>Up and running in</span>
-              <span>four simple steps.</span>
+              <span>{t.line1}</span>
+              <span>{t.line2}</span>
             </h2>
           </div>
-          <p>
-            From a short call about how your firm bills to your first invoice.
-          </p>
+          <p>{t.intro}</p>
         </div>
         <div className="qa-process-body">
           <div className="qa-process-steps">
@@ -124,7 +129,7 @@ export const ProcessJourney = () => {
                 <span>{String(index + 1).padStart(2, "0")}</span>
                 <div>
                   <h3>{title}</h3>
-                  <p>{description}</p>
+                  <p><PriceText>{description}</PriceText></p>
                 </div>
               </article>
             ))}
@@ -140,14 +145,14 @@ export const ProcessJourney = () => {
                 key={title}
                 style={{ "--process-card-index": index } as ProcessCardStyle}
               >
-                <p>STEP {String(index + 1).padStart(2, "0")}</p>
+                <p>{t.step} {String(index + 1).padStart(2, "0")}</p>
                 <h3>{title}</h3>
-                <p>{description}</p>
+                <p><PriceText>{description}</PriceText></p>
                 <ul>
                   {details.map((detail) => (
                     <li key={detail}>
                       <Check aria-hidden="true" />
-                      {detail}
+                      <PriceText>{detail}</PriceText>
                     </li>
                   ))}
                 </ul>

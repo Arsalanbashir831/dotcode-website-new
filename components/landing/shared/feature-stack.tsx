@@ -1,19 +1,29 @@
 "use client";
 
-import { type CSSProperties, useLayoutEffect, useRef } from "react";
-import Link from "next/link";
+import { type CSSProperties, type ReactNode, useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ArrowRight } from "lucide-react";
 
-import { features } from "@/components/landing/data/landing-content";
+import type { FeatureGraphicKind } from "@/components/landing/data/catalog";
+import { LocaleLink as Link } from "@/components/i18n/locale-provider";
 import { FeatureGraphic } from "@/components/landing/shared/feature-graphic";
 
 type StackCardStyle = CSSProperties & {
   "--stack-index": number;
 };
 
-export const FeatureStack = () => {
+export type FeatureStackItem = {
+  icon: ReactNode;
+  title: string;
+  description: string;
+  graphic: FeatureGraphicKind;
+  graphicLabel: string;
+  href: string;
+  linkLabel: string;
+};
+
+export const FeatureStack = ({ items }: { items: FeatureStackItem[] }) => {
   const stackRef = useRef<HTMLDivElement>(null);
 
   useLayoutEffect(() => {
@@ -84,7 +94,7 @@ export const FeatureStack = () => {
 
   return (
     <div className="qa-feature-stack" ref={stackRef}>
-      {features.map(({ icon: Icon, title, description, graphic, href }, index) => (
+      {items.map(({ icon, title, description, graphic, graphicLabel, href, linkLabel }, index) => (
         <article
           className="qa-feature-stack-card"
           data-feature-card
@@ -97,7 +107,7 @@ export const FeatureStack = () => {
             </span>
             <div>
               <span className="qa-feature-stack-icon">
-                <Icon aria-hidden="true" />
+                {icon}
               </span>
               <h3>{title}</h3>
               <p>{description}</p>
@@ -106,11 +116,11 @@ export const FeatureStack = () => {
               href={href}
               className="qa-feature-stack-link"
             >
-              Explore {title} <ArrowRight aria-hidden="true" />
+              {linkLabel} <ArrowRight aria-hidden="true" />
             </Link>
           </div>
           <div className="qa-feature-stack-media">
-            <FeatureGraphic kind={graphic} />
+            <FeatureGraphic kind={graphic} label={graphicLabel} />
           </div>
         </article>
       ))}

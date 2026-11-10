@@ -19,7 +19,7 @@ Implementation date: October 17, 2026
 - Removed obsolete HowTo markup from the Custom ERP page.
 - Added `/llms.txt` and explicit search/browsing crawler rules.
 - Added honest sitemap `lastmod` values and removed ignored priority/change-frequency hints.
-- Added a self-contained QuickAccounts definition to the homepage and citation-ready answer passages to key guides and the serial-tracking page.
+- Added a self-contained Dotcode ERP definition to the homepage and citation-ready answer passages to key guides and the serial-tracking page.
 - Expanded the blog hub with contextual guide summaries.
 - Added page-specific product screenshots, descriptive alt text, captions, and workflow evidence for the nine strategic feature/industry pages.
 - Replaced the public Gmail address with the domain contact address published by Dotcode.
@@ -49,7 +49,7 @@ The following recommendations cannot be completed truthfully from repository dat
 5. Decide whether model-training crawlers such as GPTBot, Google-Extended, CCBot, and Bytespider should be allowed. Search/browsing crawlers remain open.
 6. Request recrawls in Google Search Console and submit updated URLs to Bing/IndexNow after deployment.
 7. Run mobile Lighthouse and monitor Search Console Core Web Vitals on the deployed origin; local response timing is not a substitute for field data.
-8. Align LinkedIn, marketplace, and video-channel descriptions around “QuickAccounts by Dotcode Solutions” using account-owner access.
+8. Align LinkedIn, marketplace, and video-channel descriptions around “Dotcode ERP by Dotcode Solutions” using account-owner access.
 
 ## Post-deployment checks
 

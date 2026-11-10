@@ -1,0 +1,501 @@
+import type { Locale } from "@/lib/i18n";
+
+const en = {
+  meta: {
+    defaultTitle: "Retail & Wholesale Business Software: POS, Stock & Accounting | Dotcode ERP",
+    titleTemplate: "%s | Dotcode ERP",
+    description:
+      "Complete business software for retailers and wholesalers in Pakistan: POS, accounting, multiple outlets, stock management and customer and supplier ledgers. Free and open source, just $50/month hosting.",
+    socialDescription:
+      "POS, stock, multiple outlets, ledgers and accounting in one system for retail and wholesale businesses. Free and open source, just $50/month hosting.",
+    keywords: [
+      "retail software Pakistan",
+      "wholesale software Pakistan",
+      "POS software Pakistan",
+      "inventory management software Pakistan",
+      "stock management software",
+      "multi outlet POS software",
+      "customer ledger khata software",
+      "accounting software for shops",
+      "distribution software Pakistan",
+      "clothing store POS",
+      "garment wholesale software",
+      "footwear shop software",
+      "restaurant POS Pakistan",
+      "grocery store software",
+      "Dotcode ERP",
+      "Dotcode Solutions",
+    ],
+  },
+  common: {
+    home: "Home",
+    features: "Features",
+    industries: "Industries",
+    pricing: "Pricing",
+    howItWorks: "How it works",
+    about: "About",
+    contactUs: "Contact Us",
+    breadcrumb: "Breadcrumb",
+    bookFreeDemo: "Book a free demo",
+    tryFreeDemo: "Try the Free Demo",
+    backToTop: "Back to top",
+    ourCompany: "Our company",
+    productHome: "Dotcode ERP home",
+  },
+  header: {
+    homeLabel: "Dotcode home",
+    mainNavigation: "Main navigation",
+    openNavigation: "Open navigation",
+    closeNavigation: "Close navigation",
+    featuresEyebrow: "Core features",
+    featuresTitle: "One system for selling, stock and accounts.",
+    featuresLink: "Explore features",
+    industriesEyebrow: "Industries",
+    industriesTitle: "Built for retail and wholesale trades.",
+    industriesLink: "See all {count} industries",
+  },
+  hero: {
+    line1: "Complete business software",
+    line2: "for retail and wholesale",
+    copy:
+      "POS billing, stock, multiple outlets, customer and supplier ledgers and full accounting in one system. Built for clothing, garments, footwear, food and beverage, grocery, pharmacy, electronics, hardware and every trade in between, so you run the business, not the paperwork.",
+    whatsapp: "Talk to Us on WhatsApp",
+    ratings: "5.0 on Upwork · 4.7 on Fiverr",
+    clients: "45+ clients served worldwide",
+    pricingNote: "Simple pricing, no surprises",
+    highlights: [
+      "Free and open source",
+      "Only $50/month hosting",
+      "All features included",
+      "Setup and training included",
+    ],
+  },
+  productDefinition: {
+    eyebrow: "What is Dotcode ERP?",
+    title: "Your whole business, in one system",
+    body:
+      "Dotcode ERP is complete business software for retailers, wholesalers and distributors. Bill customers at the counter, keep stock right in every outlet and warehouse, track every customer and supplier khata, and let the accounts update themselves. We set it up, bring over your items and balances and train your staff, so you're running in days, not months.",
+    industriesLink: "See industries we serve",
+  },
+  valueStrip: { label: "Dotcode ERP benefits" },
+  featuresSection: {
+    eyebrow: "Core features",
+    title: "Everything a retail or wholesale business runs on",
+    description:
+      "POS, accounting, multiple outlets, stock and ledgers, connected so every sale updates everything else.",
+    explore: "Explore {title}",
+  },
+  featureGraphics: {
+    pos: "Example POS bill with three items, a discount, a total of Rs 6,600 paid in cash, and a print receipt button.",
+    accounting:
+      "Example accounts view: six months of sales against expenses with a net profit of Rs 412,000, and tabs for profit and loss, balance sheet and trial balance.",
+    outlets:
+      "Example outlet dashboard: today's sales for three outlets and a stock transfer of 48 pieces from the warehouse to the Gulberg outlet.",
+    stock:
+      "Example stock view: three items with quantities at two outlets and a warehouse, with one item flagged as low stock.",
+    ledger:
+      "Example customer ledger: a credit sale of Rs 120,000 less a payment of Rs 80,000 leaves Rs 40,000 outstanding, with an aging bar.",
+  },
+  audience: {
+    eyebrow: "Industries",
+    title: "Built for the trades that keep Pakistan shopping",
+    description:
+      "From boutiques and bakeries to distributors and building-material dealers, retail, wholesale or both, Dotcode ERP fits the way your trade sells.",
+    allLink: "See all industries we serve",
+  },
+  testimonials: {
+    eyebrow: "Testimonials",
+    line1: "Don’t take our word for it.",
+    line2: "Hear it from our clients.",
+    navigation: "Testimonial navigation",
+    previous: "Show previous testimonial",
+    next: "Show next testimonial",
+    rail: "Client testimonials",
+  },
+  platformPresence: {
+    eyebrow: "Our platform presence",
+    title: "Trusted on Fiverr and Upwork.",
+    description: "45+ clients served, backed by independently rated client work.",
+    clientsServed: "clients served across the world",
+    starRating: "star rating",
+    fiverrAchievement: "Level Two Seller",
+    upworkAchievement: "100% Job Success",
+    viewProfile: "View {name} profile",
+  },
+  process: {
+    kicker: "How it works",
+    line1: "Up and running in",
+    line2: "four simple steps.",
+    intro: "From a short call about how your business sells to your first sale at the counter.",
+    step: "STEP",
+  },
+  setup: {
+    eyebrow: "Getting started",
+    line1: "Software only helps when",
+    line2: "your team can use it.",
+    body:
+      "We set it up, bring over your items, stock and khata balances and train your staff, so you can start selling quickly.",
+  },
+  faq: {
+    eyebrow: "FAQs",
+    line1: "Clear answers before",
+    line2: "you choose.",
+    body: "Plain answers about pricing, setup and how Dotcode ERP works for your business.",
+  },
+  partners: {
+    eyebrow: "Partner with Dotcode Solutions",
+    title: "Recommend Dotcode ERP to the businesses you work with.",
+    description:
+      "Earn 3–5% of every license. Ideal for accountants, POS hardware vendors, trade associations, market representatives and IT service providers.",
+    rateSuffix: " of eligible license revenue",
+    perks: ["Product and sales resources", "Clear, agreed partner terms", "Earn more as your customer base grows"],
+    whiteLabelTitle: "Interested in selling under your own brand?",
+    whiteLabelBody: "White-label licensing may be available to qualified partners under agreed terms.",
+  },
+  contact: {
+    kicker: "Ready to run every outlet from one place?",
+    line1: "Less time on registers and khatas.",
+    line2: "More time growing sales.",
+    body: "See Dotcode ERP in action with a free walkthrough built around your shop, outlets or warehouse.",
+    primary: "Get a Free Demo",
+    secondary: "Book a Free Consultation",
+    preferEmail: "Prefer email?",
+    imageAlt: "Dotcode ERP dashboard showing sales and purchases",
+    sectionLabel: "Contact Dotcode",
+  },
+  consultation: {
+    eyebrow: "Book a consultation",
+    title: "Tell us how your business sells.",
+    body:
+      "Share your trade, how many outlets or warehouses you run, and whether you sell retail, wholesale or both. We’ll prepare a walkthrough around it.",
+    note: "We’ll open WhatsApp with your details ready to review and send.",
+    name: "Name",
+    company: "Company name",
+    email: "Company email",
+    phone: "WhatsApp number",
+    phonePlaceholder: "Include country code, e.g. +92 300 1234567",
+    requirements: "What should we review?",
+    submit: "Continue to WhatsApp",
+  },
+  footer: {
+    tagline: "Complete business software for retail and wholesale.",
+    byline: "Dotcode ERP by Dotcode Solutions.",
+    headquarters: "Headquarters: Lahore, Pakistan",
+    operations: "Operations office: New Mexico, USA",
+    product: "Product",
+    company: "Company",
+    industries: "Industries",
+    contact: "Contact",
+    productLinks: "Product links",
+    companyLinks: "Company links",
+    customSoftware: "Custom software",
+    faqs: "FAQs",
+    allIndustries: "All industries",
+    partnerProgram: "Partner program",
+    email: "Email",
+    whatsapp: "WhatsApp",
+    line1: "POS, stock, ledgers and accounting",
+    line2: "Setup, data transfer and training",
+    rights: "All rights reserved.",
+    bottomTag: "Dotcode ERP · Free and open source",
+  },
+  seoPage: {
+    proof: ["Free demo", "Unlimited users and outlets", "Setup and training included"],
+    howItWorks: "How it works",
+    relatedLabel: "Related Dotcode ERP pages",
+    relatedTitle: "Explore more of Dotcode ERP",
+    ctaTitle: "See whether Dotcode ERP fits your business",
+    ctaBody: "Get a free walkthrough built around your outlets, stock and the way you sell, then choose a plan.",
+    faqTitle: "Frequently asked questions",
+    byline: "Reviewed by Dotcode Solutions Product Team · Updated October 17, 2026",
+    defaultEvidence: {
+      title: "One system from the counter to the books.",
+      body: "A sale at the counter takes stock out of the right outlet, puts cash or credit in the right place, and updates the accounts, without anyone re-entering it in a register or spreadsheet.",
+      steps: [
+        ["Sell", "Bill at the counter or invoice a trade customer."],
+        ["Track", "Stock, ledgers and cash update automatically."],
+        ["Report", "See sales, stock and profit for each outlet."],
+      ] as [string, string][],
+    },
+  },
+  featuresHub: {
+    metaTitle: "POS, Accounting, Stock, Outlets & Ledgers",
+    description:
+      "POS system, accounting, multiple outlets management, stock management and ledger tracking in one business system for retailers and wholesalers.",
+    schemaName: "Dotcode ERP features",
+    eyebrow: "Core features",
+    title: "Everything a retail or wholesale business runs on",
+    intro:
+      "Five connected tools in one system. A single sale at the counter updates stock at that outlet, the customer's ledger and your accounts, with nothing to re-enter.",
+  },
+  industriesHub: {
+    metaTitle: "Retail & Wholesale Software by Industry",
+    description:
+      "POS, stock, multi-outlet, ledger and accounting software for clothing, garments, footwear, food and beverage, grocery, pharmacy, electronics, hardware and other retail and wholesale trades in Pakistan.",
+    schemaName: "Industries using Dotcode ERP",
+    eyebrow: "Industries",
+    title: "Business software for {count} retail and wholesale trades",
+    intro:
+      "Every trade sells differently. Clothing needs sizes and exchanges, distributors need retailer ledgers, bakeries sell by weight and building-material dealers carry contractors on credit. Dotcode ERP gives each of them POS, stock, multiple outlets, ledgers and accounting in one system.",
+  },
+  notFound: {
+    metaTitle: "Page Not Found",
+    metaDescription: "The requested Dotcode Solutions page could not be found.",
+    title: "Page not found",
+    body: "The page may have moved or the address may be incorrect. Return to the Dotcode ERP homepage or explore the features.",
+    home: "Return home",
+    features: "Browse features",
+  },
+};
+
+export type Dictionary = typeof en;
+
+const ur: Dictionary = {
+  meta: {
+    defaultTitle: "ریٹیل اور ہول سیل کے لیے بزنس سافٹ ویئر: POS، اسٹاک اور اکاؤنٹنگ | Dotcode ERP",
+    titleTemplate: "%s | Dotcode ERP",
+    description:
+      "پاکستان کے ریٹیلرز اور ہول سیلرز کے لیے مکمل بزنس سافٹ ویئر: POS، اکاؤنٹنگ، متعدد آؤٹ لیٹس، اسٹاک مینجمنٹ اور کسٹمر و سپلائر لیجر۔ مفت اور اوپن سورس، صرف $50 ماہانہ ہوسٹنگ۔",
+    socialDescription:
+      "ریٹیل اور ہول سیل کاروبار کے لیے POS، اسٹاک، متعدد آؤٹ لیٹس، لیجر اور اکاؤنٹنگ ایک ہی سسٹم میں۔ مفت اور اوپن سورس، صرف $50 ماہانہ ہوسٹنگ۔",
+    keywords: [
+      "ریٹیل سافٹ ویئر پاکستان",
+      "ہول سیل سافٹ ویئر",
+      "POS سافٹ ویئر پاکستان",
+      "اسٹاک مینجمنٹ سافٹ ویئر",
+      "کھاتہ سافٹ ویئر",
+      "دکان کے لیے اکاؤنٹنگ سافٹ ویئر",
+      "ڈسٹری بیوشن سافٹ ویئر",
+      "کپڑوں کی دکان کا سافٹ ویئر",
+      "ریسٹورنٹ POS",
+      "گروسری اسٹور سافٹ ویئر",
+      "Dotcode ERP",
+      "Dotcode Solutions",
+    ],
+  },
+  common: {
+    home: "ہوم",
+    features: "فیچرز",
+    industries: "انڈسٹریز",
+    pricing: "قیمت",
+    howItWorks: "طریقہ کار",
+    about: "ہمارے بارے میں",
+    contactUs: "رابطہ کریں",
+    breadcrumb: "راستہ",
+    bookFreeDemo: "مفت ڈیمو بک کریں",
+    tryFreeDemo: "مفت ڈیمو آزمائیں",
+    backToTop: "اوپر جائیں",
+    ourCompany: "ہماری کمپنی",
+    productHome: "Dotcode ERP ہوم",
+  },
+  header: {
+    homeLabel: "Dotcode ہوم",
+    mainNavigation: "مرکزی نیویگیشن",
+    openNavigation: "مینو کھولیں",
+    closeNavigation: "مینو بند کریں",
+    featuresEyebrow: "بنیادی فیچرز",
+    featuresTitle: "فروخت، اسٹاک اور اکاؤنٹس کے لیے ایک سسٹم۔",
+    featuresLink: "فیچرز دیکھیں",
+    industriesEyebrow: "انڈسٹریز",
+    industriesTitle: "ریٹیل اور ہول سیل کاروبار کے لیے تیار۔",
+    industriesLink: "تمام {count} انڈسٹریز دیکھیں",
+  },
+  hero: {
+    line1: "مکمل بزنس سافٹ ویئر",
+    line2: "ریٹیل اور ہول سیل کے لیے",
+    copy:
+      "POS بلنگ، اسٹاک، متعدد آؤٹ لیٹس، کسٹمر اور سپلائر لیجر اور مکمل اکاؤنٹنگ، سب ایک سسٹم میں۔ کپڑے، گارمنٹس، جوتے، کھانے پینے، گروسری، فارمیسی، الیکٹرانکس، ہارڈ ویئر اور ہر قسم کے کاروبار کے لیے، تاکہ آپ کاغذی کام کی بجائے کاروبار چلائیں۔",
+    whatsapp: "واٹس ایپ پر بات کریں",
+    ratings: "Upwork پر 5.0 · Fiverr پر 4.7",
+    clients: "دنیا بھر میں 45 سے زائد کلائنٹس",
+    pricingNote: "سادہ قیمت، کوئی چھپا خرچ نہیں",
+    highlights: [
+      "مفت اور اوپن سورس",
+      "صرف $50 ماہانہ ہوسٹنگ",
+      "تمام فیچرز شامل",
+      "سیٹ اپ اور ٹریننگ شامل",
+    ],
+  },
+  productDefinition: {
+    eyebrow: "Dotcode ERP کیا ہے؟",
+    title: "آپ کا پورا کاروبار، ایک سسٹم میں",
+    body:
+      "Dotcode ERP ریٹیلرز، ہول سیلرز اور ڈسٹری بیوٹرز کے لیے مکمل بزنس سافٹ ویئر ہے۔ کاؤنٹر پر گاہکوں کا بل بنائیں، ہر آؤٹ لیٹ اور گودام میں اسٹاک درست رکھیں، ہر کسٹمر اور سپلائر کا کھاتہ دیکھیں، اور اکاؤنٹس خود بخود اپ ڈیٹ ہوتے رہیں۔ ہم سیٹ اپ کرتے ہیں، آپ کے آئٹمز اور بیلنس منتقل کرتے ہیں اور اسٹاف کو ٹریننگ دیتے ہیں، تاکہ آپ مہینوں نہیں، دنوں میں کام شروع کر دیں۔",
+    industriesLink: "ہماری انڈسٹریز دیکھیں",
+  },
+  valueStrip: { label: "Dotcode ERP کے فوائد" },
+  featuresSection: {
+    eyebrow: "بنیادی فیچرز",
+    title: "ریٹیل یا ہول سیل کاروبار کی ہر ضرورت",
+    description:
+      "POS، اکاؤنٹنگ، متعدد آؤٹ لیٹس، اسٹاک اور لیجر، سب آپس میں جڑے ہوئے، تاکہ ہر فروخت باقی سب کچھ اپ ڈیٹ کر دے۔",
+    explore: "{title} دیکھیں",
+  },
+  featureGraphics: {
+    pos: "POS بل کی مثال: تین آئٹمز، ڈسکاؤنٹ، کیش میں ادا شدہ کل رقم 6,600 روپے، اور رسید پرنٹ کرنے کا بٹن۔",
+    accounting:
+      "اکاؤنٹس کی مثال: چھ ماہ کی فروخت بمقابلہ اخراجات، خالص منافع 412,000 روپے، اور نفع و نقصان، بیلنس شیٹ اور ٹرائل بیلنس کے ٹیب۔",
+    outlets:
+      "آؤٹ لیٹ ڈیش بورڈ کی مثال: تین آؤٹ لیٹس کی آج کی فروخت، اور گودام سے گلبرگ آؤٹ لیٹ کو 48 پیس کی منتقلی۔",
+    stock:
+      "اسٹاک کی مثال: دو آؤٹ لیٹس اور ایک گودام میں تین آئٹمز کی مقدار، جن میں ایک آئٹم کا اسٹاک کم ہے۔",
+    ledger:
+      "کسٹمر لیجر کی مثال: 120,000 روپے کی ادھار فروخت میں سے 80,000 روپے کی ادائیگی کے بعد 40,000 روپے باقی، اور واجبات کی مدت کا خاکہ۔",
+  },
+  audience: {
+    eyebrow: "انڈسٹریز",
+    title: "پاکستان کے ہر کاروبار کے لیے تیار",
+    description:
+      "بوتیک اور بیکری سے لے کر ڈسٹری بیوٹرز اور تعمیراتی سامان کے ڈیلرز تک، ریٹیل ہو، ہول سیل یا دونوں، Dotcode ERP آپ کے کاروبار کے انداز کے مطابق چلتا ہے۔",
+    allLink: "تمام انڈسٹریز دیکھیں",
+  },
+  testimonials: {
+    eyebrow: "کلائنٹس کی رائے",
+    line1: "ہماری بات پر نہ جائیں۔",
+    line2: "ہمارے کلائنٹس سے سنیں۔",
+    navigation: "آراء کی نیویگیشن",
+    previous: "پچھلی رائے دکھائیں",
+    next: "اگلی رائے دکھائیں",
+    rail: "کلائنٹس کی آراء",
+  },
+  platformPresence: {
+    eyebrow: "ہماری پلیٹ فارم موجودگی",
+    title: "Fiverr اور Upwork پر قابلِ اعتماد۔",
+    description: "45 سے زائد کلائنٹس، جن کے کام کی آزادانہ ریٹنگ موجود ہے۔",
+    clientsServed: "دنیا بھر میں کلائنٹس",
+    starRating: "اسٹار ریٹنگ",
+    fiverrAchievement: "لیول ٹو سیلر",
+    upworkAchievement: "100% جاب سکسیس",
+    viewProfile: "{name} پروفائل دیکھیں",
+  },
+  process: {
+    kicker: "طریقہ کار",
+    line1: "چار آسان مراحل میں",
+    line2: "کام شروع کریں۔",
+    intro: "آپ کے کاروبار کے بارے میں ایک مختصر کال سے لے کر کاؤنٹر پر پہلی فروخت تک۔",
+    step: "مرحلہ",
+  },
+  setup: {
+    eyebrow: "آغاز",
+    line1: "سافٹ ویئر تب ہی فائدہ دیتا ہے",
+    line2: "جب آپ کی ٹیم اسے استعمال کر سکے۔",
+    body:
+      "ہم سیٹ اپ کرتے ہیں، آپ کے آئٹمز، اسٹاک اور کھاتوں کے بیلنس منتقل کرتے ہیں اور اسٹاف کو ٹریننگ دیتے ہیں، تاکہ آپ جلد فروخت شروع کر سکیں۔",
+  },
+  faq: {
+    eyebrow: "عام سوالات",
+    line1: "فیصلے سے پہلے",
+    line2: "واضح جوابات۔",
+    body: "قیمت، سیٹ اپ اور Dotcode ERP آپ کے کاروبار میں کیسے کام کرتا ہے، اس بارے میں سیدھے جوابات۔",
+  },
+  partners: {
+    eyebrow: "Dotcode Solutions کے پارٹنر بنیں",
+    title: "Dotcode ERP اپنے جاننے والے کاروباروں کو تجویز کریں۔",
+    description:
+      "ہر لائسنس پر 3 سے 5 فیصد کمائیں۔ اکاؤنٹنٹس، POS ہارڈ ویئر فروشوں، تجارتی تنظیموں، مارکیٹ نمائندوں اور IT سروس فراہم کنندگان کے لیے بہترین۔",
+    rateSuffix: " اہل لائسنس آمدنی کا",
+    perks: ["پروڈکٹ اور سیلز مواد", "واضح اور طے شدہ پارٹنر شرائط", "کسٹمرز بڑھنے کے ساتھ زیادہ کمائی"],
+    whiteLabelTitle: "اپنے برانڈ کے نام سے فروخت کرنا چاہتے ہیں؟",
+    whiteLabelBody: "اہل پارٹنرز کے لیے طے شدہ شرائط پر وائٹ لیبل لائسنسنگ دستیاب ہو سکتی ہے۔",
+  },
+  contact: {
+    kicker: "ہر آؤٹ لیٹ ایک جگہ سے چلانے کے لیے تیار ہیں؟",
+    line1: "رجسٹروں اور کھاتوں پر کم وقت۔",
+    line2: "فروخت بڑھانے پر زیادہ وقت۔",
+    body: "اپنی دکان، آؤٹ لیٹس یا گودام کے مطابق مفت ڈیمو میں Dotcode ERP کو کام کرتے دیکھیں۔",
+    primary: "مفت ڈیمو حاصل کریں",
+    secondary: "مفت مشاورت بک کریں",
+    preferEmail: "ای میل کو ترجیح دیتے ہیں؟",
+    imageAlt: "Dotcode ERP ڈیش بورڈ جس میں فروخت اور خریداری دکھائی گئی ہے",
+    sectionLabel: "Dotcode سے رابطہ",
+  },
+  consultation: {
+    eyebrow: "مشاورت بک کریں",
+    title: "ہمیں بتائیں آپ کا کاروبار کیسے فروخت کرتا ہے۔",
+    body:
+      "اپنا کاروبار، آؤٹ لیٹس یا گوداموں کی تعداد، اور یہ بتائیں کہ آپ ریٹیل کرتے ہیں، ہول سیل یا دونوں۔ ہم اسی کے مطابق ڈیمو تیار کریں گے۔",
+    note: "ہم آپ کی تفصیلات کے ساتھ واٹس ایپ کھول دیں گے تاکہ آپ دیکھ کر بھیج سکیں۔",
+    name: "نام",
+    company: "کمپنی کا نام",
+    email: "کمپنی ای میل",
+    phone: "واٹس ایپ نمبر",
+    phonePlaceholder: "کنٹری کوڈ کے ساتھ، مثلاً ‎+92 300 1234567",
+    requirements: "ہم کیا دیکھیں؟",
+    submit: "واٹس ایپ پر جاری رکھیں",
+  },
+  footer: {
+    tagline: "ریٹیل اور ہول سیل کے لیے مکمل بزنس سافٹ ویئر۔",
+    byline: "Dotcode ERP، از Dotcode Solutions۔",
+    headquarters: "ہیڈ کوارٹر: لاہور، پاکستان",
+    operations: "آپریشنز آفس: نیو میکسیکو، امریکہ",
+    product: "پروڈکٹ",
+    company: "کمپنی",
+    industries: "انڈسٹریز",
+    contact: "رابطہ",
+    productLinks: "پروڈکٹ لنکس",
+    companyLinks: "کمپنی لنکس",
+    customSoftware: "کسٹم سافٹ ویئر",
+    faqs: "عام سوالات",
+    allIndustries: "تمام انڈسٹریز",
+    partnerProgram: "پارٹنر پروگرام",
+    email: "ای میل",
+    whatsapp: "واٹس ایپ",
+    line1: "POS، اسٹاک، لیجر اور اکاؤنٹنگ",
+    line2: "سیٹ اپ، ڈیٹا منتقلی اور ٹریننگ",
+    rights: "جملہ حقوق محفوظ ہیں۔",
+    bottomTag: "Dotcode ERP · مفت اور اوپن سورس",
+  },
+  seoPage: {
+    proof: ["مفت ڈیمو", "لامحدود یوزرز اور آؤٹ لیٹس", "سیٹ اپ اور ٹریننگ شامل"],
+    howItWorks: "یہ کیسے کام کرتا ہے",
+    relatedLabel: "Dotcode ERP کے متعلقہ صفحات",
+    relatedTitle: "Dotcode ERP کے بارے میں مزید",
+    ctaTitle: "دیکھیں کہ Dotcode ERP آپ کے کاروبار کے لیے موزوں ہے یا نہیں",
+    ctaBody: "اپنے آؤٹ لیٹس، اسٹاک اور فروخت کے انداز کے مطابق مفت ڈیمو لیں، پھر فیصلہ کریں۔",
+    faqTitle: "عام سوالات",
+    byline: "Dotcode Solutions پروڈکٹ ٹیم کا جائزہ شدہ · 17 اکتوبر 2026 کو اپ ڈیٹ کیا گیا",
+    defaultEvidence: {
+      title: "کاؤنٹر سے کھاتوں تک، ایک سسٹم۔",
+      body: "کاؤنٹر پر ہونے والی فروخت درست آؤٹ لیٹ سے اسٹاک کم کرتی ہے، کیش یا ادھار کو صحیح جگہ درج کرتی ہے اور اکاؤنٹس اپ ڈیٹ کرتی ہے، بغیر اس کے کہ کوئی اسے رجسٹر یا اسپریڈ شیٹ میں دوبارہ لکھے۔",
+      steps: [
+        ["فروخت", "کاؤنٹر پر بل بنائیں یا تجارتی گاہک کو انوائس بھیجیں۔"],
+        ["ریکارڈ", "اسٹاک، لیجر اور کیش خود بخود اپ ڈیٹ ہوتے ہیں۔"],
+        ["رپورٹ", "ہر آؤٹ لیٹ کی فروخت، اسٹاک اور منافع دیکھیں۔"],
+      ],
+    },
+  },
+  featuresHub: {
+    metaTitle: "POS، اکاؤنٹنگ، اسٹاک، آؤٹ لیٹس اور لیجر",
+    description:
+      "ریٹیلرز اور ہول سیلرز کے لیے ایک بزنس سسٹم میں POS سسٹم، اکاؤنٹنگ، متعدد آؤٹ لیٹس کا انتظام، اسٹاک مینجمنٹ اور لیجر ٹریکنگ۔",
+    schemaName: "Dotcode ERP کے فیچرز",
+    eyebrow: "بنیادی فیچرز",
+    title: "ریٹیل یا ہول سیل کاروبار کی ہر ضرورت",
+    intro:
+      "ایک سسٹم میں پانچ جڑے ہوئے ٹولز۔ کاؤنٹر پر ایک فروخت اس آؤٹ لیٹ کا اسٹاک، گاہک کا لیجر اور آپ کے اکاؤنٹس، سب اپ ڈیٹ کر دیتی ہے، کچھ دوبارہ درج نہیں کرنا پڑتا۔",
+  },
+  industriesHub: {
+    metaTitle: "انڈسٹری کے لحاظ سے ریٹیل اور ہول سیل سافٹ ویئر",
+    description:
+      "پاکستان میں کپڑے، گارمنٹس، جوتے، کھانے پینے، گروسری، فارمیسی، الیکٹرانکس، ہارڈ ویئر اور دیگر ریٹیل و ہول سیل کاروبار کے لیے POS، اسٹاک، متعدد آؤٹ لیٹس، لیجر اور اکاؤنٹنگ سافٹ ویئر۔",
+    schemaName: "Dotcode ERP استعمال کرنے والی انڈسٹریز",
+    eyebrow: "انڈسٹریز",
+    title: "{count} ریٹیل اور ہول سیل کاروباروں کے لیے بزنس سافٹ ویئر",
+    intro:
+      "ہر کاروبار کا فروخت کا انداز مختلف ہوتا ہے۔ کپڑوں میں سائز اور تبادلہ، ڈسٹری بیوٹرز کو دکانداروں کے کھاتے، بیکری میں وزن کے حساب سے فروخت، اور تعمیراتی سامان کے ڈیلرز ٹھیکیداروں کو ادھار دیتے ہیں۔ Dotcode ERP ان سب کو POS، اسٹاک، متعدد آؤٹ لیٹس، لیجر اور اکاؤنٹنگ ایک سسٹم میں دیتا ہے۔",
+  },
+  notFound: {
+    metaTitle: "صفحہ نہیں ملا",
+    metaDescription: "مطلوبہ Dotcode Solutions صفحہ نہیں مل سکا۔",
+    title: "صفحہ نہیں ملا",
+    body: "ہو سکتا ہے یہ صفحہ منتقل ہو گیا ہو یا پتہ غلط ہو۔ Dotcode ERP کے ہوم پیج پر واپس جائیں یا فیچرز دیکھیں۔",
+    home: "ہوم پر واپس جائیں",
+    features: "فیچرز دیکھیں",
+  },
+};
+
+export const getDictionary = (locale: Locale): Dictionary => (locale === "ur" ? ur : en);
+
+/** Replaces `{name}` placeholders in a dictionary string. */
+export const fill = (template: string, values: Record<string, string | number>) =>
+  template.replace(/\{(\w+)\}/g, (_, key: string) => String(values[key] ?? `{${key}}`));

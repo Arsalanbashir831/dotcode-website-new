@@ -1,30 +1,32 @@
 "use client";
 
+import { PriceText } from "@/components/currency/currency-provider";
+
 import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 
-import { valueItems } from "@/components/landing/data/landing-content";
 
 const groupRepetitions = 1;
 const pixelsPerSecond = 34;
 
 type TickerTrackProps = {
   direction: "left" | "right";
+  labels: string[];
 };
 
-const TickerContent = () => (
+const TickerContent = ({ labels }: { labels: string[] }) => (
   <>
     {Array.from({ length: groupRepetitions }, (_, repetitionIndex) =>
-      valueItems.map(({ label }) => (
+      labels.map((label) => (
         <span className="qa-ticker-item" key={`${repetitionIndex}-${label}`}>
-          {label}
+          <PriceText>{label}</PriceText>
         </span>
       )),
     )}
   </>
 );
 
-const TickerTrack = ({ direction }: TickerTrackProps) => {
+const TickerTrack = ({ direction, labels }: TickerTrackProps) => {
   const viewportRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
   const firstGroupRef = useRef<HTMLDivElement>(null);
@@ -92,19 +94,19 @@ const TickerTrack = ({ direction }: TickerTrackProps) => {
     >
       <div className="qa-ticker-track" ref={trackRef} aria-hidden="true">
         <div className="qa-ticker-group" ref={firstGroupRef}>
-          <TickerContent />
+          <TickerContent labels={labels} />
         </div>
         <div className="qa-ticker-group">
-          <TickerContent />
+          <TickerContent labels={labels} />
         </div>
       </div>
     </div>
   );
 };
 
-export const ValueStrip = () => (
-  <section className="qa-value-strip" aria-label="QuickAccounts benefits" data-nosnippet>
-    <TickerTrack direction="left" />
-    <TickerTrack direction="right" />
+export const ValueStrip = ({ labels, label }: { labels: string[]; label: string }) => (
+  <section className="qa-value-strip" aria-label={label} data-nosnippet>
+    <TickerTrack direction="left" labels={labels} />
+    <TickerTrack direction="right" labels={labels} />
   </section>
 );

@@ -3,6 +3,9 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
+import { getDictionary } from "@/components/i18n/dictionary";
+import { useLocale } from "@/components/i18n/locale-provider";
+
 const testimonials = [
   {
     quote:
@@ -55,7 +58,7 @@ const testimonials = [
   },
   {
     quote:
-      "Dotcode and their QuickAccounts were outstanding! Their attention to detail and professionalism truly shined through. Proactive communication and excellent politeness made cooperation a breeze. Excellent work! They helped resolve critical issues and guided our startup in developing a proof of concept. Highly recommended!",
+      "Dotcode and their Dotcode ERP were outstanding! Their attention to detail and professionalism truly shined through. Proactive communication and excellent politeness made cooperation a breeze. Excellent work! They helped resolve critical issues and guided our startup in developing a proof of concept. Highly recommended!",
     name: "Salpeer",
     role: "Founder of Modelleaps · Fiverr",
     company: "USA",
@@ -80,6 +83,7 @@ const testimonials = [
 ];
 
 export const TestimonialsSection = () => {
+  const t = getDictionary(useLocale()).testimonials;
   const railRef = useRef<HTMLDivElement>(null);
   const [canScrollBack, setCanScrollBack] = useState(false);
   const [canScrollForward, setCanScrollForward] = useState(true);
@@ -127,19 +131,19 @@ export const TestimonialsSection = () => {
     <section className="qa-testimonials-section" aria-labelledby="testimonials-title">
       <div className="qa-container qa-testimonials-topline">
         <div className="qa-testimonials-heading" data-reveal>
-          <p className="qa-eyebrow">Testimonials</p>
+          <p className="qa-eyebrow">{t.eyebrow}</p>
           <h2 id="testimonials-title">
-            <span>Don’t take our word for it.</span>
-            <span>Hear it from our clients.</span>
+            <span>{t.line1}</span>
+            <span>{t.line2}</span>
           </h2>
         </div>
 
-        <div className="qa-testimonial-controls" aria-label="Testimonial navigation">
+        <div className="qa-testimonial-controls" aria-label={t.navigation}>
           <button
             type="button"
             onClick={() => moveTestimonials(-1)}
             disabled={!canScrollBack}
-            aria-label="Show previous testimonial"
+            aria-label={t.previous}
           >
             <ArrowLeft aria-hidden="true" />
           </button>
@@ -147,7 +151,7 @@ export const TestimonialsSection = () => {
             type="button"
             onClick={() => moveTestimonials(1)}
             disabled={!canScrollForward}
-            aria-label="Show next testimonial"
+            aria-label={t.next}
           >
             <ArrowRight aria-hidden="true" />
           </button>
@@ -156,11 +160,13 @@ export const TestimonialsSection = () => {
 
       <div
         className="qa-testimonials-rail"
-        aria-label="Client testimonials"
+        aria-label={t.rail}
+        dir="ltr"
         ref={railRef}
       >
         {testimonials.map((testimonial) => (
           <blockquote
+            lang="en"
             className={`qa-testimonial-card ${testimonial.featured ? "featured" : ""}`}
             key={testimonial.name}
           >

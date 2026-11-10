@@ -1,35 +1,42 @@
-import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
-import { audienceItems } from "@/components/landing/data/landing-content";
+import { getDictionary } from "@/components/i18n/dictionary";
+import { getCatalog, industryHref } from "@/components/landing/data/catalog";
 import { SectionHeading } from "@/components/landing/shared/section-heading";
+import { localizePath } from "@/lib/i18n";
+import type { Locale } from "@/lib/i18n";
 
-export const AudienceSection = () => (
-  <section className="qa-section qa-audience-section" id="who-its-for">
-    <div className="qa-container">
-      <SectionHeading
-        isDark
-        eyebrow="Who it's for"
-        title="Built for firms that bill for their expertise"
-        description="When your business runs on people's time and know-how, the money side is about billing clients, controlling costs and getting paid on time."
-      />
-      <div className="qa-audience-grid qa-audience-grid-simple">
-        {audienceItems.map(({ icon: Icon, title, description, href }) => (
-          <article className="qa-audience-card qa-audience-card-simple" key={href} data-reveal>
-            <div className="qa-audience-copy">
-              <div className="qa-audience-title">
-                <span><Icon aria-hidden="true" /></span>
-                <h3>{title}</h3>
+export const AudienceSection = ({ locale }: { locale: Locale }) => {
+  const t = getDictionary(locale);
+  return (
+    <section className="qa-section qa-audience-section" id="industries">
+      <div className="qa-container">
+        <SectionHeading
+          isDark
+          eyebrow={t.audience.eyebrow}
+          title={t.audience.title}
+          description={t.audience.description}
+        />
+        <div className="qa-audience-grid qa-audience-grid-simple">
+          {getCatalog(locale).industryGroups.map(({ icon: Icon, name, description, industries }) => (
+            <article className="qa-audience-card qa-audience-card-simple" key={name} data-reveal>
+              <div className="qa-audience-copy">
+                <div className="qa-audience-title">
+                  <span><Icon aria-hidden="true" /></span>
+                  <h3>{name}</h3>
+                </div>
+                <p>{description}</p>
+                <ul className="qa-industry-links">
+                  {industries.map(({ slug, title }) => (
+                    <li key={slug}><Link href={localizePath(locale, industryHref(slug))}>{title}</Link></li>
+                  ))}
+                </ul>
               </div>
-              <p>{description}</p>
-              <Link className="qa-audience-link" href={href}>
-                Learn more<ArrowUpRight aria-hidden="true" />
-              </Link>
-            </div>
-          </article>
-        ))}
+            </article>
+          ))}
+        </div>
+        <p className="qa-audience-all"><Link href={localizePath(locale, "/industries")}>{t.audience.allLink}</Link></p>
       </div>
-      <p className="qa-audience-all"><Link href="/who-its-for">See all industries we serve</Link></p>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
