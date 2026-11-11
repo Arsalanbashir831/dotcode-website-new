@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { allIndustries, getCatalog, industryHref } from "@/components/landing/data/catalog";
+import { FootwearIndustryPage } from "@/components/industries/footwear/footwear-page";
 import { SeoLandingPage } from "@/components/seo/seo-landing-page";
 import { isLocale, localeAlternates } from "@/lib/i18n";
 
@@ -43,6 +44,18 @@ export default async function IndustryPage({ params }: Props) {
   const loaded = await load(params);
   if (!loaded) notFound();
   const { locale, catalog, industry } = loaded;
+
+  if (industry.slug === "footwear-leather-goods") {
+    return (
+      <FootwearIndustryPage
+        locale={locale}
+        path={industryHref(industry.slug)}
+        industry={industry}
+        oneSystem={catalog.oneSystemSection}
+        faqs={[...industry.faqs, ...catalog.commonIndustryFaqs]}
+      />
+    );
+  }
 
   return (
     <SeoLandingPage

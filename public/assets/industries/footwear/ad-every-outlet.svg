@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 628" width="1200" height="628" role="img" aria-label="Ad: Every pair. Every outlet. One system. Dotcode ERP for footwear and leather goods.">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#5a3a22" flood-opacity=".18"/>
+    </filter>
+    <linearGradient id="leather" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a86a3d"/>
+      <stop offset="1" stop-color="#7a4726"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="628" fill="#f4f1ed"/>
+  <path d="M760 0 H1200 V628 H640 C700 520 680 420 720 300 C750 200 720 90 760 0 Z" fill="#fff0e9"/>
+  <circle cx="1100" cy="560" r="160" fill="#ff986f" opacity=".25"/>
+
+  <g font-family="'Manrope','Avenir Next','Segoe UI',Helvetica,Arial,sans-serif">
+    <rect x="64" y="56" width="176" height="44" rx="22" fill="#171717"/>
+    <circle cx="90" cy="78" r="7" fill="#f45a21"/>
+    <text x="106" y="85" font-size="20" font-weight="800" fill="#fff">dotcode ERP</text>
+
+    <text x="64" y="200" font-size="76" font-weight="800" fill="#171717" letter-spacing="-3.5">Every pair.</text>
+    <text x="64" y="284" font-size="76" font-weight="800" fill="#171717" letter-spacing="-3.5">Every outlet.</text>
+    <text x="64" y="368" font-size="76" font-weight="800" fill="#f45a21" letter-spacing="-3.5">One system.</text>
+
+    <text x="64" y="424" font-size="22" font-weight="600" fill="#6d6a67">Shoes, bags and leather goods: billing, stock,</text>
+    <text x="64" y="454" font-size="22" font-weight="600" fill="#6d6a67">transfers and accounts for every branch.</text>
+
+    <rect x="64" y="496" width="262" height="64" rx="32" fill="#171717"/>
+    <text x="195" y="536" font-size="22" font-weight="800" fill="#fff" text-anchor="middle">Book a free demo  →</text>
+  </g>
+
+  <g filter="url(#shadow)" font-family="'Manrope','Avenir Next','Segoe UI',Helvetica,Arial,sans-serif">
+    <rect x="700" y="64" width="420" height="96" rx="22" fill="#fff"/>
+    <text x="728" y="102" font-size="15" font-weight="800" fill="#9a958f" letter-spacing="1.5">GULBERG OUTLET</text>
+    <text x="728" y="138" font-size="28" font-weight="800" fill="#171717">124 pairs</text>
+    <rect x="930" y="118" width="160" height="10" rx="5" fill="#f4f1ed"/><rect x="930" y="118" width="104" height="10" rx="5" fill="#f45a21"/>
+
+    <rect x="740" y="178" width="420" height="96" rx="22" fill="#fff"/>
+    <text x="768" y="216" font-size="15" font-weight="800" fill="#9a958f" letter-spacing="1.5">DHA PHASE 6</text>
+    <text x="768" y="252" font-size="28" font-weight="800" fill="#171717">98 pairs</text>
+    <rect x="970" y="232" width="160" height="10" rx="5" fill="#f4f1ed"/><rect x="970" y="232" width="82" height="10" rx="5" fill="#f45a21"/>
+
+    <rect x="700" y="292" width="420" height="96" rx="22" fill="#171717"/>
+    <text x="728" y="330" font-size="15" font-weight="800" fill="#aaa7a4" letter-spacing="1.5">WAREHOUSE</text>
+    <text x="728" y="366" font-size="28" font-weight="800" fill="#fff">1,240 pairs</text>
+    <rect x="930" y="346" width="160" height="10" rx="5" fill="#343434"/><rect x="930" y="346" width="146" height="10" rx="5" fill="#ff986f"/>
+  </g>
+
+  <g transform="translate(700 410)">
+    <ellipse cx="96" cy="196" rx="100" ry="8" fill="#5a3a22" opacity=".18"/>
+    <path d="M52 64 C52 6 140 6 140 64" fill="none" stroke="#5a3a22" stroke-width="11" stroke-linecap="round"/>
+    <rect x="6" y="58" width="180" height="134" rx="24" fill="url(#leather)"/>
+    <path d="M6 84 Q96 128 186 84 V80 Q186 58 164 58 H28 Q6 58 6 80 Z" fill="#6f4426"/>
+    <rect x="84" y="96" width="24" height="18" rx="5" fill="#e9c27a"/>
+    <rect x="18" y="70" width="156" height="110" rx="16" fill="none" stroke="#e9c27a" stroke-width="2" stroke-dasharray="5 6" opacity=".55"/>
+  </g>
+
+  <g transform="translate(900 498)">
+    <ellipse cx="148" cy="104" rx="140" ry="7" fill="#5a3a22" opacity=".18"/>
+    <path d="M10 76 C10 48 30 38 60 38 L120 38 C150 38 170 28 200 30 C250 34 290 54 292 80 L292 88 L10 88 Z" fill="url(#leather)"/>
+    <path d="M140 40 C164 34 196 40 212 58" fill="none" stroke="#4a2c18" stroke-width="5" stroke-linecap="round"/>
+    <rect x="164" y="46" width="22" height="8" rx="3" fill="#e9c27a"/>
+    <path d="M10 60 C30 50 60 50 80 56" fill="none" stroke="#4a2c18" stroke-width="3" opacity=".6"/>
+    <rect x="4" y="86" width="294" height="14" rx="7" fill="#2a1a10"/>
+  </g>
+</svg>
